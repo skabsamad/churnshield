@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChurnShield · Customer Retention Intelligence</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --bg:#080C14;--sidebar:#0D1117;--card:#0D1117;--card2:#111828;
+  --border:#1C2638;--text:#E8EDF5;--muted:#7A8BA6;
+  --primary:#5B8DEF;--danger:#F0544F;--warn:#FFAB40;--ok:#26C281;
+  --dbg:rgba(240,84,79,.12);--wbg:rgba(255,171,64,.12);--gbg:rgba(38,194,129,.12);--pbg:rgba(91,141,239,.12);
+}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);display:flex;min-height:100vh;}
+
+/* SIDEBAR */
+.sb{width:240px;background:var(--sidebar);border-right:1px solid var(--border);padding:24px 0;
+  display:flex;flex-direction:column;position:fixed;height:100vh;top:0;left:0;z-index:10;}
+.logo{padding:0 24px 28px;display:flex;align-items:center;gap:10px;}
+.logo-ico{width:32px;height:32px;background:var(--primary);border-radius:8px;display:flex;align-items:center;justify-content:center;}
+.logo-txt{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;}
+.logo-txt span{color:var(--primary);}
+.nav-wrap{padding:0 12px;flex:1;}
+.nav-lbl{font-size:10px;font-weight:500;letter-spacing:1.2px;color:var(--muted);padding:0 12px;margin:0 0 6px;text-transform:uppercase;}
+.ni{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:8px;cursor:pointer;font-size:14px;color:var(--muted);margin-bottom:2px;transition:.15s;}
+.ni:hover{background:var(--pbg);color:var(--text);}
+.ni.on{background:rgba(91,141,239,.15);color:var(--primary);font-weight:500;}
+.ni svg{width:16px;height:16px;opacity:.7;flex-shrink:0;}
+.ni.on svg{opacity:1;}
+.sb-foot{padding:16px 24px;border-top:1px solid var(--border);}
+.upload-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:10px;
+  border-radius:8px;background:var(--primary);color:#fff;font-family:'Space Grotesk',sans-serif;
+  font-size:13px;font-weight:500;border:none;cursor:pointer;transition:.15s;}
+.upload-btn:hover{opacity:.85;}
+
+/* MAIN */
+.main{margin-left:240px;flex:1;padding:32px;max-width:calc(100% - 240px);}
+.ph{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;}
+.pt{font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:700;}
+.ps{font-size:13px;color:var(--muted);margin-top:4px;}
+.ha{display:flex;gap:10px;align-items:center;}
+.btn-s{padding:8px 16px;border-radius:8px;border:1px solid var(--border);background:transparent;
+  color:var(--text);font-size:13px;cursor:pointer;transition:.15s;font-family:'DM Sans',sans-serif;}
+.btn-s:hover{background:var(--card2);}
+.btn-p{padding:8px 16px;border-radius:8px;background:var(--primary);border:none;color:#fff;
+  font-size:13px;font-weight:500;cursor:pointer;transition:.15s;font-family:'DM Sans',sans-serif;}
+.btn-p:hover{opacity:.85;}
+
+/* STATS */
+.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:20px;}
+.sc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 20px;}
+.sl{font-size:11px;color:var(--muted);font-weight:500;letter-spacing:.3px;margin-bottom:8px;text-transform:uppercase;}
+.sv{font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;line-height:1;margin-bottom:8px;}
+.schange{font-size:12px;display:flex;align-items:center;gap:4px;}
+.schange.bad{color:var(--danger);}
+.schange.good{color:var(--ok);}
+
+/* CHART ROW */
+.cr{display:grid;grid-template-columns:240px 1fr;gap:16px;margin-bottom:20px;}
+.cc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;}
+.ch{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;}
+.ct{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:600;}
+.cbadge{font-size:11px;padding:3px 8px;border-radius:20px;background:var(--pbg);color:var(--primary);font-weight:500;}
+.rl{display:flex;flex-direction:column;gap:10px;margin-top:12px;}
+.rli{display:flex;align-items:center;justify-content:space-between;}
+.rldl{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);}
+.dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+.rlv{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:600;}
+
+/* TABLE */
+.tc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:20px;}
+.tf{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.fb{padding:5px 12px;border-radius:20px;font-size:12px;font-weight:500;
+  border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;transition:.15s;font-family:'DM Sans',sans-serif;}
+.fb.on{background:var(--primary);border-color:var(--primary);color:#fff;}
+.fb:hover:not(.on){background:var(--card2);color:var(--text);}
+table{width:100%;border-collapse:collapse;}
+th{text-align:left;font-size:10px;font-weight:500;letter-spacing:.8px;text-transform:uppercase;
+  color:var(--muted);padding:0 12px 10px 0;border-bottom:1px solid var(--border);}
+td{padding:13px 12px 13px 0;font-size:13px;border-bottom:1px solid rgba(28,38,56,.5);}
+tr:last-child td{border-bottom:none;}
+tr:hover td{background:rgba(91,141,239,.02);}
+.cn{font-weight:500;font-size:13px;}
+.cid{font-size:11px;color:var(--muted);}
+.rb{display:inline-flex;align-items:center;gap:5px;padding:3px 9px;border-radius:20px;font-size:11px;font-weight:500;}
+.rb.high{background:var(--dbg);color:var(--danger);}
+.rb.medium{background:var(--wbg);color:var(--warn);}
+.rb.low{background:var(--gbg);color:var(--ok);}
+.rdot{width:5px;height:5px;border-radius:50%;}
+.sb-wrap{display:flex;align-items:center;gap:8px;}
+.st{width:72px;height:4px;background:var(--border);border-radius:2px;overflow:hidden;}
+.sf{height:100%;border-radius:2px;}
+.sv2{font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:600;min-width:28px;}
+.atag{display:inline-block;padding:2px 7px;border-radius:4px;font-size:11px;font-weight:500;
+  background:var(--card2);color:var(--muted);border:1px solid var(--border);margin:1px;}
+.ab{padding:4px 10px;border-radius:6px;font-size:11px;font-weight:500;
+  border:1px solid var(--primary);background:transparent;color:var(--primary);cursor:pointer;transition:.15s;font-family:'DM Sans',sans-serif;}
+.ab:hover{background:var(--primary);color:#fff;}
+
+/* RECO GRID */
+.rg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px;}
+.rcard{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;}
+.rico{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;margin-bottom:12px;}
+.rtit{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:600;margin-bottom:6px;}
+.rdesc{font-size:12px;color:var(--muted);line-height:1.65;margin-bottom:10px;}
+.rimpact{font-size:11px;font-weight:500;color:var(--ok);}
+
+/* TABS */
+.tc-btn{display:none;}
+.tc-btn.on{display:block;}
+
+/* MODAL */
+.mo{position:fixed;inset:0;background:rgba(0,0,0,.75);display:none;align-items:center;justify-content:center;z-index:50;}
+.modal{background:#111828;border:1px solid var(--border);border-radius:16px;padding:32px;width:480px;}
+.mt{font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700;margin-bottom:6px;}
+.ms{font-size:13px;color:var(--muted);margin-bottom:22px;}
+.uz{border:2px dashed var(--border);border-radius:12px;padding:36px;text-align:center;cursor:pointer;transition:.15s;margin-bottom:16px;}
+.uz:hover{border-color:var(--primary);}
+.uzi{font-size:28px;margin-bottom:10px;}
+.uzt{font-size:13px;color:var(--muted);}
+.uzt span{color:var(--primary);}
+.ma{display:flex;gap:10px;justify-content:flex-end;}
+
+/* TOAST */
+.toast{position:fixed;bottom:24px;right:24px;background:#26C281;color:#fff;padding:11px 18px;
+  border-radius:8px;font-size:13px;font-weight:500;display:none;align-items:center;gap:8px;z-index:100;
+  animation:su .3s ease;}
+@keyframes su{from{transform:translateY(8px);opacity:0}to{transform:translateY(0);opacity:1}}
+
+/* INSIGHT CARDS */
+.ic2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+.icc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:5px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px;}
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sb">
+  <div class="logo">
+    <div class="logo-ico">
+      <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <span class="logo-txt">Churn<span>Shield</span></span>
+  </div>
+  <div class="nav-wrap">
+    <div class="nav-lbl">Main</div>
+    <div class="ni on" onclick="goTab('dashboard',this)">
+      <svg fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="3" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="3" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="14" width="7" height="7" rx="1" stroke="currentColor" stroke-width="1.5"/></svg>
+      Dashboard
+    </div>
+    <div class="ni" onclick="goTab('customers',this)">
+      <svg fill="none" viewBox="0 0 24 24"><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M2 21v-1a7 7 0 0114 0v1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M19 8v6M22 11h-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      Customers
+    </div>
+    <div class="ni" onclick="goTab('insights',this)">
+      <svg fill="none" viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      Insights
+    </div>
+    <div class="ni" onclick="goTab('actions',this)">
+      <svg fill="none" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Action Plans
+    </div>
+    <div style="margin-top:20px;"></div>
+    <div class="nav-lbl">More</div>
+    <div class="ni">
+      <svg fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      Integrations
+    </div>
+    <div class="ni">
+      <svg fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" stroke="currentColor" stroke-width="1.5"/></svg>
+      Settings
+    </div>
+  </div>
+  <div class="sb-foot">
+    <button class="upload-btn" onclick="openModal()">
+      <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Upload CSV Data
+    </button>
+  </div>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- ── DASHBOARD ── -->
+  <div id="tab-dashboard" class="tc-btn on">
+    <div class="ph">
+      <div>
+        <div class="pt">Retention Dashboard</div>
+        <div class="ps">AI analysis of 847 customers &nbsp;·&nbsp; Last updated Apr 23, 2025</div>
+      </div>
+      <div class="ha">
+        <button class="btn-s">Export Report</button>
+        <button class="btn-p">Run New Analysis</button>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="sg">
+      <div class="sc">
+        <div class="sl">Total Customers</div>
+        <div class="sv">847</div>
+        <div class="schange good">↑ 12% from last month</div>
+      </div>
+      <div class="sc">
+        <div class="sl">At-Risk Customers</div>
+        <div class="sv" style="color:var(--danger)">213</div>
+        <div class="schange bad">↑ 8% from last month</div>
+      </div>
+      <div class="sc">
+        <div class="sl">Potential Revenue Loss</div>
+        <div class="sv" style="color:var(--warn)">₹28.4L</div>
+        <div class="schange bad">↑ 5% from last month</div>
+      </div>
+      <div class="sc">
+        <div class="sl">Avg. Churn Score</div>
+        <div class="sv" style="color:var(--primary)">62<span style="font-size:15px;color:var(--muted)">/100</span></div>
+        <div class="schange bad">↑ 4 pts from last month</div>
+      </div>
+    </div>
+
+    <!-- Charts Row -->
+    <div class="cr">
+      <!-- Donut -->
+      <div class="cc">
+        <div class="ch"><div class="ct">Risk Distribution</div></div>
+        <div style="position:relative;height:160px;">
+          <canvas id="donutChart" role="img" aria-label="Risk distribution: 89 high, 124 medium, 634 low risk">89 high, 124 medium, 634 low risk customers.</canvas>
+        </div>
+        <div class="rl">
+          <div class="rli"><div class="rldl"><div class="dot" style="background:var(--danger)"></div>High Risk</div><div class="rlv" style="color:var(--danger)">89</div></div>
+          <div class="rli"><div class="rldl"><div class="dot" style="background:var(--warn)"></div>Medium Risk</div><div class="rlv" style="color:var(--warn)">124</div></div>
+          <div class="rli"><div class="rldl"><div class="dot" style="background:var(--ok)"></div>Low Risk</div><div class="rlv" style="color:var(--ok)">634</div></div>
+        </div>
+      </div>
+      <!-- Reasons Bar -->
+      <div class="cc">
+        <div class="ch"><div class="ct">Top Churn Reasons</div><div class="cbadge">AI Analysis</div></div>
+        <div style="position:relative;height:240px;">
+          <canvas id="reasonsChart" role="img" aria-label="Top churn reasons bar chart: Price 68%, Support 54%, Competitor 47%, Low Usage 38%, Features 31%, Onboarding 22%">Price 68, Support 54, Competitor 47, Usage 38, Features 31, Onboarding 22 percent.</canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Customer Table -->
+    <div class="tc">
+      <div class="ch">
+        <div class="ct">High-Risk Customers</div>
+        <button class="btn-s" style="font-size:12px;padding:6px 12px" onclick="goTab('customers', document.querySelectorAll('.ni')[1])">View All →</button>
+      </div>
+      <div class="tf">
+        <button class="fb on" onclick="filt(this,'all')">All Risks</button>
+        <button class="fb" onclick="filt(this,'high')">High Risk</button>
+        <button class="fb" onclick="filt(this,'medium')">Medium Risk</button>
+        <button class="fb" onclick="filt(this,'low')">Low Risk</button>
+      </div>
+      <table>
+        <thead><tr>
+          <th>Customer</th><th>Risk Level</th><th>Churn Score</th><th>Top Reasons</th><th>Since</th><th>Action</th>
+        </tr></thead>
+        <tbody id="tbl-dash"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── CUSTOMERS ── -->
+  <div id="tab-customers" class="tc-btn">
+    <div class="ph">
+      <div>
+        <div class="pt">All Customers</div>
+        <div class="ps">847 total &nbsp;·&nbsp; 213 at risk &nbsp;·&nbsp; Sorted by churn score</div>
+      </div>
+      <div class="ha">
+        <button class="btn-s">Filter</button>
+        <button class="btn-s">Sort</button>
+        <button class="btn-p" onclick="toast('CSV exported successfully!')">Export CSV</button>
+      </div>
+    </div>
+    <div class="tc">
+      <table>
+        <thead><tr>
+          <th>Customer</th><th>Risk Level</th><th>Churn Score</th><th>Top Reasons</th><th>Revenue</th><th>Since</th><th>Action</th>
+        </tr></thead>
+        <tbody id="tbl-all"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── INSIGHTS ── -->
+  <div id="tab-insights" class="tc-btn">
+    <div class="ph">
+      <div>
+        <div class="pt">AI Insights</div>
+        <div class="ps">Patterns and risk drivers identified from your customer data</div>
+      </div>
+      <div class="ha"><button class="btn-p">Generate Report</button></div>
+    </div>
+
+    <!-- Insight summary cards -->
+    <div class="sg" style="margin-bottom:20px;">
+      <div class="sc" style="border-left:3px solid var(--danger);">
+        <div class="sl">Highest Risk Segment</div>
+        <div class="sv" style="font-size:18px;color:var(--danger)">0–3 Months</div>
+        <div class="schange bad">42% churn probability</div>
+      </div>
+      <div class="sc" style="border-left:3px solid var(--warn);">
+        <div class="sl">Top Churn Driver</div>
+        <div class="sv" style="font-size:18px;color:var(--warn)">Pricing</div>
+        <div class="schange bad">68% of at-risk cases</div>
+      </div>
+      <div class="sc" style="border-left:3px solid var(--primary);">
+        <div class="sl">Best Retention Segment</div>
+        <div class="sv" style="font-size:18px;color:var(--primary)">₹3L–5L</div>
+        <div class="schange good">Only 15% churn risk</div>
+      </div>
+      <div class="sc" style="border-left:3px solid var(--ok);">
+        <div class="sl">Predicted Saves (30d)</div>
+        <div class="sv" style="font-size:18px;color:var(--ok)">47</div>
+        <div class="schange good">With recommended actions</div>
+      </div>
+    </div>
+
+    <div class="ic2">
+      <div class="icc">
+        <div class="ch"><div class="ct">Churn Risk by Tenure (months)</div></div>
+        <div style="position:relative;height:200px;">
+          <canvas id="ageChart" role="img" aria-label="Churn rate by customer tenure">Churn by tenure.</canvas>
+        </div>
+      </div>
+      <div class="icc">
+        <div class="ch"><div class="ct">Churn Risk by Revenue Segment</div></div>
+        <div style="position:relative;height:200px;">
+          <canvas id="segChart" role="img" aria-label="Churn risk by revenue segment">Churn by revenue segment.</canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="icc">
+      <div class="ch"><div class="ct">Monthly At-Risk Trend</div><div class="cbadge">Last 6 months</div></div>
+      <div style="position:relative;height:200px;">
+        <canvas id="trendChart" role="img" aria-label="Monthly churn trend">Monthly trend.</canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ACTIONS ── -->
+  <div id="tab-actions" class="tc-btn">
+    <div class="ph">
+      <div>
+        <div class="pt">Action Plans</div>
+        <div class="ps">AI-recommended strategies to retain at-risk customers</div>
+      </div>
+    </div>
+    <div class="rg">
+      <div class="rcard">
+        <div class="rico" style="background:var(--dbg)">🎯</div>
+        <div class="rtit">Personalized Discount Offer</div>
+        <div class="rdesc">Send targeted 20–30% discount coupons to high-risk customers who flagged pricing as a concern in the last 30 days.</div>
+        <div class="rimpact">↑ Est. 34% retention improvement · 89 customers</div>
+        <button class="ab" style="margin-top:12px;width:100%;text-align:center" onclick="toast('Discount campaign created for 89 high-risk customers!')">Create Campaign</button>
+      </div>
+      <div class="rcard">
+        <div class="rico" style="background:var(--pbg)">📞</div>
+        <div class="rtit">Priority Support Outreach</div>
+        <div class="rdesc">Schedule proactive calls for customers with unresolved tickets older than 7 days. Assign a dedicated Customer Success Manager.</div>
+        <div class="rimpact">↑ Est. 28% satisfaction boost · 54 customers</div>
+        <button class="ab" style="margin-top:12px;width:100%;text-align:center" onclick="toast('Support calls scheduled for 54 customers!')">Schedule Calls</button>
+      </div>
+      <div class="rcard">
+        <div class="rico" style="background:var(--gbg)">🚀</div>
+        <div class="rtit">Feature Onboarding Boost</div>
+        <div class="rdesc">Trigger in-app walkthroughs for low-engagement users who haven't explored key features in the past 2 weeks.</div>
+        <div class="rimpact">↑ Est. 22% engagement increase · 38 customers</div>
+        <button class="ab" style="margin-top:12px;width:100%;text-align:center" onclick="toast('Onboarding sequences activated for 38 customers!')">Activate Sequence</button>
+      </div>
+      <div class="rcard">
+        <div class="rico" style="background:var(--wbg)">💌</div>
+        <div class="rtit">Win-back Email Series</div>
+        <div class="rdesc">3-part email drip campaign for dormant customers — highlight new features, offer 1-month free extension, collect feedback.</div>
+        <div class="rimpact">↑ Est. 18% reactivation rate · 47 customers</div>
+        <button class="ab" style="margin-top:12px;width:100%;text-align:center" onclick="toast('Email drip campaign scheduled!')">Send Campaign</button>
+      </div>
+      <div class="rcard">
+        <div class="rico" style="background:var(--pbg)">🔄</div>
+        <div class="rtit">Plan Upgrade Incentive</div>
+        <div class="rdesc">Offer mid-tier customers a free 2-week trial of the premium plan. Pro-trial users show 3× lower churn rate.</div>
+        <div class="rimpact">↑ Est. 40% upgrade conversion · 47 customers</div>
+        <button class="ab" style="margin-top:12px;width:100%;text-align:center" onclick="toast('Trial upgrades activated for 47 customers!')">Activate Trials</button>
+      </div>
+      <div class="rcard">
+        <div class="rico" style="background:var(--dbg)">📊</div>
+        <div class="rtit">Quarterly Business Review</div>
+        <div class="rdesc">Schedule QBR meetings with high-value at-risk accounts. Share their ROI data and product roadmap to reinforce value.</div>
+        <div class="rimpact">↑ Est. 45% retention for enterprise · 12 accounts</div>
+        <button class="ab" style="margin-top:12px;width:100%;text-align:center" onclick="toast('QBR meetings booked for 12 accounts!')">Book Meetings</button>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- UPLOAD MODAL -->
+<div class="mo" id="modal" onclick="closeModal(event)">
+  <div class="modal">
+    <div class="mt">Upload Customer Data</div>
+    <div class="ms">Upload your CSV to run AI-powered churn predictions instantly</div>
+    <div class="uz" onclick="toast('File picker opened!')">
+      <div class="uzi">📄</div>
+      <div class="uzt">Drag & drop your CSV here, or <span>browse files</span></div>
+      <div style="font-size:11px;color:var(--muted);margin-top:8px">Required columns: customer_id, last_login, revenue, support_tickets, plan_type</div>
+    </div>
+    <div style="display:flex;gap:16px;margin-bottom:20px;font-size:12px;color:var(--muted);flex-wrap:wrap">
+      <span>✓ customer_id</span><span>✓ last_login_date</span><span>✓ total_revenue</span><span>✓ support_tickets</span><span>✓ plan_type</span>
+    </div>
+    <div class="ma">
+      <button class="btn-s" onclick="closeModal()">Cancel</button>
+      <button class="btn-p" onclick="fakeAnalyze()">Analyze Data →</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toastEl"></div>
+
+<script>
+const customers = [
+  {id:'C001',name:'Rajesh Kumar',co:'TechVista Pvt Ltd',risk:'high',score:92,reasons:['Pricing','Low Usage'],rev:'₹2.4L',since:'Jan 2022',act:'Discount Offer'},
+  {id:'C002',name:'Priya Sharma',co:'Sharma Enterprises',risk:'high',score:87,reasons:['Poor Support','Competitor'],rev:'₹1.8L',since:'Mar 2022',act:'Support Call'},
+  {id:'C003',name:'Amit Patel',co:'Patel & Co.',risk:'high',score:84,reasons:['Missing Features','Pricing'],rev:'₹3.1L',since:'Jun 2021',act:'Feature Tour'},
+  {id:'C004',name:'Rohit Gupta',co:'Gupta & Sons',risk:'high',score:79,reasons:['Support','Pricing'],rev:'₹0.7L',since:'Apr 2023',act:'Support Call'},
+  {id:'C005',name:'Sunita Mehta',co:'Mehta Traders',risk:'medium',score:67,reasons:['Low Usage','Onboarding'],rev:'₹0.9L',since:'Aug 2023',act:'Onboarding'},
+  {id:'C006',name:'Vikram Singh',co:'Singh Solutions',risk:'medium',score:61,reasons:['Pricing','Support'],rev:'₹1.5L',since:'Feb 2023',act:'Discount Offer'},
+  {id:'C007',name:'Neha Joshi',co:'Joshi Industries',risk:'medium',score:58,reasons:['Competitor'],rev:'₹2.0L',since:'Nov 2022',act:'QBR Meeting'},
+  {id:'C008',name:'Deepika Shah',co:'Shah Textiles',risk:'medium',score:53,reasons:['Low Usage','Features'],rev:'₹1.3L',since:'Jul 2022',act:'Onboarding'},
+  {id:'C009',name:'Arjun Nair',co:'Nair Digital',risk:'low',score:28,reasons:['Missing Features'],rev:'₹4.2L',since:'May 2021',act:'Feature Tour'},
+  {id:'C010',name:'Kavita Reddy',co:'Reddy Corp',risk:'low',score:22,reasons:['Pricing'],rev:'₹1.1L',since:'Sep 2023',act:'Discount Offer'},
+];
+
+function scoreColor(s){return s>=75?'var(--danger)':s>=50?'var(--warn)':'var(--ok)';}
+
+function renderRows(tbodyId, data, showRev){
+  document.getElementById(tbodyId).innerHTML = data.map(c=>`
+    <tr>
+      <td><div class="cn">${c.name}</div><div class="cid">${c.id} · ${c.co}</div></td>
+      <td><span class="rb ${c.risk}"><span class="rdot" style="background:${c.risk==='high'?'var(--danger)':c.risk==='medium'?'var(--warn)':'var(--ok)'}"></span>${c.risk[0].toUpperCase()+c.risk.slice(1)} Risk</span></td>
+      <td><div class="sb-wrap"><div class="st"><div class="sf" style="width:${c.score}%;background:${scoreColor(c.score)}"></div></div><span class="sv2" style="color:${scoreColor(c.score)}">${c.score}</span></div></td>
+      <td>${c.reasons.map(r=>`<span class="atag">${r}</span>`).join('')}</td>
+      ${showRev?`<td style="font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:13px">${c.rev}</td>`:''}
+      <td style="color:var(--muted);font-size:12px">${c.since}</td>
+      <td><button class="ab" onclick="toast('Action initiated for ${c.name}!')">${c.act}</button></td>
+    </tr>`).join('');
+}
+
+function filt(btn, risk){
+  document.querySelectorAll('.fb').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  renderRows('tbl-dash', risk==='all'?customers:customers.filter(c=>c.risk===risk), false);
+}
+
+function goTab(id, niEl){
+  document.querySelectorAll('.tc-btn').forEach(t=>t.classList.remove('on'));
+  document.getElementById('tab-'+id).classList.add('on');
+  document.querySelectorAll('.ni').forEach(n=>n.classList.remove('on'));
+  if(niEl) niEl.classList.add('on');
+}
+
+function toast(msg){
+  const el=document.getElementById('toastEl');
+  el.textContent='✓ '+msg; el.style.display='flex';
+  clearTimeout(el._t); el._t=setTimeout(()=>el.style.display='none',3000);
+}
+
+function openModal(){document.getElementById('modal').style.display='flex';}
+function closeModal(e){if(!e||e.target===document.getElementById('modal'))document.getElementById('modal').style.display='none';}
+function fakeAnalyze(){closeModal();toast('Analysis complete! 847 customers processed.');}
+
+// Init tables
+renderRows('tbl-dash', customers, false);
+renderRows('tbl-all', customers, true);
+
+// Charts
+window.addEventListener('load',()=>{
+  const gridColor='rgba(255,255,255,.06)';
+  const tickColor='#7A8BA6';
+
+  // Donut
+  new Chart(document.getElementById('donutChart'),{
+    type:'doughnut',
+    data:{labels:['High','Medium','Low'],datasets:[{data:[89,124,634],backgroundColor:['#F0544F','#FFAB40','#26C281'],borderWidth:0,hoverOffset:4}]},
+    options:{responsive:true,maintainAspectRatio:false,cutout:'72%',
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.label}: ${c.raw} customers`}}}}
+  });
+
+  // Reasons horizontal bar
+  new Chart(document.getElementById('reasonsChart'),{
+    type:'bar',
+    data:{
+      labels:['Pricing Issues','Poor Support','Better Competitor','Low Usage','Missing Features','Onboarding Issues'],
+      datasets:[{label:'% of at-risk customers',data:[68,54,47,38,31,22],
+        backgroundColor:['#F0544F','#F0544F','#FFAB40','#FFAB40','#5B8DEF','#5B8DEF'],borderRadius:4,borderSkipped:false}]
+    },
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>` ${c.raw}% of at-risk customers`}}},
+      scales:{x:{grid:{color:gridColor},ticks:{color:tickColor,font:{size:11},callback:v=>v+'%'}},
+              y:{grid:{display:false},ticks:{color:'#E8EDF5',font:{size:12}}}}}
+  });
+
+  // Tenure line
+  new Chart(document.getElementById('ageChart'),{
+    type:'line',
+    data:{labels:['0–3','3–6','6–12','12–18','18–24','24+'],
+      datasets:[{label:'Churn Rate %',data:[42,31,22,15,10,6],borderColor:'#5B8DEF',
+        backgroundColor:'rgba(91,141,239,.1)',fill:true,tension:.4,pointBackgroundColor:'#5B8DEF',pointRadius:4}]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false}},
+      scales:{x:{grid:{color:gridColor},ticks:{color:tickColor,font:{size:11}}},
+              y:{grid:{color:gridColor},ticks:{color:tickColor,font:{size:11},callback:v=>v+'%'}}}}
+  });
+
+  // Revenue segment bar
+  new Chart(document.getElementById('segChart'),{
+    type:'bar',
+    data:{labels:['< ₹50K','₹50K–1L','₹1L–3L','₹3L–5L','> ₹5L'],
+      datasets:[{label:'Churn Risk %',data:[52,38,24,15,8],
+        backgroundColor:['#F0544F','#FFAB40','#FFAB40','#26C281','#26C281'],borderRadius:4}]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false}},
+      scales:{x:{grid:{display:false},ticks:{color:tickColor,font:{size:11}}},
+              y:{grid:{color:gridColor},ticks:{color:tickColor,font:{size:11},callback:v=>v+'%'}}}}
+  });
+
+  // Trend line
+  new Chart(document.getElementById('trendChart'),{
+    type:'line',
+    data:{labels:['Nov','Dec','Jan','Feb','Mar','Apr'],
+      datasets:[
+        {label:'High Risk',data:[72,78,81,85,87,89],borderColor:'#F0544F',tension:.4,pointBackgroundColor:'#F0544F',pointRadius:3,borderWidth:2},
+        {label:'Medium Risk',data:[98,104,110,118,121,124],borderColor:'#FFAB40',tension:.4,pointBackgroundColor:'#FFAB40',pointRadius:3,borderWidth:2}
+      ]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{labels:{color:tickColor,font:{size:12},boxWidth:10,usePointStyle:true}}},
+      scales:{x:{grid:{color:gridColor},ticks:{color:tickColor,font:{size:11}}},
+              y:{grid:{color:gridColor},ticks:{color:tickColor,font:{size:11}}}}}
+  });
+});
+</script>
+</body>
+</html>

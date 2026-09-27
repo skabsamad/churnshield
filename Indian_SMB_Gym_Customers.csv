@@ -1,0 +1,1001 @@
+CustomerID,Gender,SeniorCitizen,Partner,Dependents,tenure,PhoneService,MultipleLines,InternetService,OnlineSecurity,OnlineBackup,DeviceProtection,TechSupport,StreamingTV,StreamingMovies,Contract,PaperlessBilling,PaymentMethod,MonthlyCharges,TotalCharges,Churn
+PUNE_GYM_1000,Male,0,No,No,51,No,No,Fiber optic,No internet service,No,No,Yes,Yes,No,One year,Yes,Credit card (automatic),3172.26,161936.48,No
+PUNE_GYM_1001,Female,0,No,Yes,47,Yes,Yes,DSL,No internet service,Yes,Yes,No,No,Yes,Month-to-month,Yes,Electronic check,1175.23,55511.95,Yes
+PUNE_GYM_1002,Male,0,No,Yes,47,Yes,No phone service,Fiber optic,Yes,No internet service,No internet service,No,Yes,Yes,Two year,Yes,Mailed check,2770.89,130686.91,Yes
+PUNE_GYM_1003,Male,0,No,Yes,4,Yes,No,Fiber optic,No,No internet service,Yes,Yes,No internet service,No internet service,Month-to-month,Yes,Electronic check,1418.46,5874.82,Yes
+PUNE_GYM_1004,Male,0,Yes,No,7,Yes,No phone service,DSL,No internet service,No internet service,No,No internet service,Yes,Yes,Two year,No,Credit card (automatic),2957.42,20951.44,No
+PUNE_GYM_1005,Female,0,Yes,No,45,Yes,Yes,Fiber optic,Yes,No internet service,Yes,Yes,Yes,Yes,Month-to-month,No,Bank transfer (automatic),943.35,42889.18,No
+PUNE_GYM_1006,Male,1,No,No,35,Yes,No,Fiber optic,No internet service,No internet service,No internet service,Yes,No internet service,Yes,Month-to-month,Yes,Bank transfer (automatic),2792.61,98088.48,No
+PUNE_GYM_1007,Male,0,Yes,No,48,Yes,No,Fiber optic,No,No internet service,No,Yes,No internet service,No,Month-to-month,Yes,Mailed check,884.54,42858.57,Yes
+PUNE_GYM_1008,Male,1,No,No,9,Yes,Yes,Fiber optic,No internet service,No,No,No internet service,No,No internet service,Month-to-month,No,Mailed check,1896.06,17250.14,Yes
+PUNE_GYM_1009,Female,0,Yes,No,8,Yes,No,Fiber optic,No internet service,No,No internet service,No,No,No,Month-to-month,No,Mailed check,2728.61,22215.48,Yes
+PUNE_GYM_1010,Male,0,No,No,52,Yes,Yes,DSL,Yes,No,No internet service,No internet service,No,No internet service,Month-to-month,No,Credit card (automatic),1102.33,57512.2,Yes
+PUNE_GYM_1011,Male,0,No,Yes,45,No,No,DSL,No internet service,Yes,No internet service,No,Yes,No,One year,No,Credit card (automatic),1428.43,64774.28,No
+PUNE_GYM_1012,Male,1,Yes,No,17,Yes,Yes,No,Yes,Yes,Yes,No,No,Yes,Month-to-month,No,Mailed check,3107.82,53156.89,Yes
+PUNE_GYM_1013,Male,1,Yes,Yes,17,Yes,No,DSL,No,No,Yes,No,Yes,No,One year,Yes,Bank transfer (automatic),3166.85,54214.71,Yes
+PUNE_GYM_1014,Female,0,No,Yes,49,Yes,No phone service,DSL,No internet service,Yes,Yes,No internet service,Yes,No,Month-to-month,Yes,Bank transfer (automatic),730.31,35932.55,No
+PUNE_GYM_1015,Male,0,No,No,33,No,No phone service,Fiber optic,No,Yes,No internet service,Yes,No,No internet service,Two year,No,Bank transfer (automatic),1087.46,36086.44,No
+PUNE_GYM_1016,Female,0,Yes,No,32,Yes,No phone service,DSL,No,No internet service,No internet service,Yes,No,No internet service,Month-to-month,No,Credit card (automatic),940.67,30257.34,Yes
+PUNE_GYM_1017,Female,0,Yes,Yes,8,Yes,No,No,No internet service,No internet service,Yes,Yes,Yes,No,Month-to-month,No,Electronic check,1121.11,9224.95,Yes
+PUNE_GYM_1018,Female,1,No,Yes,19,Yes,No,No,Yes,Yes,No,Yes,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic),3413.54,65070.91,No
+PUNE_GYM_1019,Male,0,Yes,No,38,Yes,No phone service,DSL,No,Yes,Yes,Yes,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic),2199.8,83985.57,Yes
+PUNE_GYM_1020,Female,0,No,No,3,Yes,No phone service,Fiber optic,No,No,No,No internet service,Yes,No internet service,Month-to-month,No,Bank transfer (automatic),1957.53,6016.07,No
+PUNE_GYM_1021,Male,0,No,Yes,59,Yes,Yes,Fiber optic,No internet service,Yes,No internet service,No internet service,No,No internet service,Month-to-month,No,Mailed check,3454.96,204243.46,No
+PUNE_GYM_1022,Female,1,No,No,5,Yes,Yes,Fiber optic,No internet service,No internet service,No internet service,No internet service,Yes,No internet service,One year,No,Credit card (automatic),2215.17,11194.13,Yes
+PUNE_GYM_1023,Female,0,No,No,13,Yes,Yes,No,No internet service,Yes,Yes,No internet service,Yes,No,Two year,No,Mailed check,2517.24,32904.93,Yes
+PUNE_GYM_1024,Female,0,Yes,No,47,Yes,No phone service,DSL,No internet service,No,Yes,No internet service,No,No internet service,Month-to-month,Yes,Mailed check,1565.03,73973.2,No
+PUNE_GYM_1025,Female,0,Yes,Yes,46,Yes,No phone service,DSL,No internet service,No internet service,No internet service,No internet service,No internet service,Yes,Two year,No,Electronic check,1708.13,78971.09,No
+PUNE_GYM_1026,Female,0,Yes,Yes,31,Yes,No phone service,Fiber optic,No internet service,No internet service,Yes,No internet service,Yes,No,Two year,No,Mailed check,2323.79,72328.02,Yes
+PUNE_GYM_1027,Female,0,Yes,Yes,55,Yes,Yes,DSL,Yes,No internet service,No internet service,Yes,No internet service,No,Two year,Yes,Electronic check,802.38,44250.89,Yes
+PUNE_GYM_1028,Female,0,Yes,No,16,Yes,No,Fiber optic,No,No internet service,No internet service,No,No internet service,No,Month-to-month,Yes,Mailed check,1342.06,21816.92,No
+PUNE_GYM_1029,Female,1,Yes,No,50,No,No phone service,Fiber optic,Yes,Yes,No,No internet service,No,No internet service,Month-to-month,Yes,Bank transfer (automatic),1170.75,58800.19,No
+PUNE_GYM_1030,Male,0,Yes,Yes,32,Yes,No,Fiber optic,Yes,No,Yes,No,Yes,Yes,Month-to-month,No,Credit card (automatic),646.09,20901.49,No
+PUNE_GYM_1031,Male,1,No,Yes,22,Yes,No,DSL,No internet service,Yes,No internet service,No internet service,Yes,No internet service,One year,No,Mailed check,2157.01,47810.38,No
+PUNE_GYM_1032,Female,1,Yes,Yes,29,Yes,No,DSL,No,Yes,Yes,No internet service,No internet service,No,Month-to-month,No,Electronic check,2227.05,64859.1,Yes
+PUNE_GYM_1033,Female,0,Yes,No,22,No,Yes,No,Yes,No internet service,No,Yes,No internet service,No,Month-to-month,No,Credit card (automatic),1713.42,37832.21,No
+PUNE_GYM_1034,Female,0,No,Yes,43,Yes,No,Fiber optic,No internet service,No,No,No,No,No,Month-to-month,Yes,Electronic check,1379.31,59776.71,Yes
+PUNE_GYM_1035,Male,1,Yes,Yes,3,Yes,No phone service,DSL,No internet service,No internet service,Yes,Yes,No internet service,No,Month-to-month,No,Bank transfer (automatic),2490.97,7884.31,Yes
+PUNE_GYM_1036,Female,0,Yes,No,54,Yes,Yes,DSL,No,Yes,Yes,Yes,No,No internet service,One year,No,Mailed check,990.51,53610.09,No
+PUNE_GYM_1037,Male,0,No,No,10,Yes,No phone service,Fiber optic,Yes,Yes,No internet service,No,Yes,Yes,Month-to-month,Yes,Credit card (automatic),2103.98,21349.83,Yes
+PUNE_GYM_1038,Male,0,Yes,No,42,Yes,No phone service,DSL,Yes,No internet service,No,Yes,No,Yes,One year,No,Bank transfer (automatic),2827.41,118884.57,No
+PUNE_GYM_1039,Male,0,Yes,Yes,21,Yes,Yes,DSL,Yes,Yes,No,No internet service,No internet service,No,One year,No,Mailed check,1076.46,23040.58,No
+PUNE_GYM_1040,Male,1,Yes,No,16,Yes,No phone service,DSL,No internet service,Yes,No,No internet service,Yes,Yes,Month-to-month,No,Mailed check,2784.45,44896.41,No
+PUNE_GYM_1041,Male,0,No,No,12,No,No phone service,No,No,No internet service,Yes,No internet service,No,No,Month-to-month,No,Electronic check,2806.3,33844.58,Yes
+PUNE_GYM_1042,Female,0,Yes,Yes,2,Yes,Yes,DSL,No,Yes,No internet service,No internet service,Yes,No,One year,Yes,Electronic check,773.79,1655.88,Yes
+PUNE_GYM_1043,Female,0,Yes,No,41,Yes,No phone service,Fiber optic,Yes,No,Yes,No internet service,No,Yes,Month-to-month,Yes,Bank transfer (automatic),654.47,26945.9,Yes
+PUNE_GYM_1044,Female,0,No,Yes,24,Yes,No,DSL,No internet service,No internet service,Yes,Yes,No internet service,No,Month-to-month,Yes,Electronic check,3424.41,82488.79,Yes
+PUNE_GYM_1045,Female,0,Yes,Yes,35,Yes,No phone service,Fiber optic,Yes,No,Yes,Yes,No internet service,Yes,Month-to-month,Yes,Bank transfer (automatic),1160.81,41022.1,Yes
+PUNE_GYM_1046,Female,0,No,No,56,Yes,No,Fiber optic,No,Yes,No internet service,No internet service,Yes,No,One year,No,Bank transfer (automatic),2984.2,167263.54,Yes
+PUNE_GYM_1047,Male,0,No,No,30,Yes,No phone service,Fiber optic,No internet service,Yes,Yes,No internet service,Yes,Yes,One year,No,Bank transfer (automatic),2229.37,67069.61,Yes
+PUNE_GYM_1048,Female,0,Yes,No,57,Yes,Yes,DSL,Yes,No internet service,No,Yes,Yes,No,Month-to-month,No,Electronic check,1366.97,78148.19,No
+PUNE_GYM_1049,Female,0,No,No,30,Yes,Yes,DSL,Yes,Yes,No,No,No,Yes,Month-to-month,Yes,Credit card (automatic),976.91,29494.53,Yes
+PUNE_GYM_1050,Male,0,No,No,47,No,No phone service,Fiber optic,No internet service,No internet service,No,Yes,No internet service,No,Month-to-month,Yes,Bank transfer (automatic),2040.36,96153.45,Yes
+PUNE_GYM_1051,Female,1,Yes,No,35,Yes,Yes,DSL,No,No internet service,No internet service,Yes,Yes,No,One year,Yes,Credit card (automatic),1781.33,62670.4,No
+PUNE_GYM_1052,Male,0,No,Yes,19,Yes,No phone service,No,No internet service,No internet service,Yes,Yes,Yes,No,Month-to-month,No,Mailed check,2626.77,50282.6,Yes
+PUNE_GYM_1053,Female,0,No,Yes,50,No,Yes,Fiber optic,Yes,No internet service,No internet service,Yes,Yes,Yes,One year,No,Electronic check,3222.09,161590.01,No
+PUNE_GYM_1054,Male,1,Yes,No,8,Yes,No,Fiber optic,Yes,No internet service,Yes,Yes,No,No internet service,Month-to-month,Yes,Electronic check,2935.22,23954.1,Yes
+PUNE_GYM_1055,Female,0,Yes,Yes,26,Yes,No phone service,DSL,Yes,No,No,No,Yes,No,One year,Yes,Credit card (automatic),1395.91,36621.71,No
+PUNE_GYM_1056,Female,0,Yes,No,49,Yes,No,Fiber optic,Yes,No internet service,Yes,No internet service,Yes,No,Month-to-month,No,Mailed check,3148.91,154690.25,Yes
+PUNE_GYM_1057,Male,0,No,Yes,40,Yes,No,DSL,No,No,Yes,No internet service,No,Yes,One year,No,Mailed check,3016.83,121153.55,No
+PUNE_GYM_1058,Male,0,Yes,Yes,7,Yes,No phone service,Fiber optic,No,Yes,Yes,No,No,No,Month-to-month,No,Bank transfer (automatic),3294.5,23194.89,Yes
+PUNE_GYM_1059,Male,0,No,Yes,30,Yes,No,DSL,Yes,No internet service,No internet service,No internet service,Yes,No,One year,Yes,Electronic check,1930.12,58005.85,No
+PUNE_GYM_1060,Male,0,No,No,7,Yes,No phone service,DSL,No,Yes,Yes,No internet service,Yes,No,Month-to-month,Yes,Mailed check,2828.87,19914.01,No
+PUNE_GYM_1061,Male,0,No,Yes,3,Yes,No,DSL,No,No internet service,Yes,No internet service,No,No,Month-to-month,Yes,Mailed check,2315.81,7272.77,Yes
+PUNE_GYM_1062,Male,0,No,No,1,Yes,No phone service,DSL,No,No,Yes,No,No internet service,No internet service,Month-to-month,Yes,Bank transfer (automatic),1500.46,1905.59,Yes
+PUNE_GYM_1063,Male,0,No,Yes,36,Yes,No phone service,No,Yes,No,No internet service,No,No,No internet service,One year,No,Bank transfer (automatic),3483.85,125665.43,No
+PUNE_GYM_1064,Male,0,No,Yes,25,Yes,Yes,DSL,No internet service,No,No internet service,No internet service,No internet service,No,One year,No,Credit card (automatic),711.09,18095.35,No
+PUNE_GYM_1065,Female,0,No,Yes,37,No,No phone service,DSL,No internet service,Yes,No internet service,No internet service,Yes,No,Month-to-month,No,Electronic check,1070.59,39918.38,No
+PUNE_GYM_1066,Female,0,Yes,Yes,1,Yes,No phone service,Fiber optic,No internet service,No internet service,Yes,No internet service,Yes,No,One year,Yes,Mailed check,3188.37,3326.28,Yes
+PUNE_GYM_1067,Male,0,Yes,Yes,15,Yes,No,DSL,Yes,Yes,No,Yes,No internet service,No internet service,One year,No,Credit card (automatic),775.63,11863.09,Yes
+PUNE_GYM_1068,Female,1,No,No,37,Yes,No phone service,Fiber optic,No,No,No,Yes,No,No internet service,Two year,No,Electronic check,3171.78,117463.63,Yes
+PUNE_GYM_1069,Female,0,No,No,13,Yes,Yes,DSL,No,Yes,No,Yes,Yes,Yes,One year,No,Credit card (automatic),2674.14,34908.1,Yes
+PUNE_GYM_1070,Female,0,Yes,Yes,40,No,No,Fiber optic,Yes,No,Yes,No,No internet service,Yes,One year,No,Electronic check,706.38,28679.94,Yes
+PUNE_GYM_1071,Female,0,No,Yes,8,Yes,No,DSL,Yes,No,No,No internet service,No,No,Month-to-month,No,Electronic check,1845.03,15192.01,No
+PUNE_GYM_1072,Male,0,Yes,Yes,5,Yes,Yes,Fiber optic,No internet service,No,No,No,No internet service,No,One year,Yes,Mailed check,2787.97,14360.63,No
+PUNE_GYM_1073,Female,0,Yes,Yes,60,Yes,No,DSL,No internet service,No internet service,No,No,No,No internet service,One year,No,Electronic check,2290.99,137850.13,Yes
+PUNE_GYM_1074,Male,1,Yes,No,9,Yes,No,No,Yes,No internet service,Yes,No,No,No,Two year,No,Bank transfer (automatic),3314.03,30243.6,Yes
+PUNE_GYM_1075,Female,1,No,Yes,1,Yes,No,Fiber optic,No internet service,No,No,No internet service,No,No,Month-to-month,Yes,Mailed check,3116.17,3484.56,Yes
+PUNE_GYM_1076,Female,0,No,No,36,No,No,No,No,Yes,No,Yes,No,No internet service,Month-to-month,Yes,Bank transfer (automatic),1564.68,56696.41,No
+PUNE_GYM_1077,Female,1,Yes,Yes,35,Yes,Yes,Fiber optic,Yes,Yes,Yes,No internet service,No internet service,No internet service,Month-to-month,No,Credit card (automatic),845.42,29956.64,Yes
+PUNE_GYM_1078,Male,0,Yes,No,2,Yes,Yes,DSL,Yes,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Credit card (automatic),3338.35,6982.32,Yes
+PUNE_GYM_1079,Female,0,Yes,Yes,40,Yes,No,No,No,No,No,No,No internet service,No internet service,Two year,No,Electronic check,2100.13,84250.54,Yes
+PUNE_GYM_1080,Male,0,Yes,Yes,23,Yes,No,Fiber optic,No,Yes,No internet service,No,No internet service,Yes,Month-to-month,No,Electronic check,815.75,19154.33,Yes
+PUNE_GYM_1081,Female,1,Yes,No,9,Yes,Yes,No,No,No,No,No,No internet service,No internet service,One year,Yes,Bank transfer (automatic),2968.07,26932.09,Yes
+PUNE_GYM_1082,Male,0,No,Yes,34,Yes,Yes,Fiber optic,No internet service,Yes,Yes,Yes,No,No internet service,One year,No,Bank transfer (automatic),3118.67,106351.94,No
+PUNE_GYM_1083,Female,0,Yes,Yes,46,Yes,Yes,Fiber optic,Yes,No internet service,No internet service,Yes,Yes,No,One year,Yes,Bank transfer (automatic),2454.33,113172.52,No
+PUNE_GYM_1084,Male,0,No,Yes,14,Yes,No,No,No internet service,No,No internet service,Yes,Yes,No,Month-to-month,No,Credit card (automatic),1897.78,26779.57,Yes
+PUNE_GYM_1085,Male,0,Yes,No,4,Yes,No,Fiber optic,No,No,No internet service,No internet service,No internet service,No,One year,No,Bank transfer (automatic),2520.3,10571.08,Yes
+PUNE_GYM_1086,Female,0,No,Yes,30,Yes,No phone service,No,No internet service,Yes,No internet service,No,No internet service,Yes,Month-to-month,No,Mailed check,2649.38,79684.9,No
+PUNE_GYM_1087,Male,0,No,Yes,31,Yes,Yes,No,No,Yes,No,No internet service,Yes,No internet service,One year,Yes,Mailed check,3189.79,99107.21,No
+PUNE_GYM_1088,Female,0,No,No,38,Yes,No,Fiber optic,No internet service,Yes,No,Yes,No,No internet service,Month-to-month,No,Credit card (automatic),3372.0,128300.64,Yes
+PUNE_GYM_1089,Female,0,No,No,11,Yes,Yes,DSL,No internet service,No,No internet service,No,No internet service,Yes,Month-to-month,No,Bank transfer (automatic),2091.53,23436.02,Yes
+PUNE_GYM_1090,Female,0,No,No,35,Yes,No,Fiber optic,No,No internet service,No,Yes,No,No internet service,One year,Yes,Bank transfer (automatic),2915.63,102381.69,Yes
+PUNE_GYM_1091,Female,0,No,Yes,8,Yes,Yes,Fiber optic,No internet service,No internet service,No internet service,No,Yes,No,Month-to-month,No,Electronic check,3397.08,27521.86,Yes
+PUNE_GYM_1092,Female,0,Yes,Yes,3,Yes,No,Fiber optic,Yes,Yes,No internet service,No,Yes,Yes,Month-to-month,Yes,Mailed check,1038.61,3544.05,Yes
+PUNE_GYM_1093,Female,0,No,Yes,14,Yes,No phone service,Fiber optic,No internet service,No internet service,Yes,No internet service,No internet service,No internet service,One year,No,Credit card (automatic),652.98,9378.89,No
+PUNE_GYM_1094,Female,1,Yes,No,60,Yes,No phone service,Fiber optic,No internet service,Yes,No internet service,No internet service,No,Yes,Month-to-month,Yes,Bank transfer (automatic),3119.99,187376.85,Yes
+PUNE_GYM_1095,Female,0,No,Yes,13,Yes,Yes,Fiber optic,Yes,No internet service,No,Yes,No internet service,Yes,Month-to-month,Yes,Electronic check,1166.29,15341.13,Yes
+PUNE_GYM_1096,Female,0,No,Yes,45,Yes,No,No,No,No,No internet service,No internet service,Yes,No internet service,Month-to-month,Yes,Credit card (automatic),723.19,32936.6,No
+PUNE_GYM_1097,Female,0,Yes,No,32,Yes,No,DSL,Yes,Yes,Yes,No internet service,No,No,Month-to-month,No,Credit card (automatic),1064.28,34402.61,No
+PUNE_GYM_1098,Female,0,No,No,34,Yes,Yes,DSL,No internet service,No internet service,No,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check,1713.93,58456.16,No
+PUNE_GYM_1099,Male,0,Yes,No,45,Yes,No,DSL,No,No,Yes,No,No internet service,No internet service,Month-to-month,Yes,Bank transfer (automatic),1235.87,55772.18,No
+PUNE_GYM_1100,Male,0,Yes,No,19,Yes,Yes,DSL,No internet service,No internet service,Yes,No internet service,No internet service,No,Two year,No,Credit card (automatic),1485.24,28367.83,Yes
+PUNE_GYM_1101,Female,0,Yes,No,59,Yes,No,Fiber optic,No internet service,No,No internet service,Yes,Yes,No internet service,Month-to-month,Yes,Electronic check,3428.35,202623.77,No
+PUNE_GYM_1102,Female,0,Yes,Yes,38,No,Yes,DSL,Yes,No,Yes,No,No internet service,No internet service,Month-to-month,No,Electronic check,2642.78,100525.69,Yes
+PUNE_GYM_1103,Female,0,No,No,16,Yes,No,No,Yes,No internet service,Yes,No,No,No internet service,Month-to-month,No,Credit card (automatic),2665.36,42753.09,Yes
+PUNE_GYM_1104,Female,0,No,Yes,2,Yes,Yes,Fiber optic,No,No internet service,No,No internet service,No internet service,Yes,Month-to-month,Yes,Electronic check,874.59,2005.0,Yes
+PUNE_GYM_1105,Female,0,Yes,Yes,40,Yes,No,DSL,No,No,Yes,No,Yes,Yes,One year,Yes,Credit card (automatic),2723.09,109300.14,No
+PUNE_GYM_1106,Female,0,No,No,17,No,No phone service,DSL,No,No,No internet service,Yes,No internet service,Yes,One year,No,Electronic check,2744.1,47027.72,Yes
+PUNE_GYM_1107,Female,0,No,No,55,Yes,No,No,No internet service,No,No internet service,Yes,Yes,No internet service,Month-to-month,Yes,Credit card (automatic),2513.26,138501.35,Yes
+PUNE_GYM_1108,Female,0,Yes,No,34,Yes,Yes,DSL,Yes,Yes,No internet service,No,Yes,No,Month-to-month,Yes,Credit card (automatic),1262.47,43300.41,Yes
+PUNE_GYM_1109,Male,0,No,Yes,42,Yes,No phone service,Fiber optic,Yes,No,Yes,No internet service,No,Yes,Month-to-month,Yes,Credit card (automatic),1826.8,77034.04,No
+PUNE_GYM_1110,Female,0,Yes,No,60,Yes,No,Fiber optic,Yes,Yes,No,No internet service,No,No,One year,Yes,Electronic check,3054.2,183742.77,No
+PUNE_GYM_1111,Male,0,Yes,No,16,Yes,No phone service,Fiber optic,No,No,No internet service,No,No internet service,No internet service,One year,No,Credit card (automatic),2543.58,40862.26,Yes
+PUNE_GYM_1112,Female,0,No,No,38,Yes,No,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,No,Mailed check,2725.03,103891.41,Yes
+PUNE_GYM_1113,Female,0,No,No,60,Yes,No phone service,Fiber optic,Yes,No,No internet service,No,Yes,No internet service,Month-to-month,Yes,Credit card (automatic),2303.39,138499.9,Yes
+PUNE_GYM_1114,Male,1,No,No,2,Yes,Yes,No,Yes,No,No internet service,No internet service,No,No,One year,No,Bank transfer (automatic),1903.8,3985.39,No
+PUNE_GYM_1115,Female,1,Yes,Yes,2,No,No,Fiber optic,No,No,No,No internet service,No,Yes,Two year,Yes,Bank transfer (automatic),2801.25,6002.5,No
+PUNE_GYM_1116,Male,0,Yes,Yes,26,Yes,No,Fiber optic,Yes,No internet service,No internet service,No,No internet service,Yes,Two year,Yes,Mailed check,796.98,20931.68,Yes
+PUNE_GYM_1117,Female,0,No,Yes,13,Yes,Yes,DSL,No,No internet service,No,Yes,Yes,Yes,Month-to-month,Yes,Credit card (automatic),2552.17,33430.89,Yes
+PUNE_GYM_1118,Female,0,No,No,56,Yes,No phone service,DSL,Yes,No,Yes,No,No,Yes,Month-to-month,Yes,Bank transfer (automatic),3491.89,195795.77,Yes
+PUNE_GYM_1119,Male,0,No,No,47,Yes,Yes,Fiber optic,Yes,Yes,No internet service,Yes,No internet service,No,Month-to-month,No,Credit card (automatic),2862.56,134738.0,Yes
+PUNE_GYM_1120,Female,0,No,No,31,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,One year,Yes,Bank transfer (automatic),1442.63,44993.81,No
+PUNE_GYM_1121,Male,0,Yes,Yes,60,Yes,No phone service,DSL,No,No,Yes,No,Yes,No internet service,Two year,No,Electronic check,1405.68,84630.14,No
+PUNE_GYM_1122,Female,0,No,No,34,Yes,Yes,Fiber optic,No,No internet service,Yes,No,No,Yes,Month-to-month,Yes,Electronic check,2534.93,86585.31,No
+PUNE_GYM_1123,Male,0,Yes,No,39,Yes,No,Fiber optic,Yes,Yes,No internet service,Yes,No internet service,No,Month-to-month,No,Mailed check,3197.98,125127.25,Yes
+PUNE_GYM_1124,Male,0,Yes,No,3,Yes,No,DSL,No internet service,No internet service,No,Yes,No,Yes,Month-to-month,No,Mailed check,2276.05,6991.57,Yes
+PUNE_GYM_1125,Female,0,No,Yes,8,Yes,No,DSL,No,Yes,No internet service,Yes,No internet service,No,Month-to-month,No,Credit card (automatic),2129.47,17372.87,Yes
+PUNE_GYM_1126,Female,0,No,No,23,Yes,Yes,Fiber optic,No,No,Yes,Yes,Yes,No,Month-to-month,No,Mailed check,1065.11,24956.01,Yes
+PUNE_GYM_1127,Male,0,No,Yes,14,Yes,No,DSL,Yes,No internet service,No,No internet service,No internet service,No internet service,One year,Yes,Credit card (automatic),2674.83,37591.13,No
+PUNE_GYM_1128,Female,0,Yes,No,56,Yes,No,No,No internet service,Yes,Yes,No,No internet service,Yes,Month-to-month,No,Electronic check,2636.67,147942.69,No
+PUNE_GYM_1129,Female,0,No,Yes,55,Yes,No,DSL,Yes,No,No,Yes,No internet service,Yes,Month-to-month,Yes,Electronic check,3404.16,187628.94,No
+PUNE_GYM_1130,Female,0,No,Yes,27,No,No,DSL,No,No,No internet service,No,No internet service,Yes,One year,No,Bank transfer (automatic),1470.56,40049.72,No
+PUNE_GYM_1131,Male,1,Yes,Yes,54,Yes,No,No,No,No,No,Yes,No internet service,No internet service,Month-to-month,No,Credit card (automatic),2793.69,150999.49,Yes
+PUNE_GYM_1132,Male,0,No,No,29,Yes,No,No,Yes,No internet service,No internet service,No,No,No internet service,Month-to-month,No,Electronic check,1858.79,54163.55,No
+PUNE_GYM_1133,Male,0,Yes,No,39,Yes,Yes,DSL,Yes,No internet service,Yes,No,No internet service,No,Month-to-month,Yes,Electronic check,2219.57,86866.13,No
+PUNE_GYM_1134,Male,0,No,Yes,53,Yes,No,Fiber optic,No internet service,No,No,Yes,No internet service,No,Two year,No,Credit card (automatic),2967.72,157787.5,Yes
+PUNE_GYM_1135,Male,0,Yes,Yes,39,Yes,No,DSL,No internet service,No internet service,Yes,Yes,Yes,No,One year,Yes,Bank transfer (automatic),1243.79,48679.25,No
+PUNE_GYM_1136,Male,0,No,No,1,Yes,No phone service,DSL,No,Yes,No,No,No internet service,No internet service,Month-to-month,Yes,Bank transfer (automatic),1594.32,2087.29,Yes
+PUNE_GYM_1137,Male,0,No,No,17,Yes,Yes,Fiber optic,No internet service,No,No internet service,No,Yes,No internet service,Month-to-month,Yes,Bank transfer (automatic),2842.6,48574.66,No
+PUNE_GYM_1138,Male,0,Yes,Yes,41,Yes,Yes,Fiber optic,No internet service,No,No,No,No,No internet service,Month-to-month,No,Bank transfer (automatic),2254.33,92607.66,No
+PUNE_GYM_1139,Male,0,Yes,No,30,Yes,Yes,DSL,No,No internet service,No,No internet service,No,No,One year,No,Electronic check,868.03,26306.54,Yes
+PUNE_GYM_1140,Female,0,No,No,53,No,Yes,DSL,No,No,No internet service,Yes,No internet service,No internet service,One year,No,Credit card (automatic),1847.54,98265.22,No
+PUNE_GYM_1141,Male,0,Yes,No,13,Yes,No,Fiber optic,No,Yes,No internet service,No internet service,No,No,Two year,No,Credit card (automatic),2301.24,30101.52,No
+PUNE_GYM_1142,Female,0,Yes,No,21,Yes,No,DSL,No,No internet service,No internet service,No internet service,No internet service,No,Month-to-month,No,Electronic check,3237.6,68206.18,Yes
+PUNE_GYM_1143,Female,0,Yes,Yes,19,Yes,No phone service,Fiber optic,Yes,No internet service,No,Yes,No,Yes,Two year,No,Electronic check,1146.62,22227.6,No
+PUNE_GYM_1144,Female,0,Yes,No,53,Yes,No phone service,Fiber optic,No,No,Yes,Yes,No internet service,Yes,Two year,No,Electronic check,2937.26,156174.38,No
+PUNE_GYM_1145,Male,1,No,No,19,Yes,Yes,DSL,No,No,No,No internet service,No internet service,Yes,Two year,Yes,Mailed check,978.81,18824.66,No
+PUNE_GYM_1146,Male,0,No,Yes,57,Yes,No phone service,Fiber optic,No,No,No,Yes,Yes,No,One year,No,Credit card (automatic),1302.48,74400.9,No
+PUNE_GYM_1147,Male,0,Yes,Yes,25,Yes,No phone service,Fiber optic,No internet service,No internet service,Yes,No,Yes,Yes,Month-to-month,Yes,Credit card (automatic),1305.7,33059.77,No
+PUNE_GYM_1148,Male,0,Yes,No,22,Yes,Yes,No,No,No,No internet service,No,Yes,Yes,Month-to-month,Yes,Credit card (automatic),3144.69,69523.36,Yes
+PUNE_GYM_1149,Female,0,Yes,No,31,Yes,Yes,Fiber optic,Yes,Yes,No,No internet service,Yes,Yes,Month-to-month,No,Bank transfer (automatic),1177.15,36631.81,Yes
+PUNE_GYM_1150,Male,0,Yes,No,17,Yes,No phone service,Fiber optic,Yes,No,Yes,No internet service,No internet service,No internet service,Month-to-month,No,Electronic check,2882.19,49475.94,No
+PUNE_GYM_1151,Male,0,No,No,55,Yes,No,No,No,No,No internet service,Yes,No,No,One year,Yes,Electronic check,1939.24,106789.42,No
+PUNE_GYM_1152,Male,0,No,Yes,23,Yes,No phone service,DSL,Yes,No internet service,No internet service,Yes,No internet service,Yes,One year,Yes,Electronic check,3497.36,80789.42,No
+PUNE_GYM_1153,Male,0,Yes,Yes,32,Yes,No phone service,DSL,No internet service,No,No,No internet service,Yes,No internet service,Two year,No,Mailed check,3033.37,97337.41,No
+PUNE_GYM_1154,Male,0,Yes,Yes,10,Yes,No,No,No,No internet service,No internet service,No internet service,Yes,No internet service,Month-to-month,Yes,Credit card (automatic),2745.14,27774.05,Yes
+PUNE_GYM_1155,Female,0,Yes,No,10,Yes,No,Fiber optic,Yes,No,No internet service,No,No,No internet service,Month-to-month,Yes,Electronic check,3125.11,31436.39,Yes
+PUNE_GYM_1156,Male,0,No,No,36,Yes,Yes,DSL,Yes,Yes,Yes,No,Yes,Yes,One year,Yes,Mailed check,2438.69,88168.08,Yes
+PUNE_GYM_1157,Female,0,Yes,No,8,Yes,Yes,DSL,No,Yes,Yes,Yes,No internet service,No internet service,Month-to-month,Yes,Electronic check,3046.59,24856.61,Yes
+PUNE_GYM_1158,Male,0,No,No,54,Yes,No phone service,DSL,Yes,No internet service,No internet service,No,No internet service,No,Month-to-month,No,Bank transfer (automatic),1357.27,73575.95,Yes
+PUNE_GYM_1159,Female,0,Yes,Yes,52,Yes,No,DSL,No,No internet service,Yes,Yes,No internet service,No internet service,Two year,No,Credit card (automatic),883.34,46242.86,No
+PUNE_GYM_1160,Male,0,No,Yes,20,Yes,Yes,DSL,Yes,No,No internet service,Yes,No internet service,No internet service,One year,Yes,Mailed check,2386.2,47919.92,Yes
+PUNE_GYM_1161,Male,1,Yes,No,32,Yes,No phone service,DSL,No internet service,No,No,Yes,No internet service,No internet service,Month-to-month,Yes,Electronic check,1860.6,59995.95,No
+PUNE_GYM_1162,Female,0,No,Yes,50,Yes,No,DSL,Yes,Yes,Yes,No,No,No internet service,One year,Yes,Credit card (automatic),1836.68,92322.47,Yes
+PUNE_GYM_1163,Female,0,Yes,No,14,Yes,No phone service,DSL,Yes,No,No internet service,No internet service,No internet service,No,One year,No,Mailed check,2127.57,30200.5,No
+PUNE_GYM_1164,Female,0,Yes,No,50,Yes,Yes,DSL,No,Yes,No internet service,No internet service,Yes,Yes,One year,No,Credit card (automatic),1648.01,82717.61,No
+PUNE_GYM_1165,Male,0,Yes,Yes,28,No,Yes,DSL,Yes,No internet service,Yes,No,Yes,No,One year,Yes,Credit card (automatic),2415.57,68118.68,Yes
+PUNE_GYM_1166,Female,0,No,No,46,No,No,DSL,No,No,Yes,No internet service,Yes,No,Month-to-month,Yes,Bank transfer (automatic),688.65,31839.44,Yes
+PUNE_GYM_1167,Male,0,Yes,No,52,Yes,No phone service,DSL,No internet service,No internet service,No,Yes,Yes,Yes,One year,Yes,Credit card (automatic),3412.68,177750.76,No
+PUNE_GYM_1168,Male,0,No,Yes,53,Yes,No,DSL,No,No,No internet service,No internet service,No,No internet service,Month-to-month,No,Mailed check,3281.66,174243.02,Yes
+PUNE_GYM_1169,Female,0,No,No,24,Yes,Yes,DSL,No,Yes,No,No,Yes,Yes,Month-to-month,Yes,Credit card (automatic),3312.28,79791.49,Yes
+PUNE_GYM_1170,Female,0,Yes,No,15,No,Yes,DSL,Yes,No internet service,No,No internet service,No,Yes,Two year,Yes,Mailed check,1658.51,25298.62,No
+PUNE_GYM_1171,Male,1,Yes,Yes,22,Yes,No phone service,No,No internet service,No internet service,No,Yes,Yes,No,Month-to-month,Yes,Credit card (automatic),2142.48,47502.72,No
+PUNE_GYM_1172,Male,0,Yes,No,30,Yes,No phone service,DSL,No,No,Yes,Yes,No,Yes,One year,Yes,Electronic check,3366.98,101160.06,No
+PUNE_GYM_1173,Female,0,No,Yes,4,Yes,No phone service,DSL,Yes,No internet service,No,No,No,No internet service,One year,Yes,Bank transfer (automatic),3216.8,13105.78,No
+PUNE_GYM_1174,Female,0,Yes,No,13,Yes,No,DSL,Yes,Yes,Yes,No,No,No,Two year,No,Electronic check,2891.71,37827.86,No
+PUNE_GYM_1175,Female,1,No,Yes,59,Yes,No phone service,No,No,No internet service,Yes,No,Yes,No internet service,Two year,No,Bank transfer (automatic),1781.26,105420.59,Yes
+PUNE_GYM_1176,Male,0,No,Yes,23,Yes,No phone service,DSL,Yes,No internet service,No,Yes,No,No,Month-to-month,No,Mailed check,2236.58,51657.92,Yes
+PUNE_GYM_1177,Male,0,Yes,Yes,8,Yes,Yes,DSL,No,No,No,No internet service,No internet service,No internet service,Month-to-month,Yes,Bank transfer (automatic),2899.45,23342.51,Yes
+PUNE_GYM_1178,Male,1,Yes,No,18,Yes,Yes,DSL,No,No internet service,No internet service,No internet service,No internet service,Yes,Month-to-month,No,Credit card (automatic),1391.73,25412.61,Yes
+PUNE_GYM_1179,Male,1,Yes,Yes,12,Yes,No phone service,DSL,No,No,No,No,Yes,Yes,Month-to-month,Yes,Credit card (automatic),2416.7,29440.81,Yes
+PUNE_GYM_1180,Male,0,Yes,Yes,55,Yes,No phone service,Fiber optic,No internet service,No,No internet service,No internet service,No internet service,Yes,Month-to-month,No,Electronic check,3001.01,165528.19,No
+PUNE_GYM_1181,Male,0,Yes,Yes,31,Yes,Yes,Fiber optic,No,No internet service,No,No internet service,No internet service,No internet service,One year,No,Bank transfer (automatic),2651.62,82689.25,No
+PUNE_GYM_1182,Female,0,Yes,Yes,14,Yes,No phone service,No,Yes,Yes,No,No,No internet service,No,One year,Yes,Mailed check,1990.49,28279.31,No
+PUNE_GYM_1183,Male,0,No,Yes,34,Yes,No,DSL,No internet service,No,No,No,Yes,No,Two year,Yes,Mailed check,2295.36,78198.12,Yes
+PUNE_GYM_1184,Male,1,No,No,18,Yes,No,DSL,Yes,No internet service,No,Yes,Yes,No,One year,Yes,Credit card (automatic),3467.16,62850.12,No
+PUNE_GYM_1185,Male,0,No,No,56,Yes,No,No,No internet service,No,No internet service,Yes,No internet service,Yes,One year,No,Mailed check,2345.76,131622.54,Yes
+PUNE_GYM_1186,Female,0,Yes,No,34,Yes,No phone service,DSL,No internet service,Yes,No internet service,Yes,Yes,No internet service,Month-to-month,Yes,Credit card (automatic),2878.29,98253.82,No
+PUNE_GYM_1187,Male,0,No,No,11,Yes,Yes,DSL,No internet service,Yes,No,Yes,No,No,Month-to-month,No,Credit card (automatic),2707.15,30091.16,Yes
+PUNE_GYM_1188,Male,0,No,No,41,Yes,No phone service,DSL,No internet service,No,No,No internet service,No internet service,No internet service,Month-to-month,No,Credit card (automatic),2634.32,108438.56,Yes
+PUNE_GYM_1189,Female,0,No,No,12,Yes,No phone service,DSL,Yes,Yes,No internet service,No internet service,Yes,No,One year,No,Electronic check,2677.47,32399.84,Yes
+PUNE_GYM_1190,Male,0,No,No,49,Yes,Yes,Fiber optic,No,No internet service,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,1917.79,94096.43,Yes
+PUNE_GYM_1191,Male,0,No,Yes,15,Yes,Yes,DSL,Yes,No internet service,Yes,Yes,No internet service,No internet service,One year,Yes,Credit card (automatic),1975.06,29948.63,No
+PUNE_GYM_1192,Male,0,Yes,No,57,Yes,Yes,DSL,No,No,Yes,No,Yes,No,One year,Yes,Credit card (automatic),1956.8,111706.12,Yes
+PUNE_GYM_1193,Male,0,Yes,Yes,31,Yes,No,Fiber optic,Yes,Yes,No internet service,No internet service,No internet service,No,Month-to-month,No,Credit card (automatic),696.44,22075.85,No
+PUNE_GYM_1194,Male,0,No,Yes,49,Yes,No phone service,DSL,No internet service,No internet service,No internet service,No internet service,Yes,No,Month-to-month,No,Mailed check,1299.09,63966.2,Yes
+PUNE_GYM_1195,Female,0,No,No,58,Yes,Yes,Fiber optic,No internet service,No internet service,Yes,Yes,No,No,Month-to-month,Yes,Credit card (automatic),1048.24,61119.34,No
+PUNE_GYM_1196,Female,0,No,Yes,29,Yes,No phone service,Fiber optic,No,No internet service,Yes,No internet service,No internet service,Yes,Month-to-month,No,Credit card (automatic),3170.69,92412.92,Yes
+PUNE_GYM_1197,Female,0,Yes,Yes,26,Yes,No,Fiber optic,No,No,No,No,No,No,One year,No,Bank transfer (automatic),1397.41,36682.49,Yes
+PUNE_GYM_1198,Male,0,Yes,Yes,18,Yes,No,Fiber optic,Yes,No,No internet service,No,No internet service,No,One year,No,Bank transfer (automatic),1001.48,18247.73,No
+PUNE_GYM_1199,Male,0,No,Yes,32,Yes,Yes,DSL,No,No internet service,No internet service,No internet service,Yes,Yes,One year,Yes,Bank transfer (automatic),947.32,30532.68,No
+PUNE_GYM_1200,Male,0,Yes,No,22,Yes,Yes,No,Yes,No internet service,Yes,Yes,No,No,One year,No,Bank transfer (automatic),2629.97,58159.97,No
+PUNE_GYM_1201,Female,0,Yes,No,38,Yes,No phone service,DSL,No,Yes,Yes,No internet service,Yes,No internet service,One year,No,Credit card (automatic),617.64,23916.96,No
+PUNE_GYM_1202,Male,0,No,No,17,Yes,Yes,Fiber optic,No,Yes,No internet service,No,No internet service,No internet service,Two year,Yes,Bank transfer (automatic),1966.78,33853.15,No
+PUNE_GYM_1203,Male,0,Yes,No,23,Yes,No phone service,Fiber optic,No,Yes,No,Yes,No internet service,No,Month-to-month,Yes,Mailed check,944.73,22213.89,Yes
+PUNE_GYM_1204,Female,0,Yes,No,24,Yes,Yes,Fiber optic,No internet service,No,Yes,No internet service,No internet service,Yes,One year,Yes,Mailed check,3064.02,73665.23,No
+PUNE_GYM_1205,Male,1,No,No,50,Yes,No phone service,DSL,No internet service,No internet service,No internet service,Yes,No internet service,Yes,Month-to-month,Yes,Bank transfer (automatic),3379.51,169182.83,Yes
+PUNE_GYM_1206,Female,0,Yes,No,8,Yes,No phone service,Fiber optic,Yes,No,No internet service,Yes,No internet service,Yes,Month-to-month,Yes,Electronic check,3380.39,27175.2,Yes
+PUNE_GYM_1207,Female,0,Yes,No,41,Yes,No phone service,DSL,No,No internet service,No,No,No,No,Month-to-month,Yes,Mailed check,1881.7,77550.13,Yes
+PUNE_GYM_1208,Female,0,No,No,6,Yes,No phone service,Fiber optic,Yes,Yes,No,Yes,No internet service,No,One year,No,Mailed check,2469.09,14970.87,Yes
+PUNE_GYM_1209,Male,0,Yes,No,5,Yes,No,DSL,No,Yes,Yes,No internet service,Yes,No internet service,Month-to-month,No,Bank transfer (automatic),2339.14,11835.65,No
+PUNE_GYM_1210,Male,0,Yes,Yes,44,Yes,No phone service,Fiber optic,No internet service,Yes,Yes,Yes,No,Yes,Month-to-month,No,Bank transfer (automatic),1615.11,71389.51,Yes
+PUNE_GYM_1211,Male,0,No,No,57,No,Yes,Fiber optic,No internet service,Yes,Yes,Yes,Yes,No,Two year,No,Credit card (automatic),1887.79,107868.62,No
+PUNE_GYM_1212,Male,0,No,Yes,29,Yes,No,DSL,No,No internet service,No internet service,No internet service,No internet service,No,One year,Yes,Mailed check,786.54,23195.7,No
+PUNE_GYM_1213,Male,0,No,Yes,28,Yes,No,Fiber optic,No,Yes,Yes,No,Yes,No,One year,No,Bank transfer (automatic),2907.53,81705.65,Yes
+PUNE_GYM_1214,Male,0,Yes,Yes,11,Yes,No phone service,Fiber optic,No internet service,No internet service,No internet service,No,No,Yes,One year,Yes,Bank transfer (automatic),1298.33,14551.76,No
+PUNE_GYM_1215,Male,1,No,Yes,57,Yes,No,DSL,No internet service,No internet service,Yes,No internet service,No,Yes,Two year,Yes,Credit card (automatic),1935.53,110595.41,No
+PUNE_GYM_1216,Female,0,Yes,No,1,Yes,No phone service,DSL,Yes,No,No,No internet service,No,No internet service,One year,No,Mailed check,1993.8,2442.55,No
+PUNE_GYM_1217,Male,1,No,Yes,43,Yes,Yes,DSL,No internet service,Yes,No,No,Yes,Yes,Month-to-month,No,Bank transfer (automatic),2226.06,95978.67,Yes
+PUNE_GYM_1218,Female,0,Yes,No,19,Yes,No phone service,Fiber optic,No,Yes,No internet service,Yes,No,No,Two year,Yes,Credit card (automatic),2971.84,56698.32,Yes
+PUNE_GYM_1219,Male,0,No,No,9,Yes,No,Fiber optic,Yes,No,No,No internet service,Yes,No internet service,One year,Yes,Bank transfer (automatic),2606.46,23693.55,Yes
+PUNE_GYM_1220,Male,1,No,Yes,27,Yes,Yes,Fiber optic,No,No internet service,No internet service,Yes,No internet service,Yes,Month-to-month,Yes,Electronic check,2522.88,68296.4,No
+PUNE_GYM_1221,Male,0,No,No,34,Yes,No phone service,Fiber optic,Yes,Yes,No internet service,No internet service,No internet service,Yes,Month-to-month,Yes,Electronic check,2127.56,72781.32,No
+PUNE_GYM_1222,Female,0,No,Yes,44,Yes,Yes,No,No,No internet service,No,No,Yes,Yes,Month-to-month,No,Bank transfer (automatic),878.27,38802.53,Yes
+PUNE_GYM_1223,Female,0,Yes,Yes,4,Yes,Yes,DSL,No internet service,No,No internet service,Yes,No,Yes,Two year,Yes,Mailed check,1765.82,7526.72,No
+PUNE_GYM_1224,Female,0,No,No,36,Yes,No,Fiber optic,No,No internet service,No,Yes,Yes,No,Month-to-month,No,Electronic check,3376.22,121757.31,Yes
+PUNE_GYM_1225,Female,0,No,No,18,Yes,Yes,DSL,Yes,Yes,Yes,No internet service,Yes,Yes,Two year,Yes,Credit card (automatic),3487.09,63227.39,No
+PUNE_GYM_1226,Male,0,Yes,Yes,15,Yes,No,Fiber optic,No,No internet service,Yes,Yes,Yes,No,Two year,Yes,Bank transfer (automatic),2718.44,41192.93,No
+PUNE_GYM_1227,Female,0,No,No,51,Yes,Yes,No,Yes,No internet service,No,No internet service,No internet service,No,One year,Yes,Credit card (automatic),1259.79,64582.09,No
+PUNE_GYM_1228,Male,0,Yes,No,13,Yes,No phone service,Fiber optic,No,Yes,No,No,Yes,No,One year,No,Electronic check,895.48,12009.03,Yes
+PUNE_GYM_1229,Male,0,No,No,19,Yes,Yes,Fiber optic,No internet service,Yes,No,Yes,No internet service,No internet service,Month-to-month,Yes,Mailed check,1802.82,34483.92,No
+PUNE_GYM_1230,Female,0,No,Yes,49,Yes,No phone service,DSL,No internet service,No internet service,No,No internet service,Yes,No,Month-to-month,No,Credit card (automatic),3084.06,151448.63,Yes
+PUNE_GYM_1231,Female,0,No,Yes,6,Yes,No phone service,DSL,No,No internet service,Yes,Yes,No internet service,Yes,Month-to-month,No,Electronic check,2693.41,16377.42,Yes
+PUNE_GYM_1232,Female,0,Yes,No,48,Yes,Yes,DSL,No,No,No internet service,No internet service,Yes,No internet service,One year,No,Electronic check,3163.29,152098.83,No
+PUNE_GYM_1233,Female,0,No,No,56,Yes,No phone service,Fiber optic,No,Yes,No internet service,No internet service,Yes,Yes,Month-to-month,Yes,Electronic check,2385.75,134007.87,No
+PUNE_GYM_1234,Female,0,No,No,12,Yes,Yes,Fiber optic,Yes,No internet service,Yes,No internet service,No,No,Month-to-month,No,Credit card (automatic),977.95,11932.97,Yes
+PUNE_GYM_1235,Female,1,No,No,51,Yes,Yes,DSL,No,Yes,No internet service,No,No,Yes,Month-to-month,No,Electronic check,932.91,48013.95,Yes
+PUNE_GYM_1236,Female,0,Yes,No,37,Yes,No phone service,Fiber optic,No,No,Yes,Yes,Yes,No internet service,Two year,Yes,Bank transfer (automatic),739.21,27601.12,No
+PUNE_GYM_1237,Female,0,Yes,Yes,17,Yes,No phone service,No,Yes,No internet service,No internet service,No,Yes,No internet service,Month-to-month,Yes,Electronic check,2244.53,38469.88,Yes
+PUNE_GYM_1238,Male,0,No,No,58,Yes,No,Fiber optic,No internet service,No internet service,No,No internet service,Yes,Yes,Two year,No,Bank transfer (automatic),1304.37,76130.24,No
+PUNE_GYM_1239,Female,0,Yes,Yes,23,Yes,No phone service,DSL,No,No internet service,No,No internet service,Yes,Yes,Month-to-month,No,Mailed check,2729.71,63155.83,Yes
+PUNE_GYM_1240,Female,0,No,No,26,Yes,No,DSL,No,Yes,No,No,No,Yes,Month-to-month,Yes,Bank transfer (automatic),2590.12,67701.36,Yes
+PUNE_GYM_1241,Male,0,No,Yes,29,Yes,No phone service,Fiber optic,No internet service,No,Yes,No,No internet service,No internet service,Month-to-month,No,Mailed check,1522.52,44537.72,Yes
+PUNE_GYM_1242,Female,0,No,No,33,Yes,Yes,DSL,No internet service,Yes,Yes,Yes,Yes,No,Month-to-month,No,Mailed check,1112.72,37187.0,No
+PUNE_GYM_1243,Male,0,No,Yes,60,Yes,No phone service,DSL,Yes,No internet service,No internet service,No internet service,No,Yes,One year,No,Bank transfer (automatic),896.96,54017.01,No
+PUNE_GYM_1244,Male,0,No,No,27,Yes,Yes,Fiber optic,No,No,No internet service,No,Yes,No,Month-to-month,Yes,Mailed check,2738.21,74276.97,Yes
+PUNE_GYM_1245,Female,1,No,Yes,25,Yes,Yes,No,No,No internet service,No internet service,No internet service,Yes,No internet service,One year,No,Bank transfer (automatic),1906.28,47917.16,No
+PUNE_GYM_1246,Male,0,No,Yes,56,Yes,Yes,DSL,Yes,No internet service,Yes,No internet service,No internet service,Yes,One year,Yes,Credit card (automatic),1538.24,86246.18,No
+PUNE_GYM_1247,Male,0,Yes,Yes,55,Yes,No,Fiber optic,No internet service,Yes,No internet service,Yes,Yes,Yes,One year,Yes,Mailed check,3084.29,169786.07,No
+PUNE_GYM_1248,Male,1,Yes,Yes,10,Yes,No phone service,Fiber optic,Yes,No internet service,No,Yes,Yes,No internet service,One year,Yes,Bank transfer (automatic),2321.48,23444.8,No
+PUNE_GYM_1249,Male,0,Yes,Yes,47,Yes,Yes,Fiber optic,No internet service,No,No internet service,Yes,No internet service,Yes,Month-to-month,No,Mailed check,2102.21,99129.87,Yes
+PUNE_GYM_1250,Female,0,Yes,Yes,23,Yes,Yes,DSL,Yes,No internet service,No,No,No internet service,No,One year,Yes,Electronic check,2755.8,63835.99,Yes
+PUNE_GYM_1251,Male,1,Yes,No,21,Yes,No,DSL,No internet service,No internet service,Yes,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic),2965.19,62685.44,No
+PUNE_GYM_1252,Female,0,Yes,Yes,21,Yes,No phone service,DSL,Yes,Yes,No,No,No internet service,No internet service,Two year,Yes,Electronic check,2589.61,54703.14,Yes
+PUNE_GYM_1253,Male,0,Yes,No,43,Yes,No phone service,No,No internet service,No,No,No,No,Yes,Two year,No,Mailed check,1876.02,80798.41,No
+PUNE_GYM_1254,Male,0,No,No,13,Yes,No,DSL,No internet service,Yes,No,Yes,No,No internet service,Month-to-month,No,Mailed check,1699.97,22313.97,No
+PUNE_GYM_1255,Male,0,No,No,37,Yes,No,DSL,No internet service,No internet service,Yes,No internet service,No,Yes,One year,No,Credit card (automatic),2837.83,105246.39,No
+PUNE_GYM_1256,Male,0,No,No,33,Yes,No phone service,Fiber optic,No internet service,Yes,Yes,No internet service,Yes,Yes,One year,Yes,Bank transfer (automatic),2101.93,69712.38,Yes
+PUNE_GYM_1257,Female,0,No,No,24,Yes,No,DSL,No internet service,Yes,Yes,Yes,No internet service,No internet service,Month-to-month,No,Electronic check,2642.72,63551.25,Yes
+PUNE_GYM_1258,Female,1,Yes,Yes,44,Yes,No phone service,Fiber optic,No,Yes,Yes,No internet service,No internet service,Yes,One year,No,Credit card (automatic),3182.16,140327.12,Yes
+PUNE_GYM_1259,Male,0,Yes,Yes,11,Yes,No phone service,DSL,No internet service,Yes,No internet service,Yes,No,No,One year,Yes,Mailed check,3256.08,36277.47,No
+PUNE_GYM_1260,Male,0,No,Yes,17,Yes,Yes,Fiber optic,No,No internet service,Yes,No,Yes,No,Month-to-month,Yes,Mailed check,1405.38,24273.63,No
+PUNE_GYM_1261,Female,0,No,No,4,Yes,Yes,Fiber optic,No internet service,No internet service,No,No,Yes,Yes,Month-to-month,No,Credit card (automatic),1144.88,4998.35,No
+PUNE_GYM_1262,Male,0,Yes,Yes,47,No,No phone service,Fiber optic,No,No,Yes,Yes,Yes,No,One year,Yes,Electronic check,1357.73,64185.98,No
+PUNE_GYM_1263,Male,0,No,Yes,25,Yes,No phone service,Fiber optic,No,Yes,No internet service,No,No,Yes,Month-to-month,Yes,Mailed check,2778.98,69657.14,Yes
+PUNE_GYM_1264,Male,0,No,Yes,30,Yes,No phone service,DSL,Yes,Yes,No internet service,No,Yes,No,Month-to-month,Yes,Mailed check,1673.17,50339.29,No
+PUNE_GYM_1265,Female,0,No,Yes,9,Yes,No phone service,DSL,No internet service,No,No internet service,Yes,Yes,No internet service,Month-to-month,No,Bank transfer (automatic),1102.83,10357.27,Yes
+PUNE_GYM_1266,Female,0,No,Yes,21,Yes,No phone service,DSL,Yes,Yes,No,No,Yes,Yes,Month-to-month,Yes,Credit card (automatic),885.32,18969.92,No
+PUNE_GYM_1267,Female,1,Yes,No,20,Yes,No phone service,DSL,Yes,No,Yes,No internet service,No internet service,Yes,Two year,No,Mailed check,1549.21,31314.22,No
+PUNE_GYM_1268,Male,0,No,Yes,19,No,No,DSL,No internet service,No internet service,Yes,No,No,Yes,Month-to-month,Yes,Electronic check,994.8,19076.91,No
+PUNE_GYM_1269,Male,0,No,No,19,Yes,No phone service,Fiber optic,Yes,No,Yes,Yes,No internet service,Yes,One year,Yes,Bank transfer (automatic),1053.48,20357.46,Yes
+PUNE_GYM_1270,Female,0,Yes,No,12,Yes,No,Fiber optic,No internet service,Yes,No,No internet service,No internet service,Yes,Two year,No,Credit card (automatic),2583.26,31111.65,No
+PUNE_GYM_1271,Female,0,Yes,No,37,Yes,No,DSL,Yes,No,No,No internet service,No,Yes,Month-to-month,Yes,Electronic check,657.22,24464.68,Yes
+PUNE_GYM_1272,Female,0,No,No,42,Yes,No phone service,DSL,No internet service,No internet service,No internet service,No,No internet service,No internet service,Month-to-month,Yes,Mailed check,940.9,39742.56,No
+PUNE_GYM_1273,Female,0,Yes,No,17,Yes,No phone service,Fiber optic,No internet service,Yes,No internet service,No internet service,Yes,No internet service,One year,Yes,Credit card (automatic),3048.66,52104.72,No
+PUNE_GYM_1274,Male,0,No,Yes,37,Yes,No,Fiber optic,No internet service,No internet service,Yes,Yes,Yes,No,Month-to-month,Yes,Credit card (automatic),3050.25,113007.48,Yes
+PUNE_GYM_1275,Female,0,No,Yes,54,No,No,Fiber optic,No,No internet service,No,No internet service,Yes,Yes,Month-to-month,No,Electronic check,1554.81,84107.72,Yes
+PUNE_GYM_1276,Male,0,Yes,Yes,48,Yes,No phone service,DSL,Yes,No,No,No,Yes,No,One year,No,Credit card (automatic),855.06,41433.24,Yes
+PUNE_GYM_1277,Female,0,No,No,39,Yes,No phone service,Fiber optic,No,No internet service,Yes,No,No,No,One year,No,Electronic check,2644.41,103459.88,No
+PUNE_GYM_1278,Male,0,No,Yes,28,Yes,No,DSL,Yes,Yes,Yes,No internet service,No internet service,No internet service,One year,No,Mailed check,1644.38,46356.14,No
+PUNE_GYM_1279,Female,0,No,Yes,41,Yes,No,DSL,Yes,No internet service,No internet service,Yes,No internet service,No,Two year,No,Bank transfer (automatic),731.85,30286.82,No
+PUNE_GYM_1280,Female,0,No,No,35,Yes,No,Fiber optic,Yes,No internet service,No internet service,Yes,Yes,No internet service,One year,No,Electronic check,1057.7,37510.12,No
+PUNE_GYM_1281,Female,0,Yes,No,47,Yes,Yes,No,No,No,No internet service,No,Yes,No,One year,No,Bank transfer (automatic),997.92,47022.16,Yes
+PUNE_GYM_1282,Female,0,Yes,No,48,Yes,No,DSL,Yes,No internet service,Yes,No,No internet service,Yes,Two year,Yes,Credit card (automatic),2308.44,110977.37,No
+PUNE_GYM_1283,Male,0,No,No,18,Yes,Yes,DSL,No,No,Yes,Yes,No,No,Month-to-month,No,Electronic check,3204.54,58040.72,Yes
+PUNE_GYM_1284,Female,0,Yes,Yes,14,Yes,No phone service,DSL,No internet service,No,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check,2899.91,40753.29,Yes
+PUNE_GYM_1285,Male,1,No,No,35,Yes,No phone service,DSL,Yes,Yes,No internet service,No internet service,Yes,No internet service,One year,No,Electronic check,2184.9,76807.25,No
+PUNE_GYM_1286,Male,0,No,No,44,Yes,No,DSL,Yes,Yes,No,No internet service,Yes,No internet service,One year,Yes,Electronic check,1824.25,80594.1,No
+PUNE_GYM_1287,Male,0,No,Yes,41,Yes,No phone service,Fiber optic,No internet service,Yes,No,No internet service,No,No,Month-to-month,No,Electronic check,2394.16,98648.96,Yes
+PUNE_GYM_1288,Male,0,No,Yes,60,Yes,No phone service,Fiber optic,No internet service,Yes,No internet service,Yes,No internet service,No,Month-to-month,No,Bank transfer (automatic),1887.06,113676.95,Yes
+PUNE_GYM_1289,Female,1,No,No,7,Yes,No phone service,Fiber optic,Yes,No,No internet service,No,No,No internet service,Month-to-month,No,Bank transfer (automatic),1313.69,9674.05,Yes
+PUNE_GYM_1290,Male,0,Yes,Yes,41,Yes,No phone service,Fiber optic,No internet service,No internet service,No,No,No,Yes,One year,Yes,Credit card (automatic),2569.67,105501.91,Yes
+PUNE_GYM_1291,Male,0,No,No,13,Yes,Yes,Fiber optic,No,Yes,No internet service,No internet service,Yes,Yes,One year,No,Credit card (automatic),3132.41,41168.59,No
+PUNE_GYM_1292,Male,0,Yes,No,18,Yes,Yes,Fiber optic,No,Yes,No,Yes,No internet service,No,Two year,Yes,Credit card (automatic),1681.32,30415.4,No
+PUNE_GYM_1293,Female,0,Yes,Yes,37,Yes,No,Fiber optic,Yes,Yes,No,Yes,Yes,No,One year,Yes,Credit card (automatic),3040.46,112850.19,Yes
+PUNE_GYM_1294,Female,0,No,Yes,13,Yes,No,DSL,No,No internet service,No,No internet service,No internet service,No internet service,One year,Yes,Electronic check,1850.14,24439.85,No
+PUNE_GYM_1295,Female,1,No,No,36,Yes,No,No,No,Yes,Yes,No internet service,Yes,No,Month-to-month,Yes,Bank transfer (automatic),1763.87,63663.66,No
+PUNE_GYM_1296,Female,1,No,No,31,Yes,No phone service,No,Yes,No internet service,Yes,No internet service,Yes,No,Month-to-month,No,Bank transfer (automatic),682.14,21499.4,Yes
+PUNE_GYM_1297,Male,0,No,No,2,Yes,No phone service,DSL,No internet service,No,No internet service,No,No internet service,No internet service,Month-to-month,Yes,Bank transfer (automatic),2616.31,5353.6,Yes
+PUNE_GYM_1298,Male,0,No,Yes,16,Yes,Yes,DSL,Yes,No,No,No internet service,No internet service,No internet service,One year,Yes,Bank transfer (automatic),2941.76,47285.47,Yes
+PUNE_GYM_1299,Female,1,Yes,No,9,Yes,Yes,No,No,No,Yes,No,Yes,No,Month-to-month,No,Credit card (automatic),2524.32,23187.34,No
+PUNE_GYM_1300,Male,0,No,No,9,Yes,No,Fiber optic,Yes,No internet service,No internet service,Yes,No internet service,Yes,One year,Yes,Electronic check,1038.95,9519.24,No
+PUNE_GYM_1301,Male,0,No,No,38,Yes,Yes,Fiber optic,Yes,Yes,No internet service,Yes,Yes,No,One year,Yes,Bank transfer (automatic),899.55,34309.01,No
+PUNE_GYM_1302,Male,0,Yes,No,11,Yes,Yes,No,No,Yes,No internet service,No,No internet service,Yes,Month-to-month,Yes,Mailed check,2261.29,25151.66,Yes
+PUNE_GYM_1303,Female,0,Yes,No,54,Yes,Yes,DSL,No,Yes,No internet service,No,Yes,Yes,Two year,Yes,Electronic check,1764.4,95717.85,No
+PUNE_GYM_1304,Female,0,No,Yes,56,Yes,Yes,DSL,Yes,Yes,No internet service,No,Yes,Yes,One year,Yes,Mailed check,1844.38,103415.95,Yes
+PUNE_GYM_1305,Male,0,Yes,No,22,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,No internet service,Month-to-month,Yes,Electronic check,3406.62,75187.85,Yes
+PUNE_GYM_1306,Female,1,No,No,33,Yes,No,Fiber optic,No,No internet service,No internet service,No internet service,No,No internet service,Month-to-month,No,Electronic check,2699.38,89539.45,Yes
+PUNE_GYM_1307,Female,1,Yes,No,36,Yes,No,DSL,No,No,No,Yes,No internet service,No internet service,One year,No,Electronic check,1794.18,64737.74,No
+PUNE_GYM_1308,Female,0,Yes,No,45,Yes,Yes,DSL,No,Yes,Yes,No internet service,Yes,No,Month-to-month,No,Mailed check,655.39,29716.82,No
+PUNE_GYM_1309,Female,0,No,Yes,23,Yes,No,Fiber optic,No,No,No internet service,No,No,No internet service,Month-to-month,No,Bank transfer (automatic),698.88,16485.61,No
+PUNE_GYM_1310,Female,1,Yes,Yes,45,No,No phone service,Fiber optic,No,No internet service,Yes,No internet service,Yes,No internet service,One year,Yes,Bank transfer (automatic),2585.93,116684.13,No
+PUNE_GYM_1311,Male,0,Yes,Yes,45,Yes,Yes,DSL,No internet service,No internet service,No,No internet service,No,No,Two year,Yes,Mailed check,3029.44,136757.73,Yes
+PUNE_GYM_1312,Female,0,Yes,No,34,Yes,No phone service,DSL,Yes,Yes,No,Yes,Yes,No,Month-to-month,Yes,Bank transfer (automatic),2652.34,90324.2,Yes
+PUNE_GYM_1313,Male,1,Yes,No,9,Yes,No,Fiber optic,No,No internet service,Yes,No internet service,Yes,Yes,Two year,No,Credit card (automatic),1777.07,16461.85,Yes
+PUNE_GYM_1314,Male,1,Yes,Yes,24,Yes,No,No,Yes,No,No internet service,Yes,No,No,One year,No,Bank transfer (automatic),690.29,17040.92,No
+PUNE_GYM_1315,Female,0,Yes,Yes,8,Yes,No phone service,Fiber optic,No internet service,Yes,No internet service,No,No,No,Month-to-month,Yes,Credit card (automatic),3405.46,27405.81,No
+PUNE_GYM_1316,Male,0,No,Yes,7,Yes,No,Fiber optic,No,Yes,Yes,No internet service,No internet service,No internet service,One year,Yes,Credit card (automatic),3460.37,24336.14,Yes
+PUNE_GYM_1317,Male,0,No,No,36,Yes,Yes,DSL,Yes,No,Yes,No,No internet service,Yes,Month-to-month,No,Credit card (automatic),2193.16,79449.7,No
+PUNE_GYM_1318,Male,0,Yes,No,18,Yes,No phone service,Fiber optic,No,Yes,Yes,Yes,No,Yes,Month-to-month,No,Mailed check,804.95,14782.0,Yes
+PUNE_GYM_1319,Female,0,No,Yes,3,Yes,Yes,DSL,No,Yes,No internet service,No,No internet service,No,One year,No,Bank transfer (automatic),2168.82,6835.29,No
+PUNE_GYM_1320,Female,0,No,Yes,28,Yes,No phone service,DSL,No,No,No internet service,No,No,No internet service,One year,No,Bank transfer (automatic),3187.78,89604.2,No
+PUNE_GYM_1321,Male,0,No,Yes,6,Yes,No,DSL,No,Yes,No internet service,Yes,No internet service,No internet service,Month-to-month,Yes,Mailed check,2571.96,15847.63,No
+PUNE_GYM_1322,Female,0,Yes,No,44,Yes,No phone service,Fiber optic,No,Yes,Yes,No,Yes,No internet service,Two year,No,Mailed check,2687.97,118695.48,No
+PUNE_GYM_1323,Female,0,No,No,44,Yes,No phone service,Fiber optic,No,No,No internet service,No,No internet service,No internet service,One year,No,Bank transfer (automatic),846.41,37419.61,No
+PUNE_GYM_1324,Female,0,Yes,No,21,Yes,Yes,Fiber optic,No,No internet service,No,No,Yes,No,Two year,Yes,Mailed check,908.88,19281.13,Yes
+PUNE_GYM_1325,Female,1,No,Yes,28,Yes,No,DSL,No internet service,No,Yes,No internet service,Yes,No internet service,Month-to-month,Yes,Mailed check,969.31,27591.41,No
+PUNE_GYM_1326,Male,0,Yes,Yes,40,No,Yes,DSL,No internet service,Yes,No internet service,No,No internet service,Yes,Two year,Yes,Credit card (automatic),3222.69,129335.41,Yes
+PUNE_GYM_1327,Male,0,Yes,No,54,Yes,No,DSL,No,No,Yes,Yes,No,Yes,Month-to-month,No,Mailed check,2124.96,115094.89,No
+PUNE_GYM_1328,Female,0,No,Yes,54,Yes,Yes,DSL,No,Yes,No,No internet service,Yes,No,Month-to-month,No,Credit card (automatic),2895.57,156858.66,No
+PUNE_GYM_1329,Female,0,No,No,1,Yes,No phone service,No,No internet service,Yes,No,No internet service,Yes,No internet service,One year,No,Electronic check,934.34,1328.41,No
+PUNE_GYM_1330,Male,0,Yes,Yes,36,Yes,Yes,DSL,No internet service,No,Yes,Yes,No internet service,No internet service,One year,No,Credit card (automatic),3290.16,118632.09,No
+PUNE_GYM_1331,Male,0,No,Yes,21,Yes,No,Fiber optic,No internet service,Yes,Yes,No,No,No internet service,One year,Yes,Credit card (automatic),2981.31,63046.17,Yes
+PUNE_GYM_1332,Female,0,No,Yes,60,Yes,No,Fiber optic,No,No internet service,No,No internet service,No,No internet service,Month-to-month,Yes,Mailed check,1251.82,75375.09,No
+PUNE_GYM_1333,Male,0,No,Yes,43,Yes,No phone service,DSL,Yes,Yes,Yes,No internet service,No internet service,No,Month-to-month,No,Bank transfer (automatic),3135.13,134925.05,Yes
+PUNE_GYM_1334,Female,0,Yes,No,35,Yes,No,Fiber optic,Yes,No,No,No internet service,No,No internet service,One year,No,Electronic check,1363.98,47967.87,No
+PUNE_GYM_1335,Female,0,Yes,Yes,13,Yes,Yes,Fiber optic,Yes,No internet service,No,No,No internet service,No,Month-to-month,No,Electronic check,1195.49,15946.79,No
+PUNE_GYM_1336,Male,1,No,No,57,Yes,No phone service,DSL,Yes,No internet service,No internet service,No internet service,No internet service,No internet service,One year,Yes,Electronic check,1366.31,78363.75,No
+PUNE_GYM_1337,Male,0,No,No,49,Yes,No,DSL,No,Yes,Yes,Yes,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic),3238.87,158915.08,No
+PUNE_GYM_1338,Female,0,No,No,54,No,No,Fiber optic,Yes,No,Yes,No,Yes,Yes,Two year,Yes,Electronic check,3255.22,175980.49,No
+PUNE_GYM_1339,Female,0,Yes,Yes,54,Yes,Yes,DSL,No internet service,Yes,No internet service,Yes,Yes,No,One year,No,Electronic check,1554.09,84246.31,No
+PUNE_GYM_1340,Male,0,Yes,No,10,Yes,Yes,DSL,No internet service,Yes,No,Yes,Yes,Yes,One year,Yes,Bank transfer (automatic),2645.76,26882.27,No
+PUNE_GYM_1341,Female,0,No,No,53,Yes,No phone service,DSL,Yes,No,Yes,No internet service,No internet service,No,Two year,Yes,Electronic check,2559.66,136060.59,Yes
+PUNE_GYM_1342,Male,0,No,No,44,Yes,No,Fiber optic,No internet service,No,No internet service,No internet service,Yes,No internet service,One year,No,Mailed check,2939.03,129641.3,Yes
+PUNE_GYM_1343,Female,1,No,Yes,47,Yes,Yes,Fiber optic,No,Yes,No internet service,No internet service,Yes,No internet service,Month-to-month,Yes,Mailed check,1459.88,68966.92,Yes
+PUNE_GYM_1344,Male,0,No,Yes,53,Yes,No phone service,DSL,Yes,No internet service,Yes,Yes,Yes,No,Month-to-month,Yes,Credit card (automatic),2079.4,110405.04,Yes
+PUNE_GYM_1345,Male,0,No,No,10,Yes,No,DSL,Yes,Yes,No internet service,No,No internet service,Yes,One year,No,Credit card (automatic),2536.25,25635.53,No
+PUNE_GYM_1346,Male,0,No,Yes,46,Yes,No,No,No,No internet service,No,No internet service,No internet service,No,Month-to-month,Yes,Credit card (automatic),676.14,31304.59,No
+PUNE_GYM_1347,Female,1,Yes,No,13,Yes,No phone service,DSL,No internet service,Yes,No internet service,No internet service,No internet service,No,One year,No,Mailed check,1692.54,22456.79,No
+PUNE_GYM_1348,Female,0,No,No,37,Yes,No phone service,Fiber optic,No,No,No,Yes,Yes,No internet service,Month-to-month,Yes,Mailed check,2618.08,97013.98,Yes
+PUNE_GYM_1349,Male,0,Yes,Yes,38,Yes,Yes,Fiber optic,No,No internet service,No,No,No,Yes,Month-to-month,Yes,Mailed check,1332.53,51008.04,Yes
+PUNE_GYM_1350,Female,0,No,No,24,Yes,No,DSL,No internet service,No,Yes,Yes,Yes,No,Month-to-month,Yes,Credit card (automatic),3377.34,81260.27,No
+PUNE_GYM_1351,Male,0,No,Yes,2,Yes,No,Fiber optic,No,No,No internet service,No internet service,Yes,Yes,Two year,Yes,Credit card (automatic),687.47,1665.17,No
+PUNE_GYM_1352,Male,0,Yes,Yes,22,Yes,No,Fiber optic,No internet service,No,No,Yes,No internet service,Yes,One year,No,Credit card (automatic),3378.45,74545.67,No
+PUNE_GYM_1353,Female,1,Yes,No,17,Yes,No phone service,DSL,No internet service,No,No,No internet service,No internet service,No,Two year,No,Credit card (automatic),1228.62,21115.84,Yes
+PUNE_GYM_1354,Female,0,Yes,Yes,36,Yes,Yes,Fiber optic,No,No,No internet service,No,Yes,Yes,Two year,No,Credit card (automatic),741.58,26901.04,No
+PUNE_GYM_1355,Male,0,Yes,Yes,14,Yes,No,Fiber optic,No internet service,Yes,No,Yes,Yes,No internet service,Month-to-month,Yes,Credit card (automatic),1448.17,20675.5,Yes
+PUNE_GYM_1356,Female,0,No,No,10,Yes,No phone service,Fiber optic,No,No internet service,No internet service,No internet service,No,No internet service,Month-to-month,Yes,Mailed check,2880.22,29048.49,No
+PUNE_GYM_1357,Female,0,Yes,No,35,Yes,No,Fiber optic,No internet service,Yes,Yes,No internet service,No,No internet service,One year,No,Bank transfer (automatic),2782.08,97763.34,Yes
+PUNE_GYM_1358,Male,0,No,Yes,25,Yes,Yes,Fiber optic,Yes,Yes,No,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic),1205.64,30423.43,Yes
+PUNE_GYM_1359,Male,0,Yes,Yes,3,Yes,No,DSL,No internet service,Yes,No,No internet service,No,Yes,Month-to-month,No,Credit card (automatic),1170.69,3830.97,Yes
+PUNE_GYM_1360,Female,0,No,No,47,Yes,Yes,DSL,No internet service,No,No internet service,Yes,No,No internet service,Two year,No,Bank transfer (automatic),2463.48,116100.87,No
+PUNE_GYM_1361,Male,0,No,Yes,38,Yes,Yes,Fiber optic,No,Yes,No internet service,No internet service,No internet service,No,Month-to-month,Yes,Bank transfer (automatic),1928.44,73771.06,Yes
+PUNE_GYM_1362,Male,0,No,Yes,17,Yes,No,DSL,No internet service,No internet service,No internet service,Yes,No,No internet service,Month-to-month,No,Mailed check,2897.64,49506.7,Yes
+PUNE_GYM_1363,Female,0,No,Yes,12,Yes,No,Fiber optic,Yes,Yes,No internet service,No internet service,Yes,No,One year,Yes,Credit card (automatic),669.99,8222.95,No
+PUNE_GYM_1364,Male,0,No,Yes,54,Yes,Yes,DSL,Yes,No,No,Yes,No,No,Month-to-month,No,Credit card (automatic),2370.19,128454.98,Yes
+PUNE_GYM_1365,Male,0,No,Yes,52,Yes,No phone service,No,No internet service,No internet service,Yes,Yes,No internet service,No internet service,Month-to-month,Yes,Bank transfer (automatic),2718.95,141555.34,Yes
+PUNE_GYM_1366,Female,0,Yes,Yes,24,Yes,Yes,DSL,No internet service,No internet service,Yes,No internet service,Yes,No internet service,Month-to-month,No,Credit card (automatic),3480.82,83973.45,Yes
+PUNE_GYM_1367,Female,0,No,Yes,29,Yes,No,DSL,Yes,No internet service,Yes,No internet service,No,Yes,Month-to-month,No,Credit card (automatic),2568.47,74645.72,No
+PUNE_GYM_1368,Male,1,Yes,No,43,No,No,Fiber optic,No,No internet service,Yes,No internet service,Yes,No,One year,Yes,Credit card (automatic),1272.35,55074.54,Yes
+PUNE_GYM_1369,Male,1,Yes,No,25,No,No phone service,Fiber optic,Yes,Yes,No internet service,No internet service,Yes,No internet service,Two year,Yes,Credit card (automatic),913.74,23003.72,No
+PUNE_GYM_1370,Female,0,No,No,36,Yes,Yes,No,Yes,No,No,No,No,Yes,Two year,No,Bank transfer (automatic),2458.66,88980.99,No
+PUNE_GYM_1371,Female,0,Yes,No,58,Yes,Yes,Fiber optic,No internet service,No internet service,No,No internet service,No,No internet service,One year,Yes,Electronic check,2117.23,123125.34,No
+PUNE_GYM_1372,Female,0,No,No,60,Yes,Yes,Fiber optic,No internet service,No internet service,No,No internet service,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic),3207.52,192682.91,No
+PUNE_GYM_1373,Female,0,Yes,Yes,26,Yes,No,DSL,Yes,No,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check,2707.16,70542.29,No
+PUNE_GYM_1374,Male,0,No,Yes,38,Yes,Yes,DSL,No,Yes,No,Yes,Yes,No,Month-to-month,No,Electronic check,2078.25,79221.98,Yes
+PUNE_GYM_1375,Female,0,Yes,Yes,1,Yes,No phone service,No,Yes,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Electronic check,1770.41,2152.42,Yes
+PUNE_GYM_1376,Female,0,No,Yes,20,No,No,Fiber optic,Yes,Yes,No,Yes,Yes,Yes,Month-to-month,No,Electronic check,1772.69,35707.78,No
+PUNE_GYM_1377,Male,0,No,No,55,Yes,No,No,No,Yes,Yes,Yes,Yes,No internet service,One year,No,Bank transfer (automatic),1256.28,69293.84,No
+PUNE_GYM_1378,Female,0,No,Yes,28,Yes,Yes,Fiber optic,Yes,Yes,No internet service,Yes,No internet service,No internet service,Two year,No,Mailed check,650.25,18537.96,No
+PUNE_GYM_1379,Male,0,No,Yes,16,Yes,No phone service,Fiber optic,Yes,Yes,No,Yes,No internet service,Yes,Month-to-month,No,Bank transfer (automatic),2267.24,36542.97,No
+PUNE_GYM_1380,Female,0,Yes,No,47,Yes,No,DSL,No internet service,No internet service,Yes,No,No internet service,Yes,One year,No,Mailed check,1216.0,57318.32,No
+PUNE_GYM_1381,Female,0,No,Yes,17,No,No,Fiber optic,No,No internet service,Yes,No internet service,No,No,Month-to-month,No,Bank transfer (automatic),1204.15,20632.15,Yes
+PUNE_GYM_1382,Female,0,Yes,Yes,40,Yes,Yes,Fiber optic,No internet service,Yes,Yes,Yes,Yes,No,One year,Yes,Bank transfer (automatic),963.61,38927.38,No
+PUNE_GYM_1383,Male,0,Yes,No,28,Yes,Yes,DSL,No internet service,Yes,No internet service,No internet service,Yes,No,One year,Yes,Bank transfer (automatic),1149.83,32685.11,No
+PUNE_GYM_1384,Male,0,Yes,Yes,58,Yes,No phone service,Fiber optic,No,No,No internet service,Yes,Yes,No,Month-to-month,Yes,Electronic check,692.19,40340.26,Yes
+PUNE_GYM_1385,Female,0,No,Yes,12,Yes,Yes,Fiber optic,No,No,No,No,No internet service,Yes,Month-to-month,No,Bank transfer (automatic),2555.27,31072.5,Yes
+PUNE_GYM_1386,Male,0,Yes,Yes,27,Yes,No phone service,Fiber optic,Yes,No,Yes,Yes,No internet service,No internet service,Two year,No,Mailed check,1764.05,47764.39,Yes
+PUNE_GYM_1387,Male,0,Yes,Yes,54,Yes,No,DSL,No internet service,No internet service,No,No internet service,No internet service,No internet service,One year,No,Mailed check,2228.42,120587.31,No
+PUNE_GYM_1388,Male,0,Yes,Yes,53,Yes,No phone service,DSL,No,No,No,No internet service,No internet service,No internet service,Two year,Yes,Mailed check,2447.18,130003.22,No
+PUNE_GYM_1389,Male,0,No,No,42,Yes,No phone service,DSL,No internet service,No internet service,Yes,No,No internet service,No,One year,Yes,Electronic check,3420.21,143856.32,No
+PUNE_GYM_1390,Male,0,No,No,59,Yes,No phone service,DSL,No internet service,No internet service,No,No internet service,No,Yes,Two year,Yes,Bank transfer (automatic),797.97,47392.06,No
+PUNE_GYM_1391,Male,1,Yes,No,47,Yes,No,DSL,No,No internet service,No internet service,No internet service,No internet service,Yes,Month-to-month,Yes,Bank transfer (automatic),1811.96,85615.17,No
+PUNE_GYM_1392,Female,0,No,No,30,Yes,Yes,DSL,Yes,No internet service,No,Yes,Yes,Yes,Month-to-month,Yes,Credit card (automatic),1313.1,39870.78,Yes
+PUNE_GYM_1393,Female,0,No,No,41,Yes,No,Fiber optic,No internet service,No,Yes,No internet service,No internet service,No internet service,Month-to-month,No,Electronic check,1982.46,81421.08,No
+PUNE_GYM_1394,Male,0,Yes,No,34,Yes,Yes,Fiber optic,No,Yes,No internet service,Yes,Yes,No,Month-to-month,Yes,Mailed check,3269.37,111367.32,Yes
+PUNE_GYM_1395,Female,0,Yes,Yes,37,Yes,No phone service,DSL,Yes,Yes,No internet service,No,No internet service,Yes,Month-to-month,No,Mailed check,2699.55,100375.0,Yes
+PUNE_GYM_1396,Female,0,No,No,6,Yes,No phone service,Fiber optic,No internet service,Yes,No,No internet service,No internet service,No,One year,No,Bank transfer (automatic),2519.65,15326.07,Yes
+PUNE_GYM_1397,Female,1,Yes,No,7,Yes,No phone service,No,No,No,No,Yes,Yes,Yes,One year,No,Mailed check,1879.61,13534.35,No
+PUNE_GYM_1398,Female,0,No,Yes,32,Yes,No phone service,DSL,No internet service,Yes,No internet service,No internet service,Yes,No,Month-to-month,Yes,Bank transfer (automatic),2546.23,81680.74,No
+PUNE_GYM_1399,Male,0,No,Yes,32,Yes,No phone service,DSL,No,No,No,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic),693.89,22447.03,No
+PUNE_GYM_1400,Female,0,No,No,53,Yes,Yes,Fiber optic,No,No,Yes,No,Yes,No,Month-to-month,No,Credit card (automatic),2300.09,122081.28,Yes
+PUNE_GYM_1401,Female,0,No,Yes,25,Yes,Yes,Fiber optic,No internet service,No,No,Yes,No,Yes,Month-to-month,Yes,Electronic check,2205.95,55591.27,Yes
+PUNE_GYM_1402,Male,0,No,No,33,Yes,No phone service,Fiber optic,No internet service,Yes,No,No internet service,Yes,Yes,One year,Yes,Bank transfer (automatic),1605.26,53426.64,No
+PUNE_GYM_1403,Male,0,No,Yes,55,Yes,No,DSL,No,Yes,No internet service,Yes,No internet service,No,One year,No,Bank transfer (automatic),1184.39,65360.22,No
+PUNE_GYM_1404,Female,0,Yes,No,58,Yes,No,DSL,Yes,Yes,No,No internet service,No internet service,No,Month-to-month,No,Bank transfer (automatic),2941.91,171060.22,No
+PUNE_GYM_1405,Female,1,Yes,Yes,7,No,No phone service,No,No internet service,No internet service,No,No,No,No internet service,Month-to-month,No,Credit card (automatic),756.2,5536.7,Yes
+PUNE_GYM_1406,Female,0,No,Yes,52,Yes,Yes,Fiber optic,No,No,No,Yes,Yes,No,One year,No,Bank transfer (automatic),802.05,41846.21,Yes
+PUNE_GYM_1407,Female,0,No,No,57,Yes,No,Fiber optic,No,No internet service,Yes,No internet service,No internet service,Yes,Month-to-month,No,Electronic check,1877.51,107421.3,No
+PUNE_GYM_1408,Female,0,No,No,12,Yes,No,Fiber optic,Yes,No,No,No internet service,No,Yes,Month-to-month,Yes,Electronic check,1332.41,16327.5,Yes
+PUNE_GYM_1409,Female,0,Yes,No,16,Yes,No,DSL,Yes,Yes,Yes,No internet service,No internet service,No,One year,No,Mailed check,2761.81,44398.71,Yes
+PUNE_GYM_1410,Male,0,No,No,16,Yes,No phone service,No,Yes,No,Yes,Yes,No,No internet service,Month-to-month,Yes,Electronic check,2439.15,39227.6,No
+PUNE_GYM_1411,Female,0,Yes,No,43,Yes,No,Fiber optic,No internet service,No,Yes,Yes,No,No,Month-to-month,Yes,Mailed check,2840.35,122625.3,No
+PUNE_GYM_1412,Female,0,No,Yes,53,No,No,DSL,No,No internet service,Yes,Yes,Yes,Yes,Month-to-month,No,Electronic check,1541.57,82148.21,No
+PUNE_GYM_1413,Male,0,No,No,36,No,No,Fiber optic,No,No,No internet service,No,No,Yes,Two year,No,Mailed check,2747.5,99333.92,Yes
+PUNE_GYM_1414,Male,0,Yes,No,13,Yes,No,DSL,No,Yes,Yes,No internet service,No internet service,No internet service,Two year,Yes,Bank transfer (automatic),3100.68,40460.05,Yes
+PUNE_GYM_1415,Male,0,Yes,Yes,7,Yes,Yes,No,Yes,No,No,No internet service,No internet service,No,Month-to-month,No,Credit card (automatic),1601.3,11611.17,Yes
+PUNE_GYM_1416,Male,0,No,Yes,36,Yes,No phone service,Fiber optic,No,No,Yes,No,Yes,Yes,Month-to-month,Yes,Credit card (automatic),1585.7,57271.02,Yes
+PUNE_GYM_1417,Female,1,No,No,47,No,No phone service,Fiber optic,No internet service,No,No,No,Yes,Yes,Month-to-month,No,Credit card (automatic),3209.86,151354.38,Yes
+PUNE_GYM_1418,Female,0,No,Yes,51,No,Yes,No,Yes,No internet service,Yes,Yes,No,Yes,Month-to-month,No,Bank transfer (automatic),744.39,38084.73,No
+PUNE_GYM_1419,Female,0,Yes,Yes,9,Yes,Yes,No,Yes,No,No internet service,Yes,Yes,No,Month-to-month,Yes,Credit card (automatic),1615.55,14780.81,Yes
+PUNE_GYM_1420,Female,1,Yes,No,32,Yes,No phone service,DSL,Yes,No,Yes,Yes,No internet service,No,One year,Yes,Electronic check,944.15,30484.26,No
+PUNE_GYM_1421,Female,0,Yes,Yes,11,Yes,No,DSL,Yes,No internet service,Yes,Yes,No internet service,No internet service,Month-to-month,No,Mailed check,684.04,7954.12,Yes
+PUNE_GYM_1422,Female,1,Yes,Yes,8,Yes,No,Fiber optic,No internet service,No internet service,No internet service,Yes,Yes,Yes,Month-to-month,No,Bank transfer (automatic),927.32,7825.05,Yes
+PUNE_GYM_1423,Male,0,Yes,No,33,Yes,No phone service,DSL,No,No internet service,Yes,Yes,Yes,Yes,Month-to-month,No,Credit card (automatic),1850.61,61320.13,No
+PUNE_GYM_1424,Female,0,Yes,No,23,Yes,No,DSL,No internet service,No internet service,No,No,Yes,No internet service,Month-to-month,Yes,Electronic check,2592.17,59946.13,Yes
+PUNE_GYM_1425,Male,0,No,Yes,25,Yes,Yes,DSL,No,Yes,Yes,No,No,Yes,Month-to-month,No,Electronic check,1438.92,36407.24,Yes
+PUNE_GYM_1426,Male,0,No,Yes,56,Yes,No,Fiber optic,No internet service,Yes,Yes,No,No,No internet service,Month-to-month,No,Bank transfer (automatic),3064.06,171694.64,Yes
+PUNE_GYM_1427,Female,0,Yes,No,8,Yes,No,Fiber optic,Yes,No,Yes,No internet service,No internet service,No internet service,One year,No,Bank transfer (automatic),1869.09,15373.59,Yes
+PUNE_GYM_1428,Male,0,No,Yes,45,No,No,Fiber optic,Yes,Yes,No internet service,No internet service,No,Yes,One year,No,Credit card (automatic),3407.86,153832.46,No
+PUNE_GYM_1429,Female,0,No,Yes,22,Yes,No phone service,Fiber optic,No internet service,No,Yes,Yes,No,No,Month-to-month,Yes,Mailed check,3367.05,74187.93,No
+PUNE_GYM_1430,Male,0,Yes,Yes,59,Yes,Yes,Fiber optic,No internet service,Yes,Yes,No,No,No,One year,Yes,Credit card (automatic),2842.5,167825.73,Yes
+PUNE_GYM_1431,Female,0,No,No,4,Yes,No,Fiber optic,No,No internet service,No,No internet service,No,No,Month-to-month,Yes,Credit card (automatic),3303.98,13453.73,Yes
+PUNE_GYM_1432,Male,1,Yes,Yes,40,Yes,No phone service,Fiber optic,No internet service,No internet service,Yes,No internet service,No internet service,No,Month-to-month,No,Bank transfer (automatic),2650.58,106158.31,Yes
+PUNE_GYM_1433,Female,0,Yes,Yes,3,Yes,No,Fiber optic,No internet service,Yes,Yes,No,Yes,Yes,One year,No,Credit card (automatic),3197.19,9883.28,No
+PUNE_GYM_1434,Female,0,No,No,29,Yes,Yes,DSL,No,Yes,Yes,No internet service,No internet service,No internet service,Month-to-month,No,Credit card (automatic),1285.77,37678.81,No
+PUNE_GYM_1435,Female,0,Yes,Yes,41,Yes,No,Fiber optic,No,No,Yes,No internet service,No,No internet service,One year,Yes,Mailed check,1601.72,65997.28,Yes
+PUNE_GYM_1436,Female,0,Yes,Yes,29,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,One year,Yes,Electronic check,2783.5,80900.07,Yes
+PUNE_GYM_1437,Female,1,Yes,No,34,Yes,No,Fiber optic,No internet service,No,No,No internet service,Yes,No,Two year,Yes,Electronic check,1831.23,62623.74,No
+PUNE_GYM_1438,Male,0,Yes,No,34,Yes,Yes,Fiber optic,No,No internet service,No internet service,No,Yes,No internet service,Two year,Yes,Mailed check,3028.25,103334.44,No
+PUNE_GYM_1439,Male,0,Yes,No,28,Yes,No,DSL,Yes,No internet service,Yes,No internet service,No internet service,Yes,Month-to-month,No,Electronic check,3145.15,88537.18,No
+PUNE_GYM_1440,Male,0,Yes,No,13,Yes,Yes,Fiber optic,Yes,No internet service,No internet service,No,Yes,Yes,Two year,Yes,Credit card (automatic),1469.22,19258.58,No
+PUNE_GYM_1441,Female,0,Yes,Yes,15,Yes,No,DSL,Yes,No internet service,No internet service,No internet service,No internet service,No,One year,Yes,Mailed check,2988.01,45197.08,No
+PUNE_GYM_1442,Male,0,Yes,Yes,60,Yes,No,No,No internet service,No,Yes,No internet service,No internet service,Yes,One year,No,Mailed check,1047.37,63306.77,No
+PUNE_GYM_1443,Female,0,No,No,23,Yes,No phone service,DSL,Yes,No internet service,No,No,No,No internet service,Month-to-month,Yes,Bank transfer (automatic),1569.17,36391.54,No
+PUNE_GYM_1444,Female,0,No,No,44,Yes,No phone service,DSL,No internet service,No internet service,No,No internet service,No,No internet service,Two year,No,Electronic check,2102.1,92737.12,No
+PUNE_GYM_1445,Male,0,No,Yes,26,Yes,Yes,No,No internet service,No internet service,Yes,No,Yes,Yes,Month-to-month,No,Bank transfer (automatic),1256.69,32842.24,No
+PUNE_GYM_1446,Male,0,Yes,No,4,Yes,No,DSL,Yes,No internet service,Yes,No,Yes,No internet service,One year,No,Credit card (automatic),2279.88,9566.23,No
+PUNE_GYM_1447,Female,1,Yes,Yes,26,Yes,Yes,Fiber optic,No,Yes,No,No internet service,No,Yes,Month-to-month,No,Mailed check,2278.22,59491.42,Yes
+PUNE_GYM_1448,Male,1,No,No,40,Yes,No phone service,Fiber optic,No internet service,No,Yes,Yes,No internet service,No internet service,One year,No,Credit card (automatic),1200.02,48470.75,No
+PUNE_GYM_1449,Female,0,No,Yes,9,Yes,Yes,No,Yes,No,Yes,No internet service,No internet service,No,Month-to-month,Yes,Electronic check,2907.36,26605.34,Yes
+PUNE_GYM_1450,Female,0,No,No,55,No,Yes,Fiber optic,No internet service,No internet service,Yes,Yes,No,No internet service,Month-to-month,Yes,Bank transfer (automatic),2431.77,133998.01,No
+PUNE_GYM_1451,Female,0,Yes,No,5,Yes,No phone service,Fiber optic,No,Yes,No,Yes,No internet service,No,Month-to-month,No,Electronic check,1521.51,7937.12,Yes
+PUNE_GYM_1452,Female,0,No,Yes,56,Yes,No,DSL,No,No,No internet service,No internet service,No,No,Month-to-month,Yes,Credit card (automatic),1273.34,71417.91,Yes
+PUNE_GYM_1453,Female,1,No,No,32,Yes,Yes,DSL,Yes,No,No internet service,Yes,No,Yes,Month-to-month,No,Bank transfer (automatic),3148.38,100953.45,Yes
+PUNE_GYM_1454,Male,0,Yes,Yes,20,Yes,No phone service,Fiber optic,No internet service,No internet service,Yes,No,Yes,No,Month-to-month,Yes,Electronic check,3023.65,60857.11,Yes
+PUNE_GYM_1455,Male,0,No,Yes,50,Yes,No,DSL,No internet service,No internet service,No,No,Yes,No internet service,One year,Yes,Credit card (automatic),1266.31,63686.66,No
+PUNE_GYM_1456,Female,0,Yes,Yes,11,Yes,No phone service,Fiber optic,No internet service,No,Yes,Yes,No,No internet service,One year,Yes,Electronic check,703.26,7977.21,No
+PUNE_GYM_1457,Female,0,Yes,Yes,15,No,Yes,DSL,No internet service,No,No,No,Yes,No,One year,Yes,Mailed check,2933.14,44420.54,No
+PUNE_GYM_1458,Male,0,Yes,Yes,32,Yes,No,Fiber optic,Yes,Yes,Yes,No internet service,No,Yes,Month-to-month,Yes,Bank transfer (automatic),2384.97,76513.37,Yes
+PUNE_GYM_1459,Male,0,No,No,28,Yes,No,Fiber optic,No,No,No,No,No internet service,No,Month-to-month,Yes,Bank transfer (automatic),892.56,25276.19,Yes
+PUNE_GYM_1460,Female,0,No,No,22,Yes,No phone service,DSL,Yes,No,No,Yes,No internet service,No internet service,Month-to-month,Yes,Bank transfer (automatic),2303.34,50962.49,Yes
+PUNE_GYM_1461,Male,0,Yes,Yes,41,Yes,No phone service,DSL,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check,1911.33,78600.86,No
+PUNE_GYM_1462,Female,0,No,No,17,Yes,No phone service,DSL,No internet service,No,Yes,No,No internet service,No,Two year,No,Bank transfer (automatic),2846.2,48867.27,Yes
+PUNE_GYM_1463,Male,0,No,Yes,59,Yes,No,Fiber optic,No,No internet service,No internet service,No internet service,No,No,Month-to-month,No,Mailed check,1206.35,71553.32,Yes
+PUNE_GYM_1464,Female,0,No,No,26,Yes,No,Fiber optic,No internet service,No,No internet service,Yes,No internet service,No,Month-to-month,Yes,Bank transfer (automatic),1914.15,50083.58,No
+PUNE_GYM_1465,Male,0,No,No,44,Yes,Yes,DSL,Yes,No,No,No,No internet service,No internet service,Two year,Yes,Electronic check,1053.11,46641.05,Yes
+PUNE_GYM_1466,Female,0,Yes,No,7,Yes,No,Fiber optic,Yes,No,Yes,No internet service,No internet service,No internet service,Two year,No,Electronic check,3376.83,23801.53,Yes
+PUNE_GYM_1467,Male,0,No,No,42,Yes,Yes,Fiber optic,No,Yes,No,No internet service,No internet service,No internet service,Two year,No,Electronic check,2858.34,120299.15,No
+PUNE_GYM_1468,Male,0,Yes,Yes,57,Yes,No phone service,Fiber optic,Yes,No internet service,No,No,No,Yes,One year,Yes,Electronic check,2736.5,156349.61,No
+PUNE_GYM_1469,Female,0,Yes,Yes,26,Yes,No phone service,DSL,Yes,Yes,No,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check,2601.6,68111.43,Yes
+PUNE_GYM_1470,Male,0,No,No,25,Yes,No,No,Yes,No,Yes,No internet service,Yes,No internet service,Month-to-month,No,Credit card (automatic),1827.68,46118.59,Yes
+PUNE_GYM_1471,Female,1,Yes,No,10,Yes,No phone service,No,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,No,Credit card (automatic),3277.52,32995.36,Yes
+PUNE_GYM_1472,Male,0,No,Yes,59,Yes,No phone service,DSL,No internet service,No internet service,No,Yes,Yes,Yes,Month-to-month,No,Electronic check,811.46,48149.72,Yes
+PUNE_GYM_1473,Female,0,No,No,45,Yes,No,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Credit card (automatic),2929.45,131958.42,Yes
+PUNE_GYM_1474,Male,0,Yes,Yes,19,Yes,Yes,Fiber optic,No,Yes,No,Yes,Yes,Yes,Month-to-month,No,Credit card (automatic),1224.17,23400.1,Yes
+PUNE_GYM_1475,Female,0,Yes,Yes,11,Yes,No,DSL,No,Yes,Yes,Yes,Yes,Yes,Month-to-month,No,Bank transfer (automatic),1539.68,17224.57,No
+PUNE_GYM_1476,Male,0,Yes,Yes,13,No,Yes,Fiber optic,Yes,No internet service,Yes,Yes,No,Yes,Month-to-month,No,Mailed check,2106.35,27694.64,No
+PUNE_GYM_1477,Female,0,Yes,No,53,Yes,No,No,No,Yes,No internet service,No,Yes,No,Month-to-month,No,Electronic check,2869.7,152299.71,Yes
+PUNE_GYM_1478,Male,0,No,Yes,8,Yes,No,Fiber optic,Yes,No internet service,No,Yes,No internet service,No,Month-to-month,Yes,Credit card (automatic),3031.75,24611.11,No
+PUNE_GYM_1479,Female,0,No,No,40,Yes,No phone service,No,No,No,No internet service,No internet service,Yes,No,Month-to-month,No,Credit card (automatic),2292.82,92094.15,No
+PUNE_GYM_1480,Female,0,No,Yes,4,No,No,DSL,No,No,No internet service,No,No,No,One year,No,Electronic check,1768.8,7294.85,Yes
+PUNE_GYM_1481,Female,0,Yes,No,47,Yes,No,DSL,Yes,Yes,No,No internet service,Yes,No internet service,One year,No,Bank transfer (automatic),3344.86,157611.79,Yes
+PUNE_GYM_1482,Male,0,Yes,No,31,Yes,Yes,Fiber optic,Yes,No,No,Yes,No internet service,Yes,Month-to-month,No,Electronic check,1314.91,40944.45,Yes
+PUNE_GYM_1483,Female,0,Yes,No,28,Yes,No phone service,Fiber optic,No internet service,No,Yes,Yes,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic),2928.97,82328.86,No
+PUNE_GYM_1484,Male,0,No,Yes,11,Yes,Yes,Fiber optic,Yes,Yes,No,No internet service,No,Yes,Month-to-month,Yes,Credit card (automatic),2374.94,26546.05,No
+PUNE_GYM_1485,Female,0,Yes,Yes,43,Yes,Yes,Fiber optic,Yes,No,No internet service,No internet service,No,Yes,One year,No,Mailed check,1693.0,73113.8,No
+PUNE_GYM_1486,Male,0,No,No,1,No,No phone service,Fiber optic,No internet service,Yes,No internet service,No internet service,No,No internet service,Month-to-month,No,Bank transfer (automatic),603.97,1067.16,Yes
+PUNE_GYM_1487,Female,0,Yes,No,49,Yes,No phone service,DSL,Yes,No internet service,No,No,No,No,Month-to-month,Yes,Bank transfer (automatic),1895.14,92985.26,No
+PUNE_GYM_1488,Male,0,No,No,47,Yes,No phone service,Fiber optic,Yes,No internet service,No internet service,Yes,Yes,No internet service,Two year,No,Electronic check,1402.49,66252.36,No
+PUNE_GYM_1489,Male,0,No,Yes,52,No,No,DSL,No internet service,No internet service,Yes,No internet service,Yes,No internet service,Month-to-month,Yes,Credit card (automatic),902.61,47260.42,No
+PUNE_GYM_1490,Female,0,Yes,Yes,38,Yes,No phone service,DSL,Yes,Yes,No internet service,Yes,No internet service,Yes,Month-to-month,No,Mailed check,817.96,31446.62,Yes
+PUNE_GYM_1491,Male,0,Yes,Yes,24,Yes,No phone service,Fiber optic,Yes,Yes,Yes,No internet service,No,Yes,Month-to-month,Yes,Electronic check,1607.92,39023.44,Yes
+PUNE_GYM_1492,Male,0,No,Yes,54,Yes,No phone service,No,No internet service,No,No internet service,Yes,No,Yes,Month-to-month,Yes,Electronic check,2382.8,129061.54,Yes
+PUNE_GYM_1493,Female,0,No,No,60,Yes,Yes,Fiber optic,No internet service,No,Yes,No,Yes,No,Month-to-month,No,Mailed check,3028.81,182144.71,Yes
+PUNE_GYM_1494,Male,0,Yes,No,57,Yes,Yes,Fiber optic,No,No,Yes,Yes,No,No internet service,Two year,Yes,Credit card (automatic),1132.33,64758.34,No
+PUNE_GYM_1495,Male,0,Yes,Yes,47,Yes,No,DSL,Yes,No,No,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check,1831.47,86334.09,No
+PUNE_GYM_1496,Male,1,No,Yes,31,Yes,Yes,DSL,No,No,Yes,Yes,No internet service,No,One year,Yes,Electronic check,1736.67,54187.48,No
+PUNE_GYM_1497,Female,0,Yes,No,41,Yes,No,Fiber optic,No,Yes,No,No,No,No internet service,Month-to-month,Yes,Electronic check,2088.84,85963.82,Yes
+PUNE_GYM_1498,Male,1,No,Yes,46,Yes,Yes,Fiber optic,No internet service,Yes,No internet service,No,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic),2947.8,136083.24,Yes
+PUNE_GYM_1499,Female,0,No,Yes,50,Yes,No phone service,DSL,Yes,No internet service,No internet service,Yes,No internet service,Yes,Month-to-month,Yes,Mailed check,2205.57,110453.23,Yes
+PUNE_GYM_1500,Male,0,Yes,Yes,26,No,Yes,Fiber optic,Yes,No internet service,No internet service,No internet service,Yes,No,Month-to-month,No,Mailed check,3055.3,79678.31,Yes
+PUNE_GYM_1501,Male,0,Yes,Yes,49,Yes,No,DSL,No internet service,No internet service,Yes,No,No internet service,Yes,Month-to-month,Yes,Mailed check,2103.8,103415.3,Yes
+PUNE_GYM_1502,Male,1,Yes,Yes,50,No,Yes,No,No,No internet service,No internet service,No,No,No,Month-to-month,Yes,Electronic check,2351.16,118005.19,Yes
+PUNE_GYM_1503,Female,0,Yes,Yes,5,Yes,No phone service,No,No internet service,Yes,No internet service,Yes,No,Yes,Two year,No,Credit card (automatic),1868.41,9813.79,No
+PUNE_GYM_1504,Male,0,Yes,No,20,Yes,No,Fiber optic,Yes,Yes,No,No,No internet service,No internet service,Month-to-month,No,Electronic check,2986.98,59974.01,Yes
+PUNE_GYM_1505,Male,0,No,Yes,52,Yes,No phone service,Fiber optic,No internet service,Yes,No,No,No,No,Month-to-month,Yes,Bank transfer (automatic),3279.1,170640.04,Yes
+PUNE_GYM_1506,Female,0,No,Yes,41,Yes,No phone service,Fiber optic,Yes,No,No internet service,No internet service,Yes,No,Month-to-month,No,Electronic check,2453.52,100862.97,Yes
+PUNE_GYM_1507,Male,0,Yes,No,11,Yes,No,Fiber optic,No,No,No internet service,No internet service,No internet service,Yes,Month-to-month,No,Electronic check,2980.27,33040.71,Yes
+PUNE_GYM_1508,Female,0,Yes,No,56,Yes,No phone service,Fiber optic,Yes,No internet service,Yes,No internet service,No internet service,No,Month-to-month,Yes,Electronic check,771.11,43676.75,Yes
+PUNE_GYM_1509,Female,0,Yes,No,54,Yes,No phone service,Fiber optic,No,No,Yes,Yes,No internet service,No internet service,Month-to-month,Yes,Bank transfer (automatic),3227.72,174569.3,Yes
+PUNE_GYM_1510,Male,0,No,Yes,33,Yes,Yes,No,No,Yes,No internet service,No,No,No internet service,Month-to-month,No,Mailed check,1147.88,38102.33,Yes
+PUNE_GYM_1511,Female,1,Yes,No,50,Yes,No phone service,No,Yes,No internet service,No,Yes,No,No internet service,Month-to-month,Yes,Credit card (automatic),1343.91,67441.65,Yes
+PUNE_GYM_1512,Male,1,Yes,Yes,38,Yes,No phone service,Fiber optic,Yes,No internet service,No internet service,No,No internet service,Yes,One year,No,Credit card (automatic),754.66,28935.85,No
+PUNE_GYM_1513,Female,0,No,Yes,27,Yes,No phone service,Fiber optic,No,No,Yes,No,No,No,Month-to-month,No,Bank transfer (automatic),3399.66,92219.44,Yes
+PUNE_GYM_1514,Female,0,No,Yes,34,Yes,No phone service,Fiber optic,No internet service,No internet service,No,No,No,Yes,Month-to-month,No,Mailed check,3070.83,104540.63,No
+PUNE_GYM_1515,Male,1,Yes,No,15,Yes,No,Fiber optic,Yes,No,No,No internet service,No internet service,No internet service,One year,No,Mailed check,3248.24,48950.2,No
+PUNE_GYM_1516,Female,0,Yes,No,32,Yes,Yes,DSL,No,No,Yes,Yes,No internet service,No,Two year,No,Bank transfer (automatic),3056.93,98308.29,Yes
+PUNE_GYM_1517,Female,0,Yes,No,58,Yes,No phone service,DSL,No,No internet service,No internet service,Yes,No,No internet service,One year,No,Electronic check,1990.64,115618.36,Yes
+PUNE_GYM_1518,Female,1,No,No,21,Yes,No phone service,No,No internet service,No,No internet service,No,No internet service,No,Month-to-month,Yes,Mailed check,3279.84,69273.68,Yes
+PUNE_GYM_1519,Female,0,Yes,No,46,Yes,No,DSL,Yes,No,No internet service,Yes,No internet service,No,One year,No,Credit card (automatic),3411.47,157170.18,No
+PUNE_GYM_1520,Female,0,Yes,Yes,5,Yes,No phone service,DSL,No,No,Yes,No internet service,No internet service,Yes,One year,Yes,Bank transfer (automatic),2057.44,10619.91,No
+PUNE_GYM_1521,Male,0,Yes,Yes,6,Yes,No,DSL,No internet service,No,No,Yes,No internet service,No,Month-to-month,No,Credit card (automatic),1109.31,6795.68,Yes
+PUNE_GYM_1522,Female,1,No,Yes,38,Yes,Yes,Fiber optic,No,No internet service,Yes,No,No,No internet service,Two year,Yes,Electronic check,2510.01,95602.94,No
+PUNE_GYM_1523,Male,1,No,Yes,22,Yes,Yes,DSL,Yes,Yes,No internet service,No internet service,No internet service,No,Month-to-month,Yes,Bank transfer (automatic),3428.77,75733.29,No
+PUNE_GYM_1524,Female,1,Yes,No,18,Yes,No phone service,DSL,No internet service,Yes,Yes,No internet service,Yes,No internet service,Two year,Yes,Credit card (automatic),3129.23,56518.82,No
+PUNE_GYM_1525,Male,0,Yes,No,14,Yes,No phone service,Fiber optic,No,No,No,No,No internet service,Yes,One year,No,Credit card (automatic),3099.26,43706.39,No
+PUNE_GYM_1526,Male,1,No,Yes,10,Yes,No phone service,Fiber optic,No internet service,No,Yes,Yes,Yes,No internet service,One year,Yes,Electronic check,3308.07,33268.6,No
+PUNE_GYM_1527,Female,0,No,No,46,Yes,No,Fiber optic,Yes,No,No internet service,No,No internet service,No,One year,Yes,Bank transfer (automatic),3192.46,147213.2,Yes
+PUNE_GYM_1528,Female,0,No,No,13,Yes,No phone service,No,No internet service,Yes,No,Yes,Yes,No internet service,Month-to-month,No,Mailed check,2851.22,37527.6,Yes
+PUNE_GYM_1529,Female,0,No,Yes,31,Yes,No phone service,Fiber optic,Yes,No,Yes,Yes,Yes,No internet service,Month-to-month,Yes,Mailed check,2682.99,83306.89,Yes
+PUNE_GYM_1530,Male,0,No,Yes,30,Yes,Yes,Fiber optic,No,No internet service,Yes,No internet service,No internet service,No,Two year,Yes,Credit card (automatic),1367.82,41221.25,Yes
+PUNE_GYM_1531,Female,0,No,No,3,Yes,No phone service,Fiber optic,Yes,No internet service,No,No,No internet service,No internet service,One year,No,Electronic check,2401.89,7643.44,Yes
+PUNE_GYM_1532,Male,0,No,No,30,Yes,Yes,DSL,No,No internet service,No,No internet service,No internet service,No,Two year,Yes,Credit card (automatic),2112.32,63722.22,No
+PUNE_GYM_1533,Male,0,No,Yes,6,Yes,No phone service,Fiber optic,No,Yes,No internet service,No,Yes,Yes,Two year,Yes,Electronic check,3099.64,18729.32,Yes
+PUNE_GYM_1534,Male,0,No,Yes,29,Yes,Yes,No,Yes,No,No,No,No,No internet service,Two year,No,Mailed check,2025.97,59047.67,No
+PUNE_GYM_1535,Female,0,Yes,Yes,8,Yes,No phone service,No,No,No,No internet service,No internet service,No,Yes,One year,Yes,Credit card (automatic),970.45,7947.5,No
+PUNE_GYM_1536,Female,0,Yes,No,44,Yes,Yes,DSL,No internet service,No,Yes,No,No internet service,No internet service,Month-to-month,Yes,Credit card (automatic),614.42,27214.12,Yes
+PUNE_GYM_1537,Male,0,Yes,Yes,45,Yes,No,DSL,No,Yes,No internet service,No,No,No internet service,Month-to-month,Yes,Electronic check,2565.83,115938.61,Yes
+PUNE_GYM_1538,Male,0,No,Yes,43,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,No,Yes,One year,Yes,Bank transfer (automatic),2194.73,94778.01,No
+PUNE_GYM_1539,Female,0,Yes,No,44,Yes,Yes,Fiber optic,No internet service,Yes,No,No,No internet service,No internet service,Month-to-month,No,Electronic check,1559.79,69009.25,Yes
+PUNE_GYM_1540,Male,0,No,No,33,Yes,Yes,DSL,No internet service,Yes,Yes,No,Yes,No internet service,Month-to-month,No,Bank transfer (automatic),1090.02,36166.23,No
+PUNE_GYM_1541,Female,0,No,No,17,Yes,No phone service,Fiber optic,No,No internet service,No,No internet service,No internet service,Yes,Month-to-month,No,Mailed check,1953.47,33356.42,No
+PUNE_GYM_1542,Male,0,Yes,No,48,Yes,No phone service,Fiber optic,No,Yes,Yes,No internet service,No,No internet service,Two year,No,Credit card (automatic),890.83,43208.17,Yes
+PUNE_GYM_1543,Female,0,No,No,11,Yes,No phone service,DSL,Yes,Yes,Yes,No,Yes,No,Two year,Yes,Credit card (automatic),1574.71,17424.16,Yes
+PUNE_GYM_1544,Male,1,Yes,Yes,13,Yes,No,Fiber optic,No internet service,Yes,Yes,Yes,No,No internet service,One year,No,Electronic check,1699.71,22351.47,No
+PUNE_GYM_1545,Female,0,Yes,Yes,50,Yes,No,No,Yes,No,Yes,Yes,Yes,No internet service,Month-to-month,No,Electronic check,1950.29,97725.55,No
+PUNE_GYM_1546,Male,0,Yes,No,11,Yes,Yes,Fiber optic,No,No,No internet service,No internet service,No,No internet service,One year,Yes,Mailed check,1953.2,21813.35,No
+PUNE_GYM_1547,Female,0,No,No,31,No,No,DSL,No internet service,No,Yes,No,No internet service,Yes,One year,Yes,Mailed check,1345.32,41905.12,No
+PUNE_GYM_1548,Female,1,Yes,No,28,Yes,Yes,DSL,Yes,No internet service,No internet service,No,No,No,Month-to-month,Yes,Bank transfer (automatic),3065.61,86061.56,Yes
+PUNE_GYM_1549,Male,0,No,No,44,Yes,Yes,DSL,Yes,No internet service,No,Yes,No,No,Month-to-month,No,Mailed check,1631.08,72207.54,Yes
+PUNE_GYM_1550,Male,1,Yes,No,6,Yes,Yes,Fiber optic,Yes,Yes,No,Yes,Yes,No internet service,Month-to-month,Yes,Mailed check,1265.8,7936.08,Yes
+PUNE_GYM_1551,Female,0,Yes,Yes,41,Yes,No,DSL,Yes,No,No internet service,Yes,No,Yes,One year,Yes,Mailed check,1109.85,45662.12,No
+PUNE_GYM_1552,Male,1,Yes,Yes,16,Yes,No phone service,No,Yes,No internet service,No,No internet service,No internet service,Yes,One year,Yes,Mailed check,1535.48,24958.27,Yes
+PUNE_GYM_1553,Female,0,No,Yes,4,Yes,No,DSL,No internet service,No,No,No,No internet service,No,Month-to-month,No,Bank transfer (automatic),795.9,3366.58,Yes
+PUNE_GYM_1554,Male,1,No,Yes,35,Yes,Yes,Fiber optic,Yes,No internet service,Yes,No internet service,No internet service,Yes,Two year,No,Mailed check,695.43,24613.25,No
+PUNE_GYM_1555,Female,0,No,No,60,Yes,Yes,DSL,No internet service,No internet service,Yes,No,Yes,No internet service,Month-to-month,No,Bank transfer (automatic),2354.91,141653.24,Yes
+PUNE_GYM_1556,Female,0,Yes,Yes,48,Yes,No,DSL,Yes,Yes,Yes,No internet service,Yes,No internet service,Month-to-month,No,Electronic check,2395.53,115194.21,Yes
+PUNE_GYM_1557,Female,0,Yes,No,56,Yes,Yes,Fiber optic,No,Yes,No internet service,No,No,Yes,Month-to-month,No,Credit card (automatic),2135.81,119859.0,No
+PUNE_GYM_1558,Female,0,No,No,59,Yes,Yes,No,No,No internet service,No internet service,Yes,No,No internet service,Month-to-month,No,Electronic check,2810.63,166220.83,No
+PUNE_GYM_1559,Female,0,No,No,26,Yes,No,Fiber optic,Yes,Yes,No,Yes,No,No,Month-to-month,No,Mailed check,713.54,19027.2,Yes
+PUNE_GYM_1560,Female,1,No,Yes,57,Yes,No,DSL,No,No internet service,Yes,Yes,Yes,No internet service,Month-to-month,Yes,Credit card (automatic),3314.32,189227.94,Yes
+PUNE_GYM_1561,Male,1,No,No,12,Yes,No,DSL,No internet service,No internet service,No internet service,No internet service,Yes,Yes,Month-to-month,Yes,Mailed check,875.69,10612.27,Yes
+PUNE_GYM_1562,Male,0,No,Yes,11,Yes,Yes,DSL,Yes,No,No internet service,Yes,No,No,Month-to-month,Yes,Mailed check,2554.67,28336.76,Yes
+PUNE_GYM_1563,Male,0,No,Yes,37,Yes,Yes,No,No internet service,Yes,Yes,No,Yes,No internet service,One year,No,Electronic check,986.85,36772.9,No
+PUNE_GYM_1564,Female,0,Yes,No,25,No,No phone service,No,Yes,Yes,No internet service,No internet service,Yes,No,Month-to-month,No,Mailed check,3151.73,79028.92,No
+PUNE_GYM_1565,Female,0,No,No,18,Yes,No phone service,Fiber optic,No,Yes,Yes,No,No internet service,Yes,Month-to-month,Yes,Electronic check,2081.07,37733.77,No
+PUNE_GYM_1566,Female,0,Yes,No,19,Yes,No,Fiber optic,No internet service,No,No,No internet service,No internet service,No internet service,One year,Yes,Mailed check,838.65,16287.42,Yes
+PUNE_GYM_1567,Female,0,Yes,Yes,23,Yes,No phone service,Fiber optic,No,No,No,No,No,No internet service,Month-to-month,No,Bank transfer (automatic),2388.5,55083.95,No
+PUNE_GYM_1568,Male,0,No,No,55,Yes,Yes,DSL,No,No,No,No,No,No,One year,No,Credit card (automatic),626.42,34662.15,No
+PUNE_GYM_1569,Male,0,No,Yes,38,Yes,No phone service,No,Yes,Yes,Yes,No internet service,No internet service,No internet service,Two year,No,Electronic check,2850.46,108620.54,No
+PUNE_GYM_1570,Female,0,Yes,No,54,Yes,Yes,Fiber optic,No internet service,Yes,No internet service,No internet service,Yes,No internet service,Month-to-month,No,Electronic check,2486.7,134508.03,No
+PUNE_GYM_1571,Male,0,No,No,18,Yes,No,Fiber optic,No,Yes,No,Yes,No,No internet service,Two year,No,Credit card (automatic),1216.61,22395.41,No
+PUNE_GYM_1572,Male,0,No,Yes,26,Yes,No,Fiber optic,Yes,No,No,Yes,No,No internet service,One year,No,Electronic check,1686.78,44128.85,No
+PUNE_GYM_1573,Female,0,Yes,Yes,6,Yes,Yes,DSL,Yes,No,No,No,No,Yes,Two year,No,Credit card (automatic),622.64,4183.76,No
+PUNE_GYM_1574,Male,1,Yes,Yes,4,Yes,No phone service,Fiber optic,Yes,No internet service,No internet service,No,Yes,No internet service,One year,No,Bank transfer (automatic),2611.68,10905.32,Yes
+PUNE_GYM_1575,Female,0,Yes,Yes,44,Yes,No,Fiber optic,No,No,No internet service,No,No internet service,No,Month-to-month,Yes,Mailed check,1535.74,68006.96,No
+PUNE_GYM_1576,Male,0,No,Yes,51,Yes,No,DSL,Yes,No internet service,Yes,No internet service,No,Yes,Two year,No,Bank transfer (automatic),2257.61,115256.87,No
+PUNE_GYM_1577,Female,0,Yes,Yes,29,Yes,No phone service,DSL,No internet service,Yes,No,No internet service,No internet service,No,Month-to-month,No,Mailed check,3374.51,98339.89,Yes
+PUNE_GYM_1578,Female,0,No,No,59,Yes,No phone service,DSL,No internet service,No,No internet service,Yes,No internet service,No,Month-to-month,No,Credit card (automatic),1468.45,86790.05,Yes
+PUNE_GYM_1579,Female,1,Yes,No,34,Yes,Yes,DSL,No,Yes,Yes,No,Yes,No,Month-to-month,Yes,Bank transfer (automatic),3471.69,118151.22,Yes
+PUNE_GYM_1580,Female,0,Yes,Yes,17,Yes,No phone service,Fiber optic,No internet service,Yes,No,Yes,Yes,Yes,Month-to-month,Yes,Mailed check,2434.91,41659.22,Yes
+PUNE_GYM_1581,Male,0,Yes,No,43,Yes,No phone service,DSL,Yes,Yes,No internet service,No internet service,Yes,Yes,Month-to-month,No,Credit card (automatic),1302.06,56166.43,No
+PUNE_GYM_1582,Female,0,No,Yes,43,No,No phone service,DSL,No,Yes,No internet service,No internet service,Yes,Yes,One year,Yes,Mailed check,1866.66,80440.06,No
+PUNE_GYM_1583,Female,1,No,No,53,No,Yes,No,Yes,No,Yes,No internet service,Yes,No internet service,Two year,Yes,Electronic check,2747.31,145822.56,Yes
+PUNE_GYM_1584,Female,1,Yes,No,16,Yes,Yes,Fiber optic,No,Yes,No,Yes,Yes,No,Month-to-month,Yes,Electronic check,1894.79,30516.0,No
+PUNE_GYM_1585,Male,0,Yes,Yes,2,Yes,No,Fiber optic,No,No internet service,No,No internet service,No,Yes,Two year,No,Credit card (automatic),798.67,1971.26,Yes
+PUNE_GYM_1586,Female,0,Yes,Yes,34,Yes,Yes,Fiber optic,Yes,No,No internet service,No,No internet service,No,Two year,No,Mailed check,1088.95,37199.01,No
+PUNE_GYM_1587,Male,0,No,Yes,55,Yes,No,Fiber optic,No internet service,Yes,No,Yes,Yes,Yes,Month-to-month,No,Electronic check,2894.76,159529.05,Yes
+PUNE_GYM_1588,Female,1,Yes,No,8,Yes,No phone service,DSL,No internet service,No,Yes,No internet service,No,Yes,Month-to-month,No,Bank transfer (automatic),2480.28,20336.81,Yes
+PUNE_GYM_1589,Male,0,No,Yes,13,Yes,No,Fiber optic,No,No internet service,No internet service,Yes,No internet service,Yes,One year,No,Mailed check,2252.49,29555.32,Yes
+PUNE_GYM_1590,Male,1,Yes,No,42,Yes,No,DSL,Yes,Yes,No internet service,Yes,Yes,No,One year,No,Mailed check,1086.1,45972.95,No
+PUNE_GYM_1591,Female,0,Yes,Yes,8,Yes,No phone service,Fiber optic,Yes,No internet service,Yes,No internet service,Yes,No internet service,One year,No,Electronic check,3029.5,24723.75,Yes
+PUNE_GYM_1592,Male,0,Yes,No,30,Yes,No,Fiber optic,No,Yes,No internet service,No internet service,No,Yes,One year,Yes,Electronic check,3386.15,101739.56,Yes
+PUNE_GYM_1593,Female,0,Yes,No,32,Yes,Yes,DSL,No internet service,No internet service,No,Yes,No internet service,Yes,Month-to-month,No,Credit card (automatic),718.57,23261.68,No
+PUNE_GYM_1594,Female,0,Yes,Yes,36,Yes,Yes,Fiber optic,Yes,Yes,No,Yes,Yes,Yes,Month-to-month,No,Mailed check,826.29,30186.52,Yes
+PUNE_GYM_1595,Female,0,Yes,No,47,Yes,Yes,Fiber optic,No internet service,No,No internet service,No internet service,No internet service,No internet service,One year,No,Bank transfer (automatic),3165.7,149260.82,No
+PUNE_GYM_1596,Male,0,No,No,30,Yes,Yes,DSL,No internet service,Yes,Yes,No,No,No,Month-to-month,No,Electronic check,2965.1,89293.49,Yes
+PUNE_GYM_1597,Male,0,Yes,Yes,1,Yes,No,DSL,No,No,Yes,Yes,Yes,No,One year,No,Mailed check,2392.01,2549.38,Yes
+PUNE_GYM_1598,Female,0,No,No,43,Yes,No,Fiber optic,No,Yes,No,Yes,No internet service,No,One year,No,Electronic check,3340.4,144097.79,Yes
+PUNE_GYM_1599,Female,0,Yes,Yes,39,Yes,No phone service,No,No internet service,Yes,Yes,No,No,No,One year,No,Credit card (automatic),2474.65,96681.13,No
+PUNE_GYM_1600,Male,0,Yes,Yes,17,Yes,No,DSL,Yes,No internet service,No internet service,No internet service,No,Yes,Two year,No,Mailed check,1226.36,21089.27,Yes
+PUNE_GYM_1601,Female,1,No,Yes,59,Yes,No,DSL,Yes,No internet service,No internet service,No internet service,Yes,No internet service,Month-to-month,Yes,Mailed check,2713.06,160320.74,No
+PUNE_GYM_1602,Female,1,Yes,Yes,20,Yes,No,Fiber optic,No,No internet service,No,No,No internet service,Yes,One year,Yes,Credit card (automatic),2472.56,49730.12,No
+PUNE_GYM_1603,Female,1,No,No,24,Yes,No phone service,Fiber optic,No internet service,Yes,No,No internet service,Yes,No internet service,One year,No,Bank transfer (automatic),3458.66,83423.91,No
+PUNE_GYM_1604,Male,1,No,No,50,Yes,Yes,Fiber optic,Yes,Yes,No,No internet service,Yes,No,Two year,No,Electronic check,1220.3,61435.86,No
+PUNE_GYM_1605,Male,0,Yes,No,22,Yes,No,Fiber optic,Yes,Yes,Yes,Yes,No internet service,No internet service,One year,Yes,Credit card (automatic),2333.87,51733.0,No
+PUNE_GYM_1606,Male,0,No,Yes,29,Yes,No phone service,Fiber optic,No,No,No internet service,Yes,No internet service,Yes,Month-to-month,No,Mailed check,2862.49,83121.06,Yes
+PUNE_GYM_1607,Female,0,No,No,22,Yes,No phone service,No,No internet service,No,No internet service,Yes,No internet service,Yes,Two year,No,Credit card (automatic),1583.05,35153.04,No
+PUNE_GYM_1608,Female,0,Yes,No,44,Yes,No phone service,DSL,Yes,Yes,No internet service,No,No,No,One year,Yes,Mailed check,1701.07,75246.08,Yes
+PUNE_GYM_1609,Female,0,No,Yes,9,Yes,Yes,Fiber optic,No,No internet service,No,No internet service,No,Yes,Month-to-month,No,Credit card (automatic),3174.92,28852.13,Yes
+PUNE_GYM_1610,Male,0,Yes,Yes,37,No,No,DSL,Yes,No internet service,No internet service,No internet service,No internet service,Yes,One year,No,Bank transfer (automatic),1772.17,66048.26,No
+PUNE_GYM_1611,Female,0,Yes,No,10,Yes,No phone service,Fiber optic,Yes,No internet service,Yes,Yes,No,No internet service,Two year,No,Mailed check,2411.73,24546.82,Yes
+PUNE_GYM_1612,Female,0,Yes,Yes,36,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,One year,Yes,Credit card (automatic),3178.79,114791.7,No
+PUNE_GYM_1613,Female,0,Yes,Yes,37,Yes,No phone service,DSL,No,No internet service,No internet service,No,No internet service,No,Month-to-month,Yes,Bank transfer (automatic),1208.5,44839.47,Yes
+PUNE_GYM_1614,Female,0,No,Yes,28,Yes,No phone service,DSL,No internet service,Yes,No,No internet service,Yes,No,One year,No,Bank transfer (automatic),3447.44,96889.26,No
+PUNE_GYM_1615,Male,0,Yes,Yes,28,No,No phone service,No,No,No,No internet service,No,No internet service,Yes,One year,Yes,Electronic check,2635.67,74263.39,Yes
+PUNE_GYM_1616,Male,0,Yes,No,42,Yes,No phone service,Fiber optic,No internet service,No internet service,Yes,No internet service,Yes,No,Month-to-month,Yes,Mailed check,2038.75,85879.28,No
+PUNE_GYM_1617,Female,1,No,Yes,43,Yes,No phone service,DSL,Yes,No,Yes,No,No internet service,No internet service,Month-to-month,Yes,Electronic check,1849.67,79971.06,Yes
+PUNE_GYM_1618,Male,0,Yes,Yes,21,Yes,Yes,No,No internet service,No internet service,Yes,Yes,Yes,No internet service,Month-to-month,No,Bank transfer (automatic),3367.66,70946.12,No
+PUNE_GYM_1619,Male,0,Yes,Yes,24,Yes,No,DSL,Yes,Yes,No internet service,No,No internet service,Yes,One year,Yes,Electronic check,1196.6,29046.44,Yes
+PUNE_GYM_1620,Female,1,No,Yes,42,Yes,No,DSL,Yes,Yes,Yes,No,No internet service,Yes,One year,Yes,Electronic check,1503.88,63522.33,Yes
+PUNE_GYM_1621,Female,1,No,Yes,60,Yes,No,No,No,Yes,No,Yes,No,No internet service,Month-to-month,Yes,Credit card (automatic),1492.6,89927.2,Yes
+PUNE_GYM_1622,Male,1,No,Yes,40,Yes,No,Fiber optic,Yes,Yes,No internet service,No internet service,Yes,No,Month-to-month,No,Electronic check,1438.12,57977.82,Yes
+PUNE_GYM_1623,Female,0,No,Yes,2,No,Yes,No,No,No internet service,No internet service,No internet service,No,Yes,Month-to-month,Yes,Bank transfer (automatic),1958.76,4111.37,Yes
+PUNE_GYM_1624,Male,0,No,Yes,55,Yes,Yes,Fiber optic,No internet service,No,Yes,Yes,Yes,Yes,One year,Yes,Electronic check,3468.62,190979.05,No
+PUNE_GYM_1625,Female,0,No,No,8,Yes,Yes,DSL,No internet service,Yes,Yes,No,No,No,Month-to-month,No,Mailed check,3177.48,25801.46,Yes
+PUNE_GYM_1626,Male,0,No,Yes,48,Yes,No phone service,No,Yes,No internet service,No,No,No internet service,Yes,Month-to-month,Yes,Credit card (automatic),1551.05,74621.28,Yes
+PUNE_GYM_1627,Female,0,Yes,No,27,Yes,No phone service,Fiber optic,No,No,No internet service,No,No,No,Month-to-month,Yes,Bank transfer (automatic),1826.32,49596.35,Yes
+PUNE_GYM_1628,Male,0,No,Yes,22,Yes,No phone service,DSL,Yes,Yes,Yes,No internet service,No,No,One year,Yes,Electronic check,2541.49,56020.79,No
+PUNE_GYM_1629,Male,0,No,Yes,37,Yes,No,Fiber optic,No,No,No,No,No internet service,No,Month-to-month,No,Mailed check,649.74,24196.77,No
+PUNE_GYM_1630,Male,0,No,Yes,27,Yes,No phone service,No,No,Yes,Yes,No internet service,No,No,Month-to-month,No,Bank transfer (automatic),2978.45,80789.69,No
+PUNE_GYM_1631,Female,0,Yes,Yes,57,Yes,No,DSL,No,No,No internet service,No,No internet service,No,Two year,Yes,Electronic check,3151.41,180029.35,No
+PUNE_GYM_1632,Male,0,Yes,No,29,Yes,No phone service,DSL,No internet service,No,Yes,Yes,Yes,No internet service,Month-to-month,Yes,Credit card (automatic),3085.88,89636.65,Yes
+PUNE_GYM_1633,Male,0,No,Yes,3,No,No,DSL,No,Yes,No internet service,Yes,No,No,Month-to-month,Yes,Electronic check,1687.66,5254.06,Yes
+PUNE_GYM_1634,Female,0,No,Yes,44,Yes,No phone service,DSL,No internet service,No internet service,Yes,No internet service,No internet service,No internet service,Two year,Yes,Bank transfer (automatic),1939.8,85490.76,Yes
+PUNE_GYM_1635,Female,0,No,No,13,Yes,No phone service,Fiber optic,No,No,No internet service,No internet service,No internet service,No,Month-to-month,Yes,Bank transfer (automatic),635.93,8540.46,Yes
+PUNE_GYM_1636,Male,1,Yes,No,45,Yes,Yes,Fiber optic,No internet service,Yes,No,Yes,No,Yes,One year,Yes,Bank transfer (automatic),1758.25,79271.7,Yes
+PUNE_GYM_1637,Male,0,Yes,Yes,10,Yes,No phone service,DSL,No internet service,No,No internet service,Yes,Yes,No internet service,Month-to-month,No,Mailed check,1935.24,19627.32,Yes
+PUNE_GYM_1638,Female,0,No,No,36,Yes,No phone service,Fiber optic,No internet service,No,No,No,No,Yes,One year,Yes,Electronic check,3230.23,116681.12,No
+PUNE_GYM_1639,Female,0,Yes,No,9,Yes,Yes,Fiber optic,Yes,No internet service,No internet service,Yes,No internet service,No,Month-to-month,Yes,Electronic check,3192.56,29106.4,Yes
+PUNE_GYM_1640,Female,0,No,No,54,Yes,No,Fiber optic,No,No,No,No internet service,Yes,No,One year,Yes,Electronic check,3401.68,183902.9,No
+PUNE_GYM_1641,Female,0,Yes,Yes,56,Yes,Yes,Fiber optic,Yes,No,Yes,Yes,No,Yes,Month-to-month,No,Credit card (automatic),3166.8,177710.31,Yes
+PUNE_GYM_1642,Female,0,Yes,Yes,55,Yes,Yes,No,No,Yes,No internet service,No internet service,No internet service,No,Month-to-month,Yes,Mailed check,623.78,34778.98,No
+PUNE_GYM_1643,Male,0,No,Yes,27,Yes,No,DSL,No,Yes,Yes,No internet service,No,Yes,One year,No,Mailed check,2460.24,66665.49,Yes
+PUNE_GYM_1644,Female,0,No,No,34,Yes,No phone service,DSL,Yes,No internet service,No,No,Yes,No,Two year,Yes,Credit card (automatic),797.89,27359.91,No
+PUNE_GYM_1645,Male,1,No,Yes,51,Yes,No,Fiber optic,No internet service,No,No internet service,No,Yes,No,Month-to-month,Yes,Mailed check,1390.52,71245.1,Yes
+PUNE_GYM_1646,Male,0,No,No,1,Yes,No phone service,Fiber optic,No,No,No internet service,No,Yes,No internet service,One year,Yes,Credit card (automatic),2277.09,2475.29,No
+PUNE_GYM_1647,Male,0,Yes,Yes,32,Yes,No phone service,Fiber optic,No internet service,No,Yes,No,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic),2631.78,84577.59,Yes
+PUNE_GYM_1648,Female,1,Yes,Yes,25,Yes,No,DSL,Yes,No internet service,No internet service,Yes,Yes,No,One year,Yes,Bank transfer (automatic),2498.43,62893.65,No
+PUNE_GYM_1649,Male,1,Yes,No,29,Yes,Yes,DSL,No internet service,No,No internet service,No,No,Yes,Month-to-month,Yes,Mailed check,742.27,21809.56,Yes
+PUNE_GYM_1650,Male,0,No,Yes,7,Yes,No,No,No,Yes,Yes,Yes,Yes,No internet service,One year,No,Bank transfer (automatic),900.45,6674.95,Yes
+PUNE_GYM_1651,Female,0,Yes,No,49,Yes,No phone service,DSL,No,No internet service,No internet service,No,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic),972.9,48032.85,Yes
+PUNE_GYM_1652,Male,0,No,No,3,Yes,No,DSL,No,Yes,Yes,No,No internet service,No internet service,Month-to-month,Yes,Bank transfer (automatic),865.1,2710.77,No
+PUNE_GYM_1653,Male,0,Yes,Yes,20,Yes,No,DSL,Yes,Yes,Yes,No internet service,Yes,Yes,Month-to-month,Yes,Electronic check,1116.88,22510.97,Yes
+PUNE_GYM_1654,Female,0,No,No,20,Yes,No phone service,No,No,No internet service,Yes,Yes,No internet service,Yes,Month-to-month,No,Bank transfer (automatic),2596.61,52389.61,No
+PUNE_GYM_1655,Male,0,No,Yes,53,Yes,Yes,DSL,Yes,Yes,Yes,No internet service,No internet service,No internet service,Two year,Yes,Electronic check,3009.43,159975.35,No
+PUNE_GYM_1656,Male,0,Yes,Yes,30,Yes,No,Fiber optic,No internet service,No,Yes,No,No internet service,No,Two year,No,Credit card (automatic),1785.56,53978.98,Yes
+PUNE_GYM_1657,Male,1,No,No,35,Yes,No phone service,DSL,No,No internet service,No,Yes,No,No,One year,Yes,Credit card (automatic),2609.07,91785.95,No
+PUNE_GYM_1658,Female,1,No,Yes,35,Yes,No phone service,DSL,No,Yes,No,No,No,No,Month-to-month,Yes,Credit card (automatic),1180.05,41524.21,Yes
+PUNE_GYM_1659,Female,0,Yes,No,49,Yes,No,DSL,No,No,Yes,No internet service,No internet service,Yes,Month-to-month,No,Credit card (automatic),3422.51,167902.07,Yes
+PUNE_GYM_1660,Female,0,No,Yes,39,No,Yes,Fiber optic,No internet service,No,No,Yes,No,Yes,One year,No,Credit card (automatic),1614.99,63238.33,No
+PUNE_GYM_1661,Male,0,No,Yes,27,Yes,No,No,No,Yes,No,No internet service,Yes,No,Two year,Yes,Bank transfer (automatic),3053.01,82553.41,Yes
+PUNE_GYM_1662,Male,0,No,Yes,26,Yes,Yes,No,Yes,No,No internet service,No,No,Yes,Month-to-month,No,Bank transfer (automatic),3341.56,87304.51,No
+PUNE_GYM_1663,Female,0,Yes,Yes,14,Yes,Yes,Fiber optic,No internet service,No internet service,Yes,No,Yes,Yes,One year,No,Bank transfer (automatic),3107.67,44001.05,Yes
+PUNE_GYM_1664,Male,0,Yes,Yes,17,Yes,Yes,No,No internet service,Yes,No,No,Yes,No,Two year,Yes,Credit card (automatic),794.5,13936.11,No
+PUNE_GYM_1665,Male,0,No,No,18,Yes,Yes,Fiber optic,No internet service,No,No internet service,Yes,No,No internet service,Two year,Yes,Credit card (automatic),2485.89,45068.01,No
+PUNE_GYM_1666,Female,0,Yes,No,45,Yes,No,Fiber optic,No internet service,No,No internet service,No internet service,No,Yes,Month-to-month,Yes,Electronic check,948.26,42889.81,No
+PUNE_GYM_1667,Female,0,No,No,52,Yes,No phone service,Fiber optic,No internet service,Yes,Yes,No internet service,No internet service,Yes,Month-to-month,No,Mailed check,616.42,32232.92,Yes
+PUNE_GYM_1668,Male,0,No,No,29,Yes,No phone service,Fiber optic,Yes,Yes,Yes,No,No,Yes,Month-to-month,Yes,Bank transfer (automatic),750.17,22000.56,Yes
+PUNE_GYM_1669,Male,0,No,No,20,Yes,No phone service,DSL,No internet service,Yes,No internet service,No internet service,No,Yes,Month-to-month,Yes,Mailed check,3256.83,65503.39,Yes
+PUNE_GYM_1670,Male,0,No,No,53,No,No phone service,Fiber optic,No,Yes,Yes,Yes,No,No internet service,Month-to-month,No,Credit card (automatic),3234.54,171709.44,Yes
+PUNE_GYM_1671,Female,1,No,Yes,27,Yes,No phone service,Fiber optic,No internet service,No internet service,Yes,No,Yes,No,Month-to-month,No,Credit card (automatic),1254.89,34355.65,No
+PUNE_GYM_1672,Female,0,Yes,Yes,18,No,No phone service,Fiber optic,No internet service,Yes,No internet service,No,Yes,Yes,One year,Yes,Credit card (automatic),2186.48,39798.33,No
+PUNE_GYM_1673,Female,0,No,No,4,Yes,No,Fiber optic,No internet service,No internet service,No internet service,No,Yes,No,Month-to-month,No,Mailed check,3369.58,13619.28,Yes
+PUNE_GYM_1674,Female,0,Yes,No,1,Yes,Yes,Fiber optic,No internet service,No internet service,Yes,Yes,No internet service,Yes,Month-to-month,No,Electronic check,2040.45,2193.06,Yes
+PUNE_GYM_1675,Male,0,Yes,Yes,50,Yes,No phone service,DSL,No internet service,Yes,No,No,No internet service,No internet service,One year,No,Credit card (automatic),1741.38,87439.5,No
+PUNE_GYM_1676,Female,0,No,Yes,1,Yes,No,Fiber optic,Yes,No internet service,Yes,No,No internet service,No,One year,Yes,Electronic check,2001.42,2193.73,No
+PUNE_GYM_1677,Female,0,No,Yes,58,Yes,No phone service,No,Yes,Yes,No,No,Yes,No internet service,One year,Yes,Electronic check,2891.63,168130.95,No
+PUNE_GYM_1678,Female,0,Yes,No,26,No,No phone service,DSL,No internet service,Yes,No internet service,No,No,Yes,Month-to-month,Yes,Bank transfer (automatic),1984.11,51923.4,Yes
+PUNE_GYM_1679,Female,0,Yes,No,45,Yes,Yes,Fiber optic,Yes,No,No,No internet service,No internet service,No internet service,One year,No,Mailed check,2871.51,129409.88,Yes
+PUNE_GYM_1680,Female,1,Yes,No,20,Yes,Yes,No,No,Yes,No internet service,No,No internet service,No internet service,One year,Yes,Credit card (automatic),1851.92,37329.87,No
+PUNE_GYM_1681,Male,0,No,Yes,52,Yes,Yes,Fiber optic,No internet service,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check,1330.82,69465.07,Yes
+PUNE_GYM_1682,Male,0,Yes,Yes,23,Yes,No phone service,Fiber optic,No,No internet service,Yes,No,No internet service,Yes,One year,No,Mailed check,1546.77,36024.97,Yes
+PUNE_GYM_1683,Female,1,No,No,10,No,No phone service,Fiber optic,No,No,No internet service,No,No,No,Month-to-month,No,Mailed check,825.69,8369.76,Yes
+PUNE_GYM_1684,Male,0,No,No,59,Yes,No phone service,Fiber optic,No internet service,No internet service,No internet service,No internet service,Yes,Yes,Month-to-month,Yes,Credit card (automatic),2042.41,120960.53,Yes
+PUNE_GYM_1685,Female,1,No,Yes,11,Yes,Yes,DSL,No,Yes,No internet service,No,Yes,No,Month-to-month,No,Bank transfer (automatic),1029.52,11685.55,Yes
+PUNE_GYM_1686,Female,0,Yes,Yes,41,Yes,No,DSL,No,No internet service,Yes,No internet service,No,No internet service,Month-to-month,Yes,Bank transfer (automatic),2953.49,121488.11,Yes
+PUNE_GYM_1687,Male,0,No,Yes,41,Yes,No phone service,Fiber optic,No,No internet service,Yes,Yes,No,No internet service,Month-to-month,Yes,Electronic check,1819.71,74709.15,Yes
+PUNE_GYM_1688,Male,0,No,Yes,5,No,No phone service,DSL,No internet service,Yes,No,No internet service,No,No,One year,Yes,Bank transfer (automatic),2818.51,14443.85,Yes
+PUNE_GYM_1689,Female,0,No,No,58,Yes,No phone service,Fiber optic,No internet service,No internet service,No internet service,No,No internet service,Yes,Month-to-month,No,Bank transfer (automatic),3367.94,195675.91,Yes
+PUNE_GYM_1690,Female,0,No,Yes,1,Yes,No,DSL,No,Yes,No,Yes,No,Yes,Two year,No,Bank transfer (automatic),3063.49,3378.37,No
+PUNE_GYM_1691,Female,0,No,Yes,17,Yes,No phone service,Fiber optic,No internet service,No,Yes,No,Yes,No internet service,One year,Yes,Mailed check,3359.24,57521.43,No
+PUNE_GYM_1692,Male,0,Yes,Yes,22,Yes,No,Fiber optic,No internet service,Yes,No,No internet service,No,No,Month-to-month,Yes,Credit card (automatic),2247.02,49756.79,No
+PUNE_GYM_1693,Female,0,No,No,34,Yes,No phone service,Fiber optic,No,Yes,No,Yes,Yes,No internet service,Month-to-month,Yes,Mailed check,1079.44,37143.8,No
+PUNE_GYM_1694,Female,0,No,No,56,Yes,No,Fiber optic,No internet service,No internet service,Yes,Yes,Yes,No internet service,One year,Yes,Mailed check,3312.65,185701.45,No
+PUNE_GYM_1695,Female,1,Yes,Yes,45,Yes,No phone service,DSL,Yes,No,Yes,No internet service,No internet service,Yes,One year,No,Credit card (automatic),3118.66,140762.09,No
+PUNE_GYM_1696,Male,1,No,Yes,41,No,Yes,DSL,No internet service,Yes,No internet service,No internet service,No,No,Month-to-month,Yes,Mailed check,3106.8,127550.53,No
+PUNE_GYM_1697,Female,1,Yes,Yes,29,Yes,Yes,Fiber optic,Yes,No,No,Yes,No internet service,No internet service,Month-to-month,Yes,Electronic check,2610.5,76129.75,No
+PUNE_GYM_1698,Female,0,No,No,4,Yes,Yes,DSL,No,No,Yes,Yes,No,Yes,One year,No,Electronic check,2412.26,10125.23,Yes
+PUNE_GYM_1699,Male,0,Yes,No,5,No,Yes,DSL,No internet service,No internet service,Yes,No internet service,No,No internet service,Month-to-month,Yes,Mailed check,642.7,3447.78,Yes
+PUNE_GYM_1700,Female,0,Yes,No,11,Yes,No phone service,No,No,Yes,No,No,No,No internet service,Two year,Yes,Bank transfer (automatic),2769.36,30774.91,Yes
+PUNE_GYM_1701,Female,0,No,Yes,56,Yes,Yes,Fiber optic,No,No internet service,Yes,Yes,No,Yes,One year,Yes,Mailed check,865.45,48828.53,No
+PUNE_GYM_1702,Male,0,No,No,51,Yes,No,DSL,No,Yes,No internet service,No internet service,No,Yes,Month-to-month,Yes,Bank transfer (automatic),1353.28,69149.07,No
+PUNE_GYM_1703,Female,0,No,Yes,21,Yes,Yes,No,No,No,No internet service,No,Yes,No,Month-to-month,Yes,Mailed check,2199.32,46483.35,Yes
+PUNE_GYM_1704,Male,0,Yes,Yes,35,Yes,Yes,DSL,No,Yes,No,Yes,Yes,No internet service,Month-to-month,No,Electronic check,1910.02,67094.93,Yes
+PUNE_GYM_1705,Male,0,Yes,Yes,12,No,Yes,Fiber optic,No internet service,Yes,No internet service,Yes,No,No,One year,No,Bank transfer (automatic),645.75,8197.98,Yes
+PUNE_GYM_1706,Female,0,Yes,No,26,Yes,No phone service,Fiber optic,Yes,No,Yes,No internet service,Yes,Yes,Month-to-month,No,Electronic check,2989.56,78179.23,No
+PUNE_GYM_1707,Female,0,No,Yes,51,Yes,Yes,Fiber optic,No internet service,No,Yes,No,No internet service,Yes,Month-to-month,No,Mailed check,3148.52,160954.83,Yes
+PUNE_GYM_1708,Female,0,Yes,No,19,Yes,No,DSL,No internet service,Yes,Yes,Yes,No internet service,No internet service,One year,Yes,Credit card (automatic),2577.43,49333.46,Yes
+PUNE_GYM_1709,Female,1,Yes,No,45,Yes,Yes,DSL,No internet service,No internet service,Yes,No,No internet service,No,Month-to-month,No,Bank transfer (automatic),2169.1,98002.98,Yes
+PUNE_GYM_1710,Male,0,No,Yes,60,Yes,Yes,Fiber optic,No internet service,Yes,No,No,No,No,Month-to-month,No,Bank transfer (automatic),3386.14,203414.79,Yes
+PUNE_GYM_1711,Female,0,Yes,Yes,7,Yes,Yes,DSL,Yes,No,No internet service,Yes,No,No internet service,One year,No,Mailed check,947.87,6896.9,No
+PUNE_GYM_1712,Male,0,Yes,No,47,Yes,No,DSL,No internet service,No internet service,No internet service,No,Yes,No internet service,Month-to-month,No,Mailed check,2739.94,129098.66,No
+PUNE_GYM_1713,Female,0,No,Yes,55,Yes,Yes,DSL,No,No,Yes,Yes,Yes,No,Two year,No,Bank transfer (automatic),972.25,53948.96,No
+PUNE_GYM_1714,Female,0,Yes,No,7,No,No,DSL,No internet service,No,No,No,Yes,Yes,One year,No,Credit card (automatic),1707.35,12341.05,Yes
+PUNE_GYM_1715,Female,0,No,Yes,26,Yes,No,DSL,No internet service,No internet service,Yes,Yes,No internet service,Yes,Month-to-month,No,Mailed check,2297.91,60066.06,Yes
+PUNE_GYM_1716,Male,0,No,No,40,Yes,Yes,Fiber optic,Yes,No,Yes,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check,2737.55,109910.17,Yes
+PUNE_GYM_1717,Female,0,No,No,5,Yes,No,No,Yes,No,No,Yes,No internet service,No,Month-to-month,Yes,Mailed check,610.78,3302.26,Yes
+PUNE_GYM_1718,Female,0,No,No,21,Yes,No phone service,Fiber optic,No,No,No,Yes,No internet service,No,One year,No,Credit card (automatic),1355.73,28862.52,No
+PUNE_GYM_1719,Female,0,No,No,14,Yes,Yes,Fiber optic,No internet service,No,Yes,Yes,Yes,No,Month-to-month,Yes,Bank transfer (automatic),2160.78,30515.19,Yes
+PUNE_GYM_1720,Female,1,Yes,Yes,4,Yes,Yes,Fiber optic,No internet service,No,No internet service,No,No,Yes,Two year,No,Electronic check,2145.33,8793.18,Yes
+PUNE_GYM_1721,Male,0,Yes,Yes,23,Yes,No,Fiber optic,No internet service,No,Yes,No internet service,No,Yes,One year,No,Mailed check,2449.12,56673.65,No
+PUNE_GYM_1722,Female,0,No,No,42,Yes,No,Fiber optic,No,No,No internet service,No,No internet service,No,Month-to-month,No,Credit card (automatic),1481.18,62584.31,No
+PUNE_GYM_1723,Male,1,No,No,20,Yes,Yes,Fiber optic,Yes,No,No internet service,No,No,No,One year,Yes,Bank transfer (automatic),2167.53,43634.32,No
+PUNE_GYM_1724,Male,0,Yes,Yes,15,Yes,No phone service,DSL,No,No,No,Yes,No,No internet service,Month-to-month,Yes,Bank transfer (automatic),1150.38,17581.9,No
+PUNE_GYM_1725,Male,0,No,Yes,50,No,No,Fiber optic,No internet service,Yes,No,No,No,No internet service,One year,No,Credit card (automatic),1141.93,57474.13,No
+PUNE_GYM_1726,Male,0,No,Yes,52,Yes,No,DSL,Yes,Yes,Yes,Yes,No internet service,No,One year,Yes,Mailed check,2272.04,118553.16,No
+PUNE_GYM_1727,Male,0,No,Yes,45,Yes,No phone service,Fiber optic,Yes,No,No internet service,No internet service,Yes,No,Month-to-month,No,Electronic check,2587.87,116912.38,Yes
+PUNE_GYM_1728,Male,1,Yes,Yes,29,Yes,No phone service,No,No,Yes,No internet service,No,Yes,Yes,Month-to-month,Yes,Mailed check,949.16,27767.46,Yes
+PUNE_GYM_1729,Female,0,Yes,Yes,8,Yes,Yes,DSL,Yes,No internet service,Yes,No,No,No,Two year,Yes,Bank transfer (automatic),956.09,8129.31,No
+PUNE_GYM_1730,Male,1,No,No,41,Yes,No phone service,Fiber optic,Yes,Yes,Yes,No,Yes,No internet service,One year,Yes,Electronic check,2239.38,92169.49,No
+PUNE_GYM_1731,Male,0,No,Yes,48,Yes,Yes,DSL,No internet service,No,Yes,Yes,Yes,Yes,Two year,No,Mailed check,1383.28,66812.52,No
+PUNE_GYM_1732,Male,0,Yes,Yes,19,Yes,No phone service,DSL,No internet service,No,No,Yes,No internet service,No internet service,Month-to-month,Yes,Electronic check,1737.96,33401.15,No
+PUNE_GYM_1733,Female,0,Yes,No,48,Yes,No,DSL,Yes,Yes,Yes,No,No internet service,No internet service,Month-to-month,Yes,Credit card (automatic),1762.17,84766.39,Yes
+PUNE_GYM_1734,Female,0,No,Yes,39,Yes,Yes,DSL,Yes,No,Yes,No,No,Yes,Month-to-month,No,Mailed check,1117.8,43722.78,Yes
+PUNE_GYM_1735,Male,0,No,Yes,46,Yes,Yes,DSL,No,No internet service,No internet service,No internet service,No,No internet service,One year,Yes,Bank transfer (automatic),603.81,28165.77,No
+PUNE_GYM_1736,Female,1,Yes,Yes,28,Yes,Yes,DSL,No,No internet service,Yes,No internet service,No,No,Month-to-month,No,Bank transfer (automatic),3074.14,86380.34,Yes
+PUNE_GYM_1737,Male,0,Yes,Yes,46,Yes,No phone service,Fiber optic,Yes,No,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Electronic check,2673.51,123362.35,Yes
+PUNE_GYM_1738,Male,1,Yes,Yes,57,Yes,No,Fiber optic,No internet service,No internet service,No internet service,No internet service,Yes,Yes,One year,Yes,Credit card (automatic),2602.56,148636.66,Yes
+PUNE_GYM_1739,Female,0,No,No,27,Yes,Yes,DSL,Yes,No internet service,No,No internet service,No internet service,Yes,Month-to-month,No,Mailed check,2184.86,59216.11,Yes
+PUNE_GYM_1740,Male,1,Yes,Yes,4,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,No internet service,Yes,Month-to-month,Yes,Credit card (automatic),2632.81,10745.25,Yes
+PUNE_GYM_1741,Female,0,No,No,58,Yes,Yes,DSL,No internet service,No internet service,Yes,No internet service,Yes,No internet service,Month-to-month,Yes,Credit card (automatic),3313.5,192575.21,No
+PUNE_GYM_1742,Female,0,Yes,No,15,Yes,Yes,Fiber optic,No internet service,Yes,No internet service,No internet service,Yes,No,One year,No,Electronic check,2530.45,38167.46,Yes
+PUNE_GYM_1743,Male,0,Yes,Yes,35,Yes,No,DSL,No,No,No,No,No,Yes,Month-to-month,Yes,Electronic check,1368.77,48292.82,No
+PUNE_GYM_1744,Male,0,Yes,No,37,Yes,No phone service,No,No,Yes,No,Yes,Yes,No,Month-to-month,Yes,Mailed check,2254.62,83674.52,Yes
+PUNE_GYM_1745,Female,0,Yes,Yes,1,No,No,Fiber optic,No,No,Yes,No internet service,Yes,Yes,Month-to-month,No,Bank transfer (automatic),1882.74,2291.1,No
+PUNE_GYM_1746,Male,0,No,No,3,Yes,Yes,Fiber optic,No,No,No internet service,No internet service,Yes,No,One year,No,Mailed check,2213.62,6797.98,No
+PUNE_GYM_1747,Male,0,No,No,47,Yes,No,DSL,No internet service,No,Yes,No internet service,Yes,No,One year,Yes,Credit card (automatic),2101.07,98932.28,No
+PUNE_GYM_1748,Male,1,Yes,Yes,24,Yes,Yes,DSL,Yes,No,Yes,No,No,No,Month-to-month,No,Electronic check,3090.45,74545.16,Yes
+PUNE_GYM_1749,Female,0,No,Yes,27,No,No phone service,Fiber optic,No,No,Yes,No,No,Yes,Month-to-month,No,Credit card (automatic),2490.22,67560.03,Yes
+PUNE_GYM_1750,Female,0,Yes,Yes,40,Yes,No phone service,Fiber optic,No,Yes,Yes,No,Yes,No internet service,Two year,No,Electronic check,1147.4,46077.55,No
+PUNE_GYM_1751,Male,0,Yes,Yes,36,Yes,No phone service,No,No internet service,No,No internet service,No internet service,Yes,No internet service,Two year,No,Bank transfer (automatic),782.75,28640.13,No
+PUNE_GYM_1752,Female,0,Yes,Yes,34,Yes,Yes,DSL,No internet service,No internet service,No,No,No,No internet service,One year,Yes,Credit card (automatic),1830.65,62452.48,No
+PUNE_GYM_1753,Female,0,Yes,No,29,Yes,No,Fiber optic,Yes,No internet service,Yes,No internet service,No,No,Two year,Yes,Electronic check,645.27,18981.26,No
+PUNE_GYM_1754,Female,0,No,No,24,Yes,No phone service,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,One year,No,Mailed check,1523.06,36734.36,No
+PUNE_GYM_1755,Female,0,Yes,No,24,Yes,Yes,DSL,No internet service,No internet service,Yes,No internet service,No internet service,No,One year,Yes,Mailed check,1667.26,40269.45,No
+PUNE_GYM_1756,Female,0,Yes,No,42,Yes,Yes,Fiber optic,No,Yes,Yes,No,No,Yes,Month-to-month,No,Mailed check,1689.21,71243.48,Yes
+PUNE_GYM_1757,Male,0,No,No,4,Yes,No,Fiber optic,No,Yes,No,Yes,No,No,Month-to-month,No,Credit card (automatic),3440.12,13978.58,Yes
+PUNE_GYM_1758,Male,0,Yes,No,3,Yes,No phone service,No,No,No,No,No internet service,No,Yes,Month-to-month,Yes,Electronic check,1481.31,4851.57,Yes
+PUNE_GYM_1759,Male,0,Yes,No,34,Yes,Yes,Fiber optic,Yes,No,No,Yes,Yes,Yes,One year,Yes,Electronic check,1369.16,46809.01,No
+PUNE_GYM_1760,Female,0,Yes,Yes,57,Yes,No,DSL,No,No,No,Yes,Yes,Yes,Two year,Yes,Electronic check,975.2,55978.2,No
+PUNE_GYM_1761,Female,0,No,Yes,49,Yes,No phone service,Fiber optic,No,No internet service,Yes,Yes,No,No,One year,Yes,Credit card (automatic),2081.93,102197.4,No
+PUNE_GYM_1762,Male,0,Yes,No,23,Yes,No,DSL,No internet service,No internet service,No internet service,No internet service,Yes,No internet service,Month-to-month,No,Electronic check,1045.66,24300.99,No
+PUNE_GYM_1763,Female,0,No,No,53,No,No,DSL,No,Yes,No,No,Yes,No,Month-to-month,No,Bank transfer (automatic),2387.25,126627.47,Yes
+PUNE_GYM_1764,Male,0,Yes,Yes,56,Yes,Yes,Fiber optic,No internet service,No internet service,No,No internet service,No,No,Month-to-month,Yes,Credit card (automatic),1049.96,59201.22,No
+PUNE_GYM_1765,Male,0,Yes,Yes,52,Yes,Yes,DSL,No,Yes,Yes,No,Yes,Yes,Month-to-month,No,Bank transfer (automatic),2272.35,118512.55,No
+PUNE_GYM_1766,Male,0,No,Yes,23,Yes,Yes,Fiber optic,Yes,No internet service,Yes,No internet service,No internet service,Yes,One year,Yes,Bank transfer (automatic),2996.18,69339.27,No
+PUNE_GYM_1767,Female,0,Yes,Yes,45,Yes,No,No,No,Yes,Yes,No internet service,Yes,No internet service,Two year,Yes,Mailed check,723.32,32831.64,No
+PUNE_GYM_1768,Female,0,Yes,No,5,Yes,Yes,No,No,No,Yes,No internet service,Yes,No internet service,Month-to-month,Yes,Credit card (automatic),1817.27,9506.25,Yes
+PUNE_GYM_1769,Male,0,No,Yes,31,Yes,No,Fiber optic,No internet service,No internet service,No internet service,No,No,Yes,Month-to-month,No,Electronic check,1937.04,60407.27,No
+PUNE_GYM_1770,Male,0,No,No,53,Yes,No,Fiber optic,No internet service,Yes,No internet service,No internet service,No,No internet service,One year,No,Bank transfer (automatic),2894.11,153489.28,No
+PUNE_GYM_1771,Male,1,No,No,41,Yes,Yes,Fiber optic,No internet service,No internet service,No,Yes,No internet service,No internet service,Month-to-month,Yes,Credit card (automatic),1956.96,80436.84,Yes
+PUNE_GYM_1772,Male,0,No,No,57,Yes,No phone service,DSL,No,No,No internet service,No internet service,Yes,Yes,Two year,Yes,Electronic check,2245.85,128311.01,Yes
+PUNE_GYM_1773,Female,0,No,Yes,57,Yes,No phone service,Fiber optic,No,Yes,No,Yes,No internet service,No,Month-to-month,Yes,Mailed check,2894.49,165333.4,Yes
+PUNE_GYM_1774,Female,0,Yes,Yes,60,Yes,No phone service,Fiber optic,Yes,No internet service,No,No,No internet service,No internet service,Month-to-month,Yes,Credit card (automatic),2223.3,133524.24,Yes
+PUNE_GYM_1775,Male,0,No,No,54,No,No,Fiber optic,No,No internet service,No internet service,No,No,Yes,Month-to-month,No,Credit card (automatic),1639.07,88891.81,Yes
+PUNE_GYM_1776,Male,0,Yes,No,6,Yes,No,Fiber optic,Yes,No,No,No internet service,Yes,No internet service,Month-to-month,No,Credit card (automatic),848.94,5411.05,No
+PUNE_GYM_1777,Female,1,Yes,No,37,No,No,DSL,No internet service,No,Yes,No internet service,No,No internet service,One year,Yes,Electronic check,2716.76,100830.43,No
+PUNE_GYM_1778,Female,0,Yes,Yes,57,Yes,Yes,Fiber optic,No internet service,Yes,No,No internet service,No internet service,Yes,Month-to-month,Yes,Bank transfer (automatic),3126.3,178415.92,Yes
+PUNE_GYM_1779,Male,0,No,No,10,No,No,DSL,No internet service,No internet service,Yes,Yes,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic),3413.19,34469.83,Yes
+PUNE_GYM_1780,Male,0,No,Yes,40,Yes,Yes,Fiber optic,Yes,No internet service,No internet service,No,No,No internet service,Month-to-month,Yes,Credit card (automatic),3287.14,131596.6,No
+PUNE_GYM_1781,Male,0,Yes,No,7,Yes,Yes,Fiber optic,No,No,No internet service,Yes,No,No internet service,Month-to-month,No,Credit card (automatic),2912.51,20513.45,Yes
+PUNE_GYM_1782,Female,0,No,No,39,Yes,No phone service,DSL,No internet service,No,No,Yes,No,No,Month-to-month,No,Electronic check,2466.07,96570.28,No
+PUNE_GYM_1783,Female,0,No,No,38,Yes,No phone service,No,No,Yes,Yes,No internet service,No,No,Month-to-month,Yes,Mailed check,2866.23,109145.5,Yes
+PUNE_GYM_1784,Female,0,No,Yes,21,Yes,No phone service,DSL,No,No internet service,No,No internet service,No,No internet service,One year,No,Credit card (automatic),1853.04,39152.63,No
+PUNE_GYM_1785,Male,0,No,Yes,20,Yes,Yes,Fiber optic,No internet service,No internet service,No internet service,Yes,No internet service,Yes,Two year,No,Credit card (automatic),2324.85,46680.35,No
+PUNE_GYM_1786,Male,0,Yes,No,3,Yes,Yes,Fiber optic,Yes,Yes,No,Yes,No,No internet service,Month-to-month,No,Mailed check,1611.23,5111.94,No
+PUNE_GYM_1787,Female,0,Yes,Yes,51,Yes,Yes,No,No,Yes,No,No internet service,Yes,No internet service,Month-to-month,No,Credit card (automatic),1547.46,79041.26,Yes
+PUNE_GYM_1788,Female,0,No,No,22,Yes,No,Fiber optic,No internet service,No,Yes,No internet service,No internet service,No,Month-to-month,Yes,Bank transfer (automatic),2794.41,61697.17,Yes
+PUNE_GYM_1789,Male,0,Yes,Yes,47,Yes,Yes,Fiber optic,No,No,No internet service,Yes,No internet service,No,Month-to-month,No,Credit card (automatic),1916.41,90382.12,Yes
+PUNE_GYM_1790,Female,0,No,Yes,4,Yes,No phone service,No,No,Yes,No,No internet service,Yes,No,One year,No,Bank transfer (automatic),1215.27,5147.33,No
+PUNE_GYM_1791,Female,0,No,Yes,28,Yes,No phone service,DSL,No,Yes,Yes,No internet service,Yes,No internet service,One year,No,Electronic check,1185.62,33697.23,No
+PUNE_GYM_1792,Male,0,Yes,No,12,Yes,Yes,No,No,No internet service,No,Yes,No internet service,No internet service,One year,Yes,Electronic check,3091.6,37354.71,No
+PUNE_GYM_1793,Female,0,Yes,Yes,38,Yes,Yes,No,No,Yes,Yes,Yes,No,Yes,Month-to-month,Yes,Bank transfer (automatic),2565.51,97744.18,No
+PUNE_GYM_1794,Male,0,Yes,Yes,51,Yes,No phone service,No,Yes,Yes,Yes,No,No internet service,No internet service,Month-to-month,Yes,Bank transfer (automatic),2183.53,111661.46,Yes
+PUNE_GYM_1795,Male,0,No,No,36,Yes,Yes,Fiber optic,Yes,No internet service,No,Yes,No internet service,No internet service,Two year,No,Mailed check,1762.72,63634.04,No
+PUNE_GYM_1796,Male,0,Yes,No,47,Yes,No phone service,Fiber optic,No internet service,Yes,No internet service,No internet service,Yes,No,Month-to-month,Yes,Bank transfer (automatic),1849.37,87370.91,Yes
+PUNE_GYM_1797,Male,0,No,No,41,Yes,No,DSL,Yes,No,No internet service,Yes,No internet service,No,Month-to-month,Yes,Bank transfer (automatic),766.56,31757.87,No
+PUNE_GYM_1798,Male,0,Yes,No,5,Yes,No phone service,DSL,Yes,No,Yes,Yes,No,No,Two year,Yes,Credit card (automatic),1919.24,9773.04,No
+PUNE_GYM_1799,Male,0,Yes,Yes,13,Yes,No,DSL,Yes,No internet service,No internet service,Yes,Yes,No,One year,No,Mailed check,2906.82,38206.04,No
+PUNE_GYM_1800,Male,0,No,Yes,23,Yes,Yes,Fiber optic,No,Yes,Yes,No,No internet service,No,One year,Yes,Bank transfer (automatic),1725.16,39792.41,Yes
+PUNE_GYM_1801,Female,1,No,Yes,58,Yes,Yes,Fiber optic,No,No,No internet service,No,No internet service,Yes,Month-to-month,Yes,Bank transfer (automatic),1712.39,99811.65,Yes
+PUNE_GYM_1802,Male,0,No,Yes,50,Yes,No,DSL,No internet service,No,No,No internet service,No,Yes,Month-to-month,Yes,Bank transfer (automatic),645.58,32725.06,No
+PUNE_GYM_1803,Male,0,No,Yes,30,Yes,Yes,Fiber optic,No internet service,No,No internet service,No,No internet service,Yes,Month-to-month,No,Credit card (automatic),1927.72,58163.46,No
+PUNE_GYM_1804,Female,0,No,No,37,Yes,No,Fiber optic,No internet service,No,Yes,Yes,No internet service,No,One year,No,Credit card (automatic),673.48,25063.28,No
+PUNE_GYM_1805,Female,1,No,Yes,25,Yes,Yes,DSL,No,Yes,Yes,No,No internet service,No,Month-to-month,Yes,Credit card (automatic),2254.01,56536.36,Yes
+PUNE_GYM_1806,Female,0,No,Yes,48,Yes,No phone service,DSL,Yes,Yes,No internet service,Yes,No internet service,No,One year,Yes,Electronic check,2069.67,99555.93,No
+PUNE_GYM_1807,Male,0,No,Yes,27,Yes,Yes,Fiber optic,Yes,Yes,No,No,No,Yes,One year,Yes,Credit card (automatic),3036.02,82168.95,Yes
+PUNE_GYM_1808,Female,0,Yes,No,51,Yes,No phone service,DSL,No,Yes,Yes,No,No internet service,No,Month-to-month,No,Bank transfer (automatic),2287.16,116944.17,Yes
+PUNE_GYM_1809,Male,0,No,No,14,Yes,No phone service,DSL,No internet service,No,Yes,No,No internet service,Yes,Month-to-month,No,Credit card (automatic),1537.94,22008.98,Yes
+PUNE_GYM_1810,Male,0,No,Yes,57,No,No,Fiber optic,No internet service,No internet service,Yes,Yes,No internet service,No,Month-to-month,Yes,Credit card (automatic),2097.07,119810.66,Yes
+PUNE_GYM_1811,Male,1,Yes,No,48,Yes,Yes,Fiber optic,No internet service,No internet service,Yes,No,Yes,No internet service,One year,No,Mailed check,2629.15,126563.83,Yes
+PUNE_GYM_1812,Male,0,No,No,59,No,No,Fiber optic,No,No,Yes,Yes,No,Yes,One year,Yes,Bank transfer (automatic),872.5,51852.93,Yes
+PUNE_GYM_1813,Female,0,Yes,No,47,Yes,Yes,Fiber optic,No internet service,No,No,Yes,Yes,No internet service,One year,No,Credit card (automatic),2401.11,113300.8,No
+PUNE_GYM_1814,Female,0,Yes,No,54,Yes,No phone service,No,No internet service,No internet service,No internet service,No internet service,Yes,Yes,Month-to-month,Yes,Electronic check,3258.22,176057.41,Yes
+PUNE_GYM_1815,Male,0,No,No,36,Yes,No phone service,Fiber optic,No,No internet service,No,No,No,No,Month-to-month,No,Mailed check,1467.48,53091.01,Yes
+PUNE_GYM_1816,Male,0,Yes,No,39,Yes,Yes,DSL,Yes,No,No,No internet service,Yes,No,One year,Yes,Credit card (automatic),2417.21,94685.08,No
+PUNE_GYM_1817,Male,0,No,No,16,Yes,Yes,Fiber optic,No,No,Yes,No internet service,Yes,No internet service,Month-to-month,No,Mailed check,2981.86,48135.71,Yes
+PUNE_GYM_1818,Female,0,Yes,Yes,56,Yes,No,Fiber optic,No,Yes,No,Yes,Yes,No,One year,Yes,Mailed check,2084.24,117188.37,No
+PUNE_GYM_1819,Male,0,Yes,Yes,22,Yes,Yes,DSL,No,Yes,Yes,No,No,Yes,One year,Yes,Electronic check,2682.14,59388.2,No
+PUNE_GYM_1820,Male,0,Yes,No,21,No,Yes,Fiber optic,No,No internet service,No,Yes,No internet service,No,Month-to-month,Yes,Electronic check,1501.93,31738.59,No
+PUNE_GYM_1821,Female,0,No,Yes,54,Yes,Yes,DSL,Yes,No,Yes,Yes,No,No,Month-to-month,Yes,Electronic check,1487.57,80631.05,Yes
+PUNE_GYM_1822,Female,1,No,Yes,21,Yes,No,Fiber optic,No internet service,No internet service,Yes,No,No,Yes,Month-to-month,No,Bank transfer (automatic),2535.99,53368.73,Yes
+PUNE_GYM_1823,Male,0,Yes,No,8,Yes,Yes,Fiber optic,No,Yes,No,Yes,No,No internet service,Month-to-month,Yes,Mailed check,2645.69,21524.29,Yes
+PUNE_GYM_1824,Female,1,Yes,Yes,49,Yes,No phone service,DSL,Yes,Yes,No,No,Yes,No internet service,One year,No,Credit card (automatic),3317.33,162870.89,No
+PUNE_GYM_1825,Female,0,No,No,16,Yes,No,Fiber optic,No internet service,No internet service,No internet service,No,No internet service,No,One year,No,Electronic check,1252.03,20399.21,No
+PUNE_GYM_1826,Male,0,No,No,59,Yes,No,No,No internet service,Yes,No internet service,Yes,No,Yes,Two year,Yes,Electronic check,1957.83,115984.03,Yes
+PUNE_GYM_1827,Female,0,Yes,No,55,No,No phone service,DSL,No internet service,No,No internet service,Yes,No,No internet service,One year,Yes,Mailed check,1326.49,73331.86,No
+PUNE_GYM_1828,Male,0,Yes,Yes,31,Yes,No phone service,Fiber optic,No,No internet service,No,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check,832.27,26028.55,No
+PUNE_GYM_1829,Female,0,No,Yes,42,Yes,No phone service,Fiber optic,No,No,No,Yes,No internet service,No,Month-to-month,Yes,Mailed check,1769.37,74493.03,No
+PUNE_GYM_1830,Male,0,No,Yes,10,Yes,Yes,DSL,No internet service,No,Yes,No,No internet service,Yes,One year,No,Credit card (automatic),1684.83,17290.15,No
+PUNE_GYM_1831,Male,0,No,Yes,32,Yes,No phone service,DSL,No internet service,Yes,No internet service,No internet service,Yes,No internet service,Month-to-month,No,Bank transfer (automatic),1384.26,44474.05,Yes
+PUNE_GYM_1832,Male,0,No,No,59,Yes,Yes,Fiber optic,No internet service,No,Yes,No,No internet service,No,One year,No,Bank transfer (automatic),1461.29,86380.75,No
+PUNE_GYM_1833,Female,1,No,No,34,Yes,No,DSL,No internet service,No internet service,Yes,No internet service,Yes,No,One year,No,Electronic check,1645.19,56119.1,No
+PUNE_GYM_1834,Male,1,Yes,Yes,9,Yes,No,Fiber optic,No internet service,No,Yes,Yes,No,No,Month-to-month,Yes,Bank transfer (automatic),3467.63,31512.21,Yes
+PUNE_GYM_1835,Female,0,No,No,17,Yes,No phone service,DSL,No internet service,No,Yes,Yes,Yes,No,Month-to-month,No,Credit card (automatic),2870.58,48949.53,Yes
+PUNE_GYM_1836,Male,0,Yes,No,11,Yes,Yes,Fiber optic,Yes,No,No internet service,Yes,No internet service,No internet service,One year,Yes,Bank transfer (automatic),807.06,9352.91,No
+PUNE_GYM_1837,Male,0,No,Yes,32,Yes,No phone service,No,No internet service,No,Yes,No,Yes,Yes,Two year,Yes,Credit card (automatic),3130.0,100646.5,Yes
+PUNE_GYM_1838,Female,0,Yes,No,10,Yes,No phone service,DSL,No,No,No,No internet service,No internet service,No,Month-to-month,No,Electronic check,2436.58,24855.32,Yes
+PUNE_GYM_1839,Male,0,No,Yes,22,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,No,Two year,No,Mailed check,3182.72,70135.49,No
+PUNE_GYM_1840,Male,0,No,No,57,Yes,No phone service,Fiber optic,No,No internet service,No,No internet service,No,No internet service,One year,No,Credit card (automatic),1590.96,91163.2,No
+PUNE_GYM_1841,Female,0,Yes,Yes,17,Yes,No,Fiber optic,No internet service,Yes,No internet service,Yes,Yes,No,Two year,No,Mailed check,1947.1,33599.67,No
+PUNE_GYM_1842,Male,1,Yes,No,4,Yes,No phone service,No,No,No internet service,Yes,No,No,No,Month-to-month,No,Electronic check,3199.06,13273.21,Yes
+PUNE_GYM_1843,Male,0,No,No,48,Yes,Yes,Fiber optic,Yes,No internet service,No internet service,Yes,No internet service,Yes,Month-to-month,No,Credit card (automatic),1390.46,67110.46,No
+PUNE_GYM_1844,Male,0,No,Yes,52,Yes,Yes,Fiber optic,No internet service,No internet service,Yes,No,No,No,One year,Yes,Credit card (automatic),3254.95,169637.89,No
+PUNE_GYM_1845,Male,0,No,Yes,47,Yes,No,DSL,No,No internet service,No internet service,Yes,No internet service,No internet service,Two year,Yes,Bank transfer (automatic),3002.65,141273.45,No
+PUNE_GYM_1846,Female,0,No,Yes,25,Yes,Yes,DSL,Yes,No internet service,No internet service,No,No internet service,Yes,Month-to-month,Yes,Credit card (automatic),3443.62,86540.22,Yes
+PUNE_GYM_1847,Female,0,No,Yes,59,Yes,Yes,DSL,Yes,No,Yes,No,No,No internet service,One year,No,Electronic check,1540.35,91004.51,No
+PUNE_GYM_1848,Male,1,Yes,No,21,Yes,No,DSL,No,Yes,No internet service,No internet service,No,Yes,Two year,Yes,Mailed check,1283.68,27184.37,No
+PUNE_GYM_1849,Female,0,Yes,No,37,Yes,No phone service,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Credit card (automatic),1559.51,58198.33,No
+PUNE_GYM_1850,Male,1,No,Yes,38,Yes,No,No,No,No,No,No internet service,Yes,No,One year,Yes,Electronic check,3368.48,128271.17,No
+PUNE_GYM_1851,Female,0,Yes,No,49,Yes,No phone service,Fiber optic,Yes,No internet service,No,No internet service,No,No,Two year,Yes,Electronic check,1565.91,76882.05,Yes
+PUNE_GYM_1852,Male,0,Yes,Yes,1,Yes,No,Fiber optic,No internet service,Yes,No,Yes,No,No,Month-to-month,Yes,Credit card (automatic),2239.11,2726.83,Yes
+PUNE_GYM_1853,Male,0,Yes,Yes,25,Yes,No phone service,DSL,No internet service,No,No internet service,No,No,No internet service,Month-to-month,Yes,Bank transfer (automatic),1770.67,44760.41,No
+PUNE_GYM_1854,Male,0,No,No,51,Yes,No,DSL,No internet service,No,No,No internet service,No,No,One year,No,Credit card (automatic),1749.04,89375.86,No
+PUNE_GYM_1855,Male,1,Yes,No,36,Yes,No phone service,Fiber optic,No internet service,Yes,Yes,Yes,No internet service,No,Month-to-month,No,Credit card (automatic),1160.8,42234.72,No
+PUNE_GYM_1856,Male,1,No,Yes,17,No,No,DSL,No internet service,Yes,No,No,No,Yes,Month-to-month,No,Bank transfer (automatic),2157.53,36934.18,No
+PUNE_GYM_1857,Male,0,Yes,Yes,41,Yes,No phone service,Fiber optic,No,No internet service,No,No internet service,No,No,Two year,Yes,Electronic check,3063.27,125846.62,No
+PUNE_GYM_1858,Female,0,No,Yes,24,Yes,No,Fiber optic,No internet service,No internet service,No internet service,No internet service,No,No,One year,No,Credit card (automatic),743.51,18049.32,Yes
+PUNE_GYM_1859,Male,0,Yes,No,2,No,Yes,No,No internet service,Yes,Yes,No internet service,No,No,One year,No,Bank transfer (automatic),3178.76,6475.4,No
+PUNE_GYM_1860,Female,1,No,No,40,No,No phone service,Fiber optic,No internet service,No internet service,No internet service,No,No internet service,No,One year,Yes,Mailed check,2529.87,101402.0,No
+PUNE_GYM_1861,Male,0,No,No,15,Yes,No,Fiber optic,No internet service,No,No internet service,No internet service,Yes,Yes,Month-to-month,No,Mailed check,2388.54,35949.61,Yes
+PUNE_GYM_1862,Female,0,Yes,No,32,Yes,No phone service,DSL,Yes,No internet service,Yes,No,Yes,No,Month-to-month,Yes,Bank transfer (automatic),2415.11,77753.27,Yes
+PUNE_GYM_1863,Female,0,No,Yes,39,Yes,No phone service,No,No internet service,No internet service,No internet service,No internet service,Yes,Yes,Month-to-month,No,Electronic check,1459.18,57272.71,No
+PUNE_GYM_1864,Female,0,No,Yes,59,Yes,No,DSL,No internet service,No,Yes,Yes,Yes,No internet service,Month-to-month,Yes,Bank transfer (automatic),1803.92,106885.93,Yes
+PUNE_GYM_1865,Male,0,No,Yes,6,Yes,No phone service,DSL,No,No internet service,No,No internet service,Yes,No,One year,Yes,Electronic check,2917.94,17894.56,No
+PUNE_GYM_1866,Male,0,No,Yes,1,Yes,No,DSL,Yes,No,Yes,Yes,No internet service,No,One year,No,Mailed check,1488.51,1641.02,Yes
+PUNE_GYM_1867,Female,1,No,Yes,47,Yes,Yes,No,No,No internet service,Yes,Yes,Yes,No,Month-to-month,Yes,Credit card (automatic),1963.06,92740.05,Yes
+PUNE_GYM_1868,Male,0,No,Yes,23,Yes,No phone service,No,No internet service,Yes,Yes,Yes,No internet service,Yes,Month-to-month,No,Bank transfer (automatic),656.93,15569.35,Yes
+PUNE_GYM_1869,Female,0,No,No,58,Yes,Yes,Fiber optic,No,No internet service,No internet service,No,No internet service,No,Month-to-month,Yes,Mailed check,2727.32,158423.79,Yes
+PUNE_GYM_1870,Male,1,No,No,39,Yes,No phone service,Fiber optic,No,Yes,Yes,Yes,Yes,No,Month-to-month,No,Credit card (automatic),1811.34,70786.87,No
+PUNE_GYM_1871,Female,0,Yes,Yes,57,Yes,No phone service,DSL,No internet service,Yes,Yes,No internet service,Yes,No internet service,Month-to-month,No,Mailed check,2123.54,121423.44,No
+PUNE_GYM_1872,Female,1,Yes,Yes,17,Yes,No phone service,DSL,Yes,Yes,Yes,No,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic),932.6,16245.54,Yes
+PUNE_GYM_1873,Male,0,No,No,34,Yes,No,DSL,Yes,Yes,No,Yes,No,Yes,One year,No,Bank transfer (automatic),3475.97,118641.71,Yes
+PUNE_GYM_1874,Female,0,No,No,59,Yes,Yes,DSL,No,Yes,Yes,No,No internet service,No internet service,Month-to-month,No,Credit card (automatic),1477.16,87273.5,No
+PUNE_GYM_1875,Male,1,Yes,No,41,Yes,No phone service,No,No internet service,No,No internet service,No,Yes,Yes,Month-to-month,No,Bank transfer (automatic),2441.47,100256.95,Yes
+PUNE_GYM_1876,Female,0,Yes,No,29,No,No,Fiber optic,No,No,Yes,No,No,No,One year,Yes,Mailed check,2285.59,66621.41,Yes
+PUNE_GYM_1877,Female,0,Yes,Yes,9,Yes,No phone service,Fiber optic,No,No,Yes,No internet service,No internet service,No,Month-to-month,Yes,Credit card (automatic),2876.77,26238.58,No
+PUNE_GYM_1878,Male,0,No,Yes,13,Yes,No,Fiber optic,No,Yes,No,Yes,No,No internet service,One year,No,Credit card (automatic),1452.13,18991.13,Yes
+PUNE_GYM_1879,Male,0,Yes,Yes,6,Yes,No phone service,Fiber optic,No internet service,No internet service,Yes,No,No,Yes,Month-to-month,No,Mailed check,2792.19,17011.91,Yes
+PUNE_GYM_1880,Male,0,No,Yes,6,Yes,Yes,Fiber optic,No internet service,No,No internet service,No,Yes,Yes,Month-to-month,Yes,Electronic check,1709.26,10589.22,Yes
+PUNE_GYM_1881,Female,0,No,Yes,20,Yes,Yes,Fiber optic,Yes,No internet service,Yes,No,No internet service,Yes,Month-to-month,Yes,Credit card (automatic),1792.37,36242.56,Yes
+PUNE_GYM_1882,Male,1,Yes,No,52,Yes,No phone service,DSL,No internet service,No internet service,No internet service,Yes,No,No internet service,Two year,No,Electronic check,2550.87,132871.7,Yes
+PUNE_GYM_1883,Female,0,No,Yes,53,Yes,No,No,No,Yes,No,No,No internet service,No,Month-to-month,Yes,Mailed check,2874.43,152638.35,No
+PUNE_GYM_1884,Female,0,No,No,3,Yes,No phone service,DSL,No,Yes,Yes,No,Yes,No internet service,Two year,Yes,Mailed check,2533.91,8027.35,No
+PUNE_GYM_1885,Male,0,No,Yes,17,Yes,No,DSL,Yes,Yes,No,No internet service,No internet service,No,Month-to-month,No,Credit card (automatic),3209.65,55045.61,No
+PUNE_GYM_1886,Male,0,No,Yes,49,Yes,No phone service,Fiber optic,No internet service,No,Yes,Yes,No,No internet service,Month-to-month,Yes,Bank transfer (automatic),1426.96,70113.17,Yes
+PUNE_GYM_1887,Female,0,Yes,Yes,12,No,No,DSL,No,Yes,No internet service,No internet service,No,No,Month-to-month,Yes,Credit card (automatic),3211.79,38742.7,Yes
+PUNE_GYM_1888,Female,1,Yes,Yes,48,No,Yes,DSL,Yes,No,No,Yes,No internet service,Yes,Month-to-month,Yes,Bank transfer (automatic),979.5,47491.93,Yes
+PUNE_GYM_1889,Male,0,No,Yes,47,Yes,No phone service,DSL,Yes,No,Yes,Yes,No,Yes,Month-to-month,No,Electronic check,2512.64,118352.44,Yes
+PUNE_GYM_1890,Male,0,No,No,45,Yes,Yes,Fiber optic,No,No,No internet service,Yes,No,Yes,Month-to-month,Yes,Bank transfer (automatic),2188.13,98853.19,No
+PUNE_GYM_1891,Male,0,Yes,No,55,Yes,Yes,Fiber optic,No,No,No,No internet service,No,No internet service,Month-to-month,No,Credit card (automatic),2034.44,112239.11,Yes
+PUNE_GYM_1892,Male,0,No,No,1,Yes,No phone service,Fiber optic,No internet service,Yes,Yes,No internet service,Yes,No internet service,Month-to-month,Yes,Bank transfer (automatic),1501.64,1715.88,Yes
+PUNE_GYM_1893,Male,0,Yes,Yes,17,Yes,No phone service,DSL,Yes,No,No,No internet service,Yes,No internet service,Month-to-month,Yes,Mailed check,2060.82,35395.36,No
+PUNE_GYM_1894,Female,0,No,Yes,3,No,No,DSL,No,Yes,Yes,No internet service,No,Yes,Month-to-month,No,Electronic check,1069.14,3569.65,Yes
+PUNE_GYM_1895,Female,0,No,No,26,Yes,No,No,Yes,Yes,No internet service,No,No internet service,No,Month-to-month,No,Mailed check,1671.03,43783.76,Yes
+PUNE_GYM_1896,Female,0,Yes,Yes,15,Yes,Yes,DSL,No internet service,No,No internet service,No,Yes,Yes,One year,No,Mailed check,886.17,13432.41,No
+PUNE_GYM_1897,Female,0,Yes,Yes,36,Yes,No,DSL,No,Yes,No,No,No internet service,Yes,Two year,No,Mailed check,2258.36,81799.03,Yes
+PUNE_GYM_1898,Male,0,Yes,No,32,No,No,No,No internet service,No internet service,No,Yes,No,No,Month-to-month,Yes,Mailed check,877.73,28347.53,No
+PUNE_GYM_1899,Male,0,Yes,Yes,32,Yes,No phone service,Fiber optic,Yes,Yes,Yes,No,No,No,Month-to-month,No,Bank transfer (automatic),1065.0,34435.3,Yes
+PUNE_GYM_1900,Male,0,No,No,4,Yes,No,Fiber optic,No internet service,Yes,No internet service,Yes,No internet service,No,Month-to-month,No,Mailed check,847.85,3845.7,No
+PUNE_GYM_1901,Female,0,Yes,Yes,18,Yes,Yes,No,No internet service,No,Yes,No internet service,Yes,No,Two year,No,Bank transfer (automatic),1705.8,30973.72,No
+PUNE_GYM_1902,Female,0,No,No,49,Yes,No,Fiber optic,Yes,No,No internet service,Yes,No internet service,Yes,Month-to-month,Yes,Mailed check,3041.68,149451.89,No
+PUNE_GYM_1903,Male,0,Yes,Yes,19,Yes,Yes,No,No internet service,Yes,No,Yes,No internet service,No internet service,One year,Yes,Credit card (automatic),3230.0,61858.73,No
+PUNE_GYM_1904,Male,0,Yes,Yes,43,No,No phone service,No,Yes,No,Yes,No,No,Yes,Month-to-month,No,Mailed check,808.48,35008.21,Yes
+PUNE_GYM_1905,Female,0,No,No,52,Yes,Yes,DSL,No,No internet service,Yes,No internet service,Yes,No,Month-to-month,No,Credit card (automatic),2440.2,127152.51,Yes
+PUNE_GYM_1906,Female,0,Yes,Yes,35,Yes,No,DSL,Yes,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic),2584.72,90927.43,No
+PUNE_GYM_1907,Male,0,Yes,Yes,40,Yes,No phone service,DSL,Yes,No,No internet service,No,Yes,No internet service,Month-to-month,No,Electronic check,2147.93,86081.06,No
+PUNE_GYM_1908,Male,0,Yes,No,14,Yes,No,DSL,No,Yes,No internet service,No internet service,No,Yes,Two year,Yes,Bank transfer (automatic),2534.26,35591.08,Yes
+PUNE_GYM_1909,Female,1,Yes,Yes,58,Yes,No phone service,Fiber optic,Yes,No internet service,No,No internet service,Yes,Yes,Month-to-month,No,Electronic check,1277.7,74570.16,No
+PUNE_GYM_1910,Male,0,No,No,33,Yes,No phone service,Fiber optic,No,No internet service,Yes,No internet service,No,Yes,One year,Yes,Electronic check,2019.97,67087.65,No
+PUNE_GYM_1911,Male,0,No,Yes,14,Yes,No,Fiber optic,No,Yes,No internet service,No,Yes,No internet service,One year,No,Mailed check,1733.54,24758.59,No
+PUNE_GYM_1912,Male,0,Yes,Yes,34,Yes,No,DSL,Yes,No,No,No internet service,No internet service,No internet service,One year,No,Electronic check,860.15,29368.4,No
+PUNE_GYM_1913,Female,0,Yes,Yes,55,Yes,No phone service,Fiber optic,No internet service,No internet service,No internet service,Yes,No,No internet service,Month-to-month,Yes,Bank transfer (automatic),2414.11,132938.52,No
+PUNE_GYM_1914,Female,0,Yes,Yes,4,Yes,No phone service,Fiber optic,No internet service,Yes,Yes,Yes,No internet service,No,Month-to-month,No,Mailed check,2036.12,8286.61,Yes
+PUNE_GYM_1915,Female,1,No,No,24,Yes,No,Fiber optic,No,Yes,No internet service,No internet service,No,No,Month-to-month,No,Electronic check,1398.0,33925.37,Yes
+PUNE_GYM_1916,Female,0,No,Yes,59,Yes,Yes,DSL,No internet service,No internet service,Yes,No,Yes,Yes,Month-to-month,No,Bank transfer (automatic),1973.69,116790.11,No
+PUNE_GYM_1917,Female,0,No,No,29,Yes,No,No,No internet service,No,No,No,Yes,No internet service,One year,No,Electronic check,2848.36,82846.17,No
+PUNE_GYM_1918,Female,0,No,Yes,19,Yes,No phone service,No,Yes,No internet service,No,No,No,Yes,Month-to-month,Yes,Electronic check,2924.81,55694.36,Yes
+PUNE_GYM_1919,Female,1,Yes,Yes,6,Yes,No,DSL,No,Yes,No internet service,No internet service,No,No internet service,One year,No,Mailed check,2483.63,15257.64,No
+PUNE_GYM_1920,Male,0,Yes,Yes,57,Yes,Yes,No,No,No internet service,Yes,No internet service,No,Yes,Month-to-month,No,Mailed check,1956.47,111846.84,No
+PUNE_GYM_1921,Male,0,Yes,Yes,33,Yes,No,DSL,Yes,No,Yes,Yes,Yes,No,Two year,Yes,Bank transfer (automatic),2269.67,75044.27,No
+PUNE_GYM_1922,Male,0,No,No,49,Yes,No phone service,DSL,No internet service,Yes,Yes,No,No,No internet service,Month-to-month,No,Mailed check,1716.54,84574.02,No
+PUNE_GYM_1923,Male,0,Yes,No,40,Yes,No,DSL,No,No,No internet service,Yes,No,No,Month-to-month,Yes,Mailed check,967.01,38859.98,No
+PUNE_GYM_1924,Male,1,No,No,19,Yes,No phone service,Fiber optic,No internet service,No internet service,Yes,Yes,No internet service,No internet service,Two year,No,Credit card (automatic),1718.3,33045.1,No
+PUNE_GYM_1925,Male,1,No,No,53,Yes,No phone service,No,No,No internet service,Yes,No,No,Yes,Month-to-month,No,Credit card (automatic),2137.96,113765.91,Yes
+PUNE_GYM_1926,Male,0,Yes,Yes,1,No,No,Fiber optic,No,No,Yes,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic),2336.62,2668.41,Yes
+PUNE_GYM_1927,Female,1,Yes,No,5,Yes,No phone service,Fiber optic,No,No internet service,Yes,No internet service,No internet service,No,Month-to-month,Yes,Mailed check,3313.82,16767.84,Yes
+PUNE_GYM_1928,Female,0,Yes,No,27,Yes,No phone service,DSL,No,No,No internet service,Yes,No internet service,No internet service,Month-to-month,Yes,Bank transfer (automatic),2854.27,77288.99,No
+PUNE_GYM_1929,Male,1,No,Yes,16,Yes,Yes,Fiber optic,No internet service,No internet service,No internet service,Yes,Yes,Yes,One year,No,Credit card (automatic),1040.78,17106.78,Yes
+PUNE_GYM_1930,Male,0,No,Yes,6,No,Yes,Fiber optic,No internet service,No,Yes,Yes,No internet service,No internet service,Two year,Yes,Credit card (automatic),1105.13,6850.08,Yes
+PUNE_GYM_1931,Female,0,Yes,Yes,40,Yes,Yes,DSL,No internet service,No,Yes,Yes,No,No,Month-to-month,No,Credit card (automatic),891.43,36055.68,No
+PUNE_GYM_1932,Male,0,Yes,Yes,13,Yes,Yes,Fiber optic,No internet service,Yes,No,No,Yes,Yes,Two year,Yes,Bank transfer (automatic),2740.73,36125.56,Yes
+PUNE_GYM_1933,Male,0,No,No,48,Yes,No phone service,DSL,Yes,Yes,No,Yes,Yes,No,One year,No,Mailed check,2647.75,127591.93,Yes
+PUNE_GYM_1934,Female,0,Yes,No,35,Yes,No,DSL,No,No,Yes,Yes,Yes,No internet service,One year,Yes,Electronic check,3460.45,121429.14,No
+PUNE_GYM_1935,Male,0,No,Yes,19,Yes,No phone service,DSL,No,No internet service,Yes,No internet service,Yes,No,Month-to-month,No,Mailed check,2113.87,40594.15,No
+PUNE_GYM_1936,Female,0,No,Yes,12,Yes,No phone service,DSL,No,No internet service,No,No internet service,Yes,No internet service,Month-to-month,Yes,Bank transfer (automatic),2996.6,36455.3,Yes
+PUNE_GYM_1937,Male,0,Yes,Yes,16,Yes,No phone service,DSL,Yes,No internet service,No,No internet service,Yes,Yes,Two year,Yes,Credit card (automatic),2271.68,36596.75,No
+PUNE_GYM_1938,Female,0,Yes,No,59,Yes,No,DSL,No internet service,No,Yes,No,Yes,No,Two year,Yes,Electronic check,3134.85,185157.11,No
+PUNE_GYM_1939,Female,0,Yes,No,43,Yes,Yes,DSL,No,No,No internet service,No,No internet service,No,Month-to-month,Yes,Bank transfer (automatic),2690.96,115856.97,Yes
+PUNE_GYM_1940,Female,1,Yes,Yes,10,Yes,No phone service,DSL,No internet service,No,No internet service,No internet service,No,No internet service,Month-to-month,No,Credit card (automatic),2464.36,24799.96,Yes
+PUNE_GYM_1941,Male,0,No,Yes,25,Yes,No phone service,DSL,No internet service,No,Yes,No internet service,No,No,Month-to-month,No,Bank transfer (automatic),2238.86,56412.92,Yes
+PUNE_GYM_1942,Female,0,No,No,20,Yes,Yes,No,Yes,Yes,Yes,Yes,No internet service,No,One year,Yes,Electronic check,2696.61,54267.69,No
+PUNE_GYM_1943,Male,0,No,Yes,31,Yes,No phone service,Fiber optic,Yes,No,No,Yes,No internet service,Yes,Month-to-month,No,Credit card (automatic),1817.0,56776.48,No
+PUNE_GYM_1944,Male,1,Yes,Yes,4,No,No,Fiber optic,No internet service,No internet service,No,No,Yes,No internet service,Month-to-month,Yes,Mailed check,880.07,3936.06,Yes
+PUNE_GYM_1945,Male,0,No,No,44,Yes,No phone service,No,No,Yes,No internet service,No,Yes,No internet service,Month-to-month,No,Bank transfer (automatic),715.96,31871.74,Yes
+PUNE_GYM_1946,Male,0,Yes,Yes,23,Yes,No phone service,Fiber optic,No,No internet service,Yes,Yes,No internet service,Yes,One year,Yes,Electronic check,1989.17,46094.63,No
+PUNE_GYM_1947,Female,0,Yes,No,2,Yes,Yes,Fiber optic,Yes,No,No,No internet service,Yes,Yes,Month-to-month,No,Mailed check,2337.95,4795.24,Yes
+PUNE_GYM_1948,Female,1,Yes,Yes,56,Yes,No phone service,DSL,Yes,Yes,No internet service,Yes,No,No internet service,Month-to-month,No,Electronic check,828.66,46853.87,No
+PUNE_GYM_1949,Male,0,Yes,Yes,22,No,No phone service,Fiber optic,Yes,No,No internet service,No,No,Yes,One year,Yes,Bank transfer (automatic),1432.02,31771.58,No
+PUNE_GYM_1950,Male,0,Yes,No,51,Yes,No,Fiber optic,Yes,Yes,No internet service,No,Yes,Yes,One year,Yes,Electronic check,1533.89,78552.3,No
+PUNE_GYM_1951,Female,0,Yes,No,57,Yes,Yes,No,Yes,No internet service,No,Yes,Yes,Yes,Month-to-month,Yes,Credit card (automatic),2232.11,127339.05,No
+PUNE_GYM_1952,Male,1,No,Yes,37,Yes,Yes,DSL,Yes,No,No,Yes,Yes,No internet service,Month-to-month,Yes,Electronic check,1407.6,52555.63,No
+PUNE_GYM_1953,Female,0,Yes,No,8,Yes,No,Fiber optic,Yes,No,Yes,Yes,No,Yes,One year,Yes,Bank transfer (automatic),877.38,7480.14,No
+PUNE_GYM_1954,Male,0,No,Yes,7,Yes,No phone service,No,No,Yes,Yes,No,Yes,No,One year,No,Credit card (automatic),1078.08,7863.87,Yes
+PUNE_GYM_1955,Male,1,No,Yes,14,Yes,Yes,No,Yes,Yes,No internet service,No internet service,No internet service,No,One year,Yes,Electronic check,1104.45,15793.22,No
+PUNE_GYM_1956,Female,0,Yes,No,56,Yes,Yes,Fiber optic,Yes,No,No internet service,Yes,Yes,No internet service,Two year,No,Electronic check,3043.82,170835.93,Yes
+PUNE_GYM_1957,Male,0,Yes,Yes,55,Yes,No phone service,Fiber optic,No,Yes,No,No,No internet service,Yes,One year,Yes,Credit card (automatic),1424.53,78555.03,No
+PUNE_GYM_1958,Female,0,Yes,Yes,3,Yes,No phone service,DSL,No,No,No,No,Yes,No,One year,No,Mailed check,2672.61,8206.6,Yes
+PUNE_GYM_1959,Male,0,No,No,50,No,Yes,DSL,No internet service,Yes,Yes,No,Yes,No internet service,Month-to-month,No,Mailed check,2246.73,112706.11,Yes
+PUNE_GYM_1960,Male,0,Yes,No,16,Yes,No phone service,DSL,Yes,No internet service,Yes,Yes,No,No,Month-to-month,Yes,Credit card (automatic),3433.41,55076.33,No
+PUNE_GYM_1961,Male,0,No,Yes,55,Yes,Yes,No,Yes,Yes,Yes,Yes,No internet service,Yes,Month-to-month,Yes,Electronic check,1391.19,76797.07,No
+PUNE_GYM_1962,Female,0,Yes,No,19,Yes,No phone service,DSL,Yes,No internet service,No,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check,1059.28,20423.42,No
+PUNE_GYM_1963,Male,0,Yes,No,51,Yes,No phone service,Fiber optic,Yes,Yes,No internet service,No,No internet service,No,Month-to-month,No,Credit card (automatic),750.91,38548.94,No
+PUNE_GYM_1964,Male,1,No,No,18,Yes,No,DSL,No internet service,Yes,Yes,Yes,No,No internet service,Month-to-month,Yes,Bank transfer (automatic),1298.78,23552.15,Yes
+PUNE_GYM_1965,Male,0,No,No,52,Yes,No phone service,Fiber optic,No,No,Yes,No,No internet service,No,One year,No,Electronic check,2583.81,134600.25,Yes
+PUNE_GYM_1966,Male,1,Yes,Yes,16,Yes,No,DSL,No,Yes,No,No,No,No,Month-to-month,No,Bank transfer (automatic),847.25,13791.02,Yes
+PUNE_GYM_1967,Female,0,No,Yes,8,Yes,No phone service,DSL,Yes,Yes,Yes,No internet service,Yes,Yes,Month-to-month,No,Electronic check,1309.64,10776.83,No
+PUNE_GYM_1968,Female,1,No,Yes,60,Yes,Yes,Fiber optic,Yes,No internet service,No internet service,Yes,Yes,Yes,Two year,No,Mailed check,3080.39,185193.27,No
+PUNE_GYM_1969,Male,0,No,No,33,Yes,Yes,DSL,Yes,Yes,No,Yes,No internet service,No,Month-to-month,No,Bank transfer (automatic),2290.56,76075.77,No
+PUNE_GYM_1970,Female,0,No,No,49,Yes,No phone service,Fiber optic,No internet service,No,Yes,No,Yes,No internet service,Month-to-month,No,Bank transfer (automatic),801.61,39436.56,Yes
+PUNE_GYM_1971,Male,0,No,No,12,Yes,No phone service,Fiber optic,No internet service,No internet service,Yes,No,Yes,No internet service,Month-to-month,Yes,Credit card (automatic),738.28,9308.57,Yes
+PUNE_GYM_1972,Male,1,Yes,No,53,Yes,Yes,DSL,No,No,No,No internet service,No internet service,Yes,Two year,Yes,Mailed check,777.26,41408.45,No
+PUNE_GYM_1973,Male,0,Yes,No,11,Yes,No phone service,Fiber optic,Yes,No,No,No internet service,Yes,No,Month-to-month,Yes,Mailed check,3331.44,36982.39,No
+PUNE_GYM_1974,Female,0,No,No,5,Yes,No,DSL,Yes,No,Yes,No internet service,No internet service,Yes,One year,Yes,Electronic check,3064.63,15641.84,Yes
+PUNE_GYM_1975,Female,0,Yes,No,27,Yes,No,Fiber optic,Yes,No,No internet service,No internet service,No internet service,No,Month-to-month,No,Credit card (automatic),3050.33,82681.69,Yes
+PUNE_GYM_1976,Female,0,Yes,Yes,12,Yes,No,DSL,Yes,No internet service,No,No internet service,Yes,No,Month-to-month,Yes,Credit card (automatic),3280.23,39752.1,Yes
+PUNE_GYM_1977,Female,0,No,Yes,17,Yes,No,DSL,No internet service,Yes,No internet service,No internet service,Yes,Yes,Month-to-month,No,Electronic check,2065.24,35361.76,No
+PUNE_GYM_1978,Female,0,Yes,No,6,Yes,No,DSL,No,No,Yes,No,Yes,No internet service,One year,No,Bank transfer (automatic),1317.3,8131.44,Yes
+PUNE_GYM_1979,Female,0,No,No,33,Yes,No phone service,DSL,No,No internet service,No internet service,No internet service,Yes,Yes,One year,Yes,Electronic check,1763.91,58650.16,No
+PUNE_GYM_1980,Female,0,No,No,5,Yes,No phone service,No,No internet service,No,Yes,No,Yes,No,One year,Yes,Electronic check,2684.71,13611.59,Yes
+PUNE_GYM_1981,Female,0,Yes,Yes,57,Yes,No,Fiber optic,Yes,Yes,Yes,No,No,Yes,One year,No,Electronic check,3140.5,179180.6,No
+PUNE_GYM_1982,Female,0,No,Yes,28,Yes,No phone service,Fiber optic,No,No internet service,Yes,Yes,Yes,No internet service,Month-to-month,Yes,Credit card (automatic),1861.76,52235.52,Yes
+PUNE_GYM_1983,Male,0,No,No,14,Yes,No phone service,Fiber optic,No,No internet service,Yes,No,No,No internet service,One year,Yes,Electronic check,2152.6,30320.63,No
+PUNE_GYM_1984,Female,0,No,No,5,Yes,No,Fiber optic,No internet service,Yes,No internet service,No,No internet service,No,Month-to-month,No,Electronic check,3302.17,16818.26,Yes
+PUNE_GYM_1985,Female,0,No,Yes,54,Yes,No phone service,No,Yes,No internet service,Yes,No internet service,Yes,Yes,One year,No,Electronic check,911.75,49549.9,No
+PUNE_GYM_1986,Female,0,No,Yes,56,Yes,No phone service,Fiber optic,No,Yes,Yes,No,Yes,No internet service,Month-to-month,No,Mailed check,3100.67,173839.29,No
+PUNE_GYM_1987,Female,0,Yes,Yes,59,Yes,No phone service,DSL,Yes,No internet service,No internet service,No internet service,Yes,Yes,Month-to-month,No,Bank transfer (automatic),1061.99,62786.32,Yes
+PUNE_GYM_1988,Female,0,Yes,Yes,33,Yes,No,DSL,No,No internet service,No,No internet service,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic),2003.2,66503.46,No
+PUNE_GYM_1989,Female,0,No,No,50,Yes,No phone service,Fiber optic,No internet service,Yes,No internet service,No internet service,No,No,Month-to-month,No,Bank transfer (automatic),1233.43,62074.69,Yes
+PUNE_GYM_1990,Female,0,No,Yes,48,Yes,Yes,DSL,Yes,Yes,No internet service,Yes,No,No,Month-to-month,Yes,Bank transfer (automatic),2348.55,113229.53,Yes
+PUNE_GYM_1991,Female,0,Yes,Yes,41,Yes,Yes,Fiber optic,No internet service,No internet service,No internet service,No internet service,Yes,Yes,One year,Yes,Credit card (automatic),2219.86,91474.27,Yes
+PUNE_GYM_1992,Female,0,No,No,19,Yes,No,DSL,No,No internet service,Yes,No,Yes,No,Month-to-month,Yes,Credit card (automatic),1702.02,32808.8,Yes
+PUNE_GYM_1993,Female,0,Yes,Yes,22,Yes,Yes,Fiber optic,No internet service,Yes,Yes,No internet service,Yes,No internet service,Month-to-month,No,Electronic check,3103.58,68698.04,Yes
+PUNE_GYM_1994,Female,0,No,Yes,5,Yes,No,No,No internet service,Yes,Yes,No internet service,Yes,No,One year,No,Credit card (automatic),2513.46,12913.5,No
+PUNE_GYM_1995,Male,0,No,Yes,59,Yes,Yes,No,No internet service,No internet service,No,No internet service,No internet service,No internet service,Month-to-month,Yes,Bank transfer (automatic),2691.49,158949.33,Yes
+PUNE_GYM_1996,Male,0,No,No,2,Yes,Yes,Fiber optic,No,No internet service,Yes,Yes,Yes,No internet service,One year,Yes,Mailed check,1036.91,2422.75,Yes
+PUNE_GYM_1997,Female,0,No,Yes,30,Yes,Yes,Fiber optic,Yes,No internet service,No,No,No internet service,No,One year,Yes,Electronic check,3161.18,94957.78,Yes
+PUNE_GYM_1998,Female,0,No,No,47,Yes,No,DSL,No internet service,Yes,Yes,Yes,Yes,No internet service,Two year,No,Electronic check,1084.42,51421.86,No
+PUNE_GYM_1999,Male,1,No,No,39,Yes,No,Fiber optic,Yes,No internet service,No internet service,No,No,No internet service,One year,Yes,Bank transfer (automatic),1246.08,48889.85,No

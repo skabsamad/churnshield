@@ -1,6 +1,5 @@
 # =====================================================================
-#  Project : ChurnShield AI — Streamlit Dashboard
-#  Purpose : CSV Upload → Churn Prediction → Risk Dashboard → Report
+#  ChurnShield AI — Production Ready (Cloud Compatible)
 # =====================================================================
 
 import os
@@ -8,47 +7,118 @@ import joblib
 import pandas as pd
 import streamlit as st
 import plotly.express as px
+from sklearn.model_selection import train_test_split
+from xgboost import XGBClassifier
+from sklearn.metrics import accuracy_score, recall_score, roc_auc_score
+
+st.set_page_config(page_title="ChurnShield AI", page_icon="🛡️", layout="wide")
 
 # ---------------------------------------------------------------------
-# PAGE SETUP
-# ---------------------------------------------------------------------
-st.set_page_config(
-    page_title="ChurnShield AI",
-    page_icon="🛡️",
-    layout="wide"
-)
-
-MODEL_PATH = os.path.join("saved_models", "churn_model.pkl")
-COLS_PATH = os.path.join("saved_models", "feature_columns.pkl")
-
-# ---------------------------------------------------------------------
-# LOAD TRAINED MODEL
+# SMART MODEL LOADER (Cloud + Local Compatible)
 # ---------------------------------------------------------------------
 @st.cache_resource
-def load_model():
-    model = joblib.load(MODEL_PATH)
-    cols = joblib.load(COLS_PATH)
-    return model, cols
+def get_model_and_features():
+    possible_model_paths = [
+        "saved_models/churn_model.pkl",
+        "churn_model.pkl",
+        "data/saved_models/churn_model.pkl",
+        os.path.join("saved_models", "churn_model.pkl")
+    ]
+    possible_cols_paths = [
+        "saved_models/feature_columns.pkl",
+        "feature_columns.pkl",
+        "data/saved_models/feature_columns.pkl"
+    ]
 
-if not os.path.exists(MODEL_PATH):
-    st.error("❌ Model file nahi mili! Pehle terminal me run karo: python data/train.py")
-    st.stop()
+    model = None
+    feature_cols = None
 
-model, feature_cols = load_model()
+    for mp in possible_model_paths:
+        if os.path.exists(mp):
+            model = joblib.load(mp)
+            break
+
+    for cp in possible_cols_paths:
+        if os.path.exists(cp):
+            feature_cols = joblib.load(cp)
+            break
+
+    # Agar model nahi mila toh on-the-fly train kar lo (Cloud fallback)
+    if model is None or feature_cols is None:
+        st.warning("⚠️ Model file nahi mili. Cloud pe auto-training shuru ho rahi hai... (30 sec)")
+        model, feature_cols = train_model_on_cloud()
+    
+    return model, feature_cols
+
+
+def train_model_on_cloud():
+    """Agar .pkl missing ho toh sample data se model train karke return karta hai"""
+    # Sample data dhoondho
+    sample_path = None
+    for root, dirs, files in os.walk("."):
+        for f in files:
+            if f.endswith(".csv") and ("Telco" in f or "Gym" in f or "Churn" in f or "Customer" in f):
+                sample_path = os.path.join(root, f)
+                break
+        if sample_path:
+            break
+
+    if not sample_path:
+        # Last fallback - dummy data
+        st.error("Koi CSV nahi mili training ke liye.")
+        st.stop()
+
+    df = pd.read_csv(sample_path)
+
+    # Basic cleaning
+    for col in ['customerID', 'CustomerID', 'Customer_ID', 'id']:
+        if col in df.columns:
+            df = df.drop(columns=[col])
+
+    if 'TotalCharges' in df.columns:
+        df['TotalCharges'] = pd.to_numeric(df['TotalCharges'].astype(str).str.strip(), errors='coerce')
+        df['TotalCharges'] = df['TotalCharges'].fillna(df['TotalCharges'].median())
+
+    target = 'Churn' if 'Churn' in df.columns else 'Exited'
+    if df[target].dtype == 'object':
+        df[target] = df[target].map({'Yes': 1, 'No': 0, 'True': 1, 'False': 0})
+
+    X = df.drop(columns=[target])
+    y = df[target].astype(int)
+
+    for c in X.columns:
+        if X[c].dtype == 'object' and X[c].nunique() == 2:
+            X[c] = X[c].map({'Yes': 1, 'No': 0, 'Male': 1, 'Female': 0})
+
+    X = pd.get_dummies(X, drop_first=True)
+
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
+
+    model = XGBClassifier(n_estimators=100, learning_rate=0.05, max_depth=4, random_state=42, eval_metric='logloss')
+    model.fit(X_train, y_train)
+
+    # Save for next time
+    os.makedirs("saved_models", exist_ok=True)
+    joblib.dump(model, "saved_models/churn_model.pkl")
+    joblib.dump(X.columns.tolist(), "saved_models/feature_columns.pkl")
+
+    return model, X.columns.tolist()
+
+
+model, feature_cols = get_model_and_features()
 
 # ---------------------------------------------------------------------
 # HELPER FUNCTIONS
 # ---------------------------------------------------------------------
 def preprocess_for_model(raw_df):
-    """Uploaded CSV ko model ke format me convert karta hai"""
     df = raw_df.copy()
-    for col in ['customerID', 'CustomerID', 'Customer_ID']:
+    for col in ['customerID', 'CustomerID', 'Customer_ID', 'id', 'RowNumber']:
         if col in df.columns:
             df = df.drop(columns=[col])
     if 'TotalCharges' in df.columns:
         df['TotalCharges'] = pd.to_numeric(df['TotalCharges'].astype(str).str.strip(), errors='coerce')
         df['TotalCharges'] = df['TotalCharges'].fillna(df['TotalCharges'].median())
-    for t in ['Churn', 'Exited', 'churn']:
+    for t in ['Churn', 'Exited', 'churn', 'target']:
         if t in df.columns:
             df = df.drop(columns=[t])
     for c in df.columns:
@@ -59,48 +129,33 @@ def preprocess_for_model(raw_df):
     return df
 
 def risk_label(p):
-    if p >= 0.70:
-        return "🔴 High Risk"
-    elif p >= 0.40:
-        return "🟠 Medium Risk"
+    if p >= 0.70: return "🔴 High Risk"
+    elif p >= 0.40: return "🟠 Medium Risk"
     return "🟢 Safe"
 
 def get_reasons(row):
-    """Customer kyun jaa sakta hai — top reasons"""
     reasons = []
-    if row.get('Contract') == 'Month-to-month':
-        reasons.append("Month-to-month contract (no long-term commitment)")
-    if row.get('tenure') is not None and row.get('tenure') <= 12:
-        reasons.append("Naya customer (kam tenure)")
-    if row.get('MonthlyCharges') is not None and row.get('MonthlyCharges') >= 80:
-        reasons.append("Monthly charges zyada hain")
-    if row.get('TechSupport') == 'No':
-        reasons.append("Tech support service nahi li")
-    if row.get('InternetService') == 'Fiber optic':
-        reasons.append("Fiber optic service issues")
-    if row.get('PaymentMethod') == 'Electronic check':
-        reasons.append("Manual payment (electronic check)")
-    if row.get('OnlineSecurity') == 'No':
-        reasons.append("Online security add-on nahi hai")
-    if not reasons:
-        reasons.append("Kai chhote factors mil kar risk badha rahe hain")
+    if row.get('Contract') == 'Month-to-month': reasons.append("Month-to-month contract")
+    if row.get('tenure') is not None and row.get('tenure') <= 12: reasons.append("New customer (low tenure)")
+    if row.get('MonthlyCharges') is not None and row.get('MonthlyCharges') >= 75: reasons.append("High monthly charges")
+    if row.get('TechSupport') == 'No': reasons.append("No tech support")
+    if row.get('InternetService') == 'Fiber optic': reasons.append("Fiber optic issues")
+    if row.get('PaymentMethod') == 'Electronic check': reasons.append("Manual payment method")
+    if not reasons: reasons.append("Multiple small risk factors")
     return reasons[:3]
 
 def get_actions(risk_pct, row):
-    """Business ko kya action lena chahiye"""
     actions = []
     if risk_pct >= 70:
-        actions.append("📞 Retention team se personal call")
-        actions.append("🎁 20% discount / 1 month free offer")
+        actions.append("📞 Priority retention call")
+        actions.append("🎁 20% discount / 1 month free")
     elif risk_pct >= 40:
-        actions.append("📧 Feedback survey / re-engagement email")
-        actions.append("🎁 Chhota loyalty reward")
+        actions.append("📧 Feedback + re-engagement email")
+        actions.append("🎁 Small loyalty reward")
     else:
-        actions.append("⭐ Loyalty program me enroll karo")
+        actions.append("⭐ Enroll in loyalty program")
     if row.get('Contract') == 'Month-to-month':
-        actions.append("📄 Annual plan par extra discount")
-    if row.get('TechSupport') == 'No':
-        actions.append("🛠️ Free tech-support trial")
+        actions.append("📄 Offer annual plan upgrade")
     return actions
 
 # ---------------------------------------------------------------------
@@ -110,52 +165,43 @@ st.sidebar.title("🛡️ ChurnShield AI")
 st.sidebar.markdown("*Predict before they leave. Act before it's too late.*")
 st.sidebar.divider()
 
-uploaded_file = st.sidebar.file_uploader("📂 Apna Customer CSV Upload Karo", type=['csv'])
-use_sample = st.sidebar.checkbox("📊 Sample Telco Data Use Karo", value=True)
+uploaded_file = st.sidebar.file_uploader("📂 Upload Customer CSV", type=['csv'])
+use_sample = st.sidebar.checkbox("📊 Use Sample Data", value=True)
 
 st.sidebar.divider()
-st.sidebar.markdown("### 💰 Pricing Plans")
+st.sidebar.markdown("### 💰 Pricing")
 st.sidebar.markdown("🟢 Starter — ₹999/mo\n\n🟡 Growth — ₹2,499/mo\n\n🔴 Pro — ₹4,999/mo")
 
 # ---------------------------------------------------------------------
-# DATA LOADING
+# DATA LOAD
 # ---------------------------------------------------------------------
 raw_df = None
-
 if uploaded_file is not None:
     raw_df = pd.read_csv(uploaded_file)
-    st.sidebar.success(f"✅ {len(raw_df)} customers loaded!")
+    st.sidebar.success(f"✅ {len(raw_df)} customers loaded")
 elif use_sample:
     sample_path = None
-    if os.path.exists("data"):
-        for f in os.listdir("data"):
+    for root, dirs, files in os.walk("."):
+        for f in files:
             if f.endswith(".csv"):
-                sample_path = os.path.join("data", f)
+                sample_path = os.path.join(root, f)
                 break
+        if sample_path: break
     if sample_path:
         raw_df = pd.read_csv(sample_path)
-        st.sidebar.success(f"✅ Sample data: {len(raw_df)} customers")
-    else:
-        st.sidebar.error("data/ folder me koi CSV nahi mili")
+        st.sidebar.success(f"✅ Sample: {len(raw_df)} customers")
 
-# ---------------------------------------------------------------------
-# HERO SECTION
-# ---------------------------------------------------------------------
 st.title("🛡️ ChurnShield AI")
 st.markdown("#### Affordable AI-Powered Customer Churn Prediction for Indian SMBs")
 
 if raw_df is None:
-    st.info("👈 Left sidebar se CSV upload karo ya **Sample Data** checkbox tick karo")
-    c1, c2, c3 = st.columns(3)
-    c1.metric("💰 Price", "₹999/mo", "vs ₹30K+ competitors")
-    c2.metric("⏱️ Setup Time", "2 Minutes", "Sirf CSV upload")
-    c3.metric("🧠 Coding Skill", "ZERO", "Koi technical knowledge nahi")
+    st.info("👈 Left se CSV upload karo ya Sample Data tick karo")
     st.stop()
 
 # ---------------------------------------------------------------------
-# RUN PREDICTIONS
+# PREDICTION
 # ---------------------------------------------------------------------
-with st.spinner("🤖 AI model sabhi customers ka churn risk calculate kar raha hai..."):
+with st.spinner("🤖 AI analyzing customers..."):
     X = preprocess_for_model(raw_df)
     probs = model.predict_proba(X)[:, 1]
 
@@ -163,93 +209,67 @@ results = raw_df.copy()
 results['Churn_Risk_%'] = (probs * 100).round(1)
 results['Risk_Category'] = [risk_label(p) for p in probs]
 results['Top_Reasons'] = ["; ".join(get_reasons(row)) for _, row in raw_df.iterrows()]
-results['Recommended_Actions'] = [
-    "; ".join(get_actions(p * 100, row)) for p, (_, row) in zip(probs, raw_df.iterrows())
-]
+results['Recommended_Actions'] = ["; ".join(get_actions(p*100, row)) for p, (_, row) in zip(probs, raw_df.iterrows())]
 
-# ---------------------------------------------------------------------
-# KPI CARDS
-# ---------------------------------------------------------------------
+# Metrics
 total = len(results)
 high = int((probs >= 0.7).sum())
 medium = int(((probs >= 0.4) & (probs < 0.7)).sum())
 safe = int((probs < 0.4).sum())
-rev_risk = results.loc[probs >= 0.7, 'MonthlyCharges'].sum() if 'MonthlyCharges' in results.columns else 0
 
+rev_col = None
+for c in ['MonthlyCharges', 'Balance', 'EstimatedSalary', 'Monthly_Spend']:
+    if c in results.columns:
+        rev_col = c
+        break
+rev_risk = results.loc[probs >= 0.7, rev_col].sum() if rev_col else high * 1200
+
+# KPI Cards
 c1, c2, c3, c4, c5 = st.columns(5)
-c1.metric("👥 Total Customers", total)
-c2.metric("🔴 High Risk", high)
-c3.metric("🟠 Medium Risk", medium)
-c4.metric("🟢 Safe", safe)
-c5.metric("💸 Revenue at Risk/mo", f"₹{rev_risk:,.0f}")
+c1.metric("👥 Total Customers", f"{total:,}")
+c2.metric("🔴 High Risk", f"{high:,}")
+c3.metric("🟠 Medium Risk", f"{medium:,}")
+c4.metric("🟢 Safe", f"{safe:,}")
+c5.metric("💸 Revenue at Risk", f"₹{rev_risk:,.0f}")
 
 st.divider()
 
-# ---------------------------------------------------------------------
-# TABS
-# ---------------------------------------------------------------------
-tab1, tab2, tab3, tab4 = st.tabs([
-    "📊 Dashboard", "📋 Customer Risk Report", "🔍 Why Customers Leave", "📥 Download Report"
-])
+# Tabs
+tab1, tab2, tab3, tab4 = st.tabs(["📊 Dashboard", "📋 Customer Report", "🔍 Why They Leave", "📥 Download"])
 
 COLOR_MAP = {'🔴 High Risk': '#e74c3c', '🟠 Medium Risk': '#f39c12', '🟢 Safe': '#2ecc71'}
 
 with tab1:
-    colA, colB = st.columns(2)
-    with colA:
+    col1, col2 = st.columns(2)
+    with col1:
         dist = results['Risk_Category'].value_counts().reset_index()
         dist.columns = ['Category', 'Count']
-        fig1 = px.pie(dist, names='Category', values='Count', hole=0.45,
-                      title="Customer Risk Distribution",
-                      color='Category', color_discrete_map=COLOR_MAP)
-        st.plotly_chart(fig1, use_container_width=True)
-    with colB:
-        fig2 = px.histogram(results, x='Churn_Risk_%', nbins=25,
-                            title="Churn Risk Score Distribution",
-                            color_discrete_sequence=['#3498db'])
+        fig = px.pie(dist, names='Category', values='Count', hole=0.45, color='Category', color_discrete_map=COLOR_MAP, title="Risk Distribution")
+        st.plotly_chart(fig, use_container_width=True)
+    with col2:
+        fig2 = px.histogram(results, x='Churn_Risk_%', nbins=25, title="Risk Score Distribution", color_discrete_sequence=['#3498db'])
         st.plotly_chart(fig2, use_container_width=True)
 
-    if 'tenure' in results.columns and 'MonthlyCharges' in results.columns:
-        fig3 = px.scatter(results, x='tenure', y='MonthlyCharges', color='Risk_Category',
-                          title="Tenure vs Monthly Charges (Risk ke hisaab se)",
-                          color_discrete_map=COLOR_MAP, opacity=0.6)
-        st.plotly_chart(fig3, use_container_width=True)
-
-    st.subheader("🚨 Immediate Action Required — Top 5 High Risk Customers")
+    st.subheader("🚨 Top 5 High Risk Customers")
     top5 = results.sort_values('Churn_Risk_%', ascending=False).head(5)
     for _, r in top5.iterrows():
-        with st.expander(f"🔴 Risk: {r['Churn_Risk_%']}%  |  Reasons: {r['Top_Reasons'][:60]}..."):
-            st.markdown(f"**Kyun jaa sakta hai:** {r['Top_Reasons']}")
-            st.markdown(f"**Kya karo:** {r['Recommended_Actions']}")
+        with st.expander(f"🔴 Risk {r['Churn_Risk_%']}% — {r['Top_Reasons'][:50]}..."):
+            st.write("**Reasons:**", r['Top_Reasons'])
+            st.write("**Action:**", r['Recommended_Actions'])
 
 with tab2:
-    filt = st.selectbox("Risk Category se Filter Karo:",
-                        ["All", "🔴 High Risk", "🟠 Medium Risk", "🟢 Safe"])
-    display_df = results if filt == "All" else results[results['Risk_Category'] == filt]
-    id_cols = [c for c in ['customerID', 'CustomerID'] if c in results.columns]
-    show_cols = id_cols + ['Churn_Risk_%', 'Risk_Category', 'Top_Reasons', 'Recommended_Actions']
-    st.markdown(f"**{len(display_df)} customers dikh rahe hain**")
-    st.dataframe(display_df[show_cols].sort_values('Churn_Risk_%', ascending=False),
-                 use_container_width=True, height=500)
+    filt = st.selectbox("Filter:", ["All", "🔴 High Risk", "🟠 Medium Risk", "🟢 Safe"])
+    show = results if filt == "All" else results[results['Risk_Category'] == filt]
+    st.dataframe(show.sort_values('Churn_Risk_%', ascending=False), use_container_width=True, height=450)
 
 with tab3:
-    st.subheader("AI ke hisaab se Churn ke Sabse Bade Reasons")
-    imp = pd.DataFrame({'Feature': feature_cols, 'Importance': model.feature_importances_})
-    imp = imp.sort_values('Importance', ascending=False).head(12)
-    fig = px.bar(imp[::-1], x='Importance', y='Feature', orientation='h',
-                 color='Importance', color_continuous_scale='Reds',
-                 title="Top 12 Churn Drivers (Feature Importance)")
-    st.plotly_chart(fig, use_container_width=True)
-    st.success("💡 **Business Tip:** In top factors par focus karo — contract type, tenure, aur monthly charges sabse zyada matter karte hain.")
+    if hasattr(model, 'feature_importances_'):
+        imp = pd.DataFrame({'Feature': feature_cols, 'Importance': model.feature_importances_})
+        imp = imp.sort_values('Importance', ascending=False).head(12)
+        fig = px.bar(imp[::-1], x='Importance', y='Feature', orientation='h', color='Importance', color_continuous_scale='Reds', title="Top Churn Drivers")
+        st.plotly_chart(fig, use_container_width=True)
 
 with tab4:
-    st.subheader("📥 Complete Churn Prediction Report Download Karo")
-    st.markdown("Ye CSV file business owner apne team ko de sakta hai — har customer ka risk %, reason aur action plan ke saath.")
-    csv_data = results.to_csv(index=False).encode('utf-8')
-    st.download_button(
-        label="📥 Download Full Report (CSV)",
-        data=csv_data,
-        file_name="churnshield_report.csv",
-        mime="text/csv"
-    )
+    csv = results.to_csv(index=False).encode('utf-8')
+    st.download_button("📥 Download Full Report (CSV)", csv, "ChurnShield_Report.csv", "text/csv")
     st.dataframe(results.head(10), use_container_width=True)
